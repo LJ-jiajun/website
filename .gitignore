@@ -1,0 +1,7 @@
+*.zip
+*.class
+*.json
+*.project
+/test/
+/boxsizing.htc
+/malldemo.html
