@@ -7,7 +7,7 @@
 *.project
 
 /test/
-/fonts/
+fonts/*
 /newhyMall/boxsizing.htc
 
 /newhyMall/malldemo.html
