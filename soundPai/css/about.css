@@ -1,0 +1,160 @@
+.banner{
+	width: 100%;
+	min-width: 1200px;
+	height: auto;
+	overflow: hidden;
+}
+.banner img{
+	width: 100%;
+}
+.content{
+	width: 100%;
+	min-width: 1200px;
+	height: auto;
+	margin-top: 34px;
+	margin-bottom: 60px;
+	overflow: hidden;
+}
+/*location*/
+.content .location{
+	width: 100%;
+	height: 48px;
+	border-bottom: 1px solid #ccc;
+}
+.content .location ul{
+	width: 1200px;
+	margin: 0 auto;
+}
+.content .location li{
+	float: left;
+	height: 48px;
+	font-size: 18px;
+	color: #666;
+	line-height: 48px;
+}
+.content .location li a{
+	display: inline;
+	color: #666;
+	margin: 0 10px;
+}
+.content .location li a:hover{
+	color: #1c1c1c;
+}
+.content .location li.active{
+	color: #1c1c1c;
+	margin-left: 10px;
+}
+.content .subnav{
+	width: 1200px;
+	height: auto;
+	margin: 24px auto 30px;
+	overflow: hidden;
+}
+.content .subnav .top{
+	float: left;
+	width: 200px;
+	height: 60px;
+	background-color: #666;
+	text-align: center;
+}
+.content .subnav .top span{
+	display: block;
+	width: 118px;
+	height: 38px;
+	font-size: 22px;
+	line-height: 38px;
+	border: 1px solid #fff;
+	border-radius: 0 16px 0 0;
+	color: #fff;
+	margin: 10px 40px;
+	behavior: url(../PIE.htc);
+	position: relative;
+	z-index: 10;
+}
+.content .subnav ul{
+	float: left;
+	width: 600px;
+	height: 60px;
+}
+.content .subnav li{
+	float: left;
+	width: 200px;
+	height: 60px;
+	font-size: 20px;
+	line-height: 60px;
+	background-color: #333;
+	text-align: center;
+}
+.content .subnav li:nth-of-type(2){
+	background-color: #666;
+}
+.content .subnav li a{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+.content .subnav li a:hover{
+	color: #00ffff;
+}
+.content .subnav li.active a{
+	color: #00ffff;
+}
+.content .main{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.content .main div{
+	position: relative;
+	float: left;
+	width: 600px;
+	height: 300px;
+}
+.content .main img{
+	width: 100%;
+	height: 100%;
+}
+.content .main h2{
+	width: 100%;
+	height: 34px;
+	font-size: 22px;
+	font-weight: 400;
+	color: #333;
+	line-height: 34px;
+	text-align: center;
+	margin-top: 36px;
+}
+.content .main h3{
+	width: 600px;
+	height: 24px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #999;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 12px;
+}
+.content .main p{
+	width: 520px;
+	height: auto;
+	color: #666;
+	line-height: 34px;
+	text-align: justify;
+	overflow: hidden;
+}
+.content .main div.text p{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	margin-left: -260px \9;
+	margin-top: -85px \9;
+}
+.content .main div.title p{
+	padding: 0px 40px;
+	text-indent: 2em;
+}

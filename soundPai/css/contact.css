@@ -1,0 +1,166 @@
+@font-face {
+	font-family:"fzltkh";
+	src: url(../fonts/fzltkh.ttf);
+	src: url(../fonts/fzltkh.eot);
+	src: url(../fonts/fzltkh.woff);
+	src: url(../fonts/fzltkh.woff2);
+	src: url(../fonts/fzltkh.svg);
+}
+
+.banner{
+	width: 100%;
+	min-width: 1200px;
+	height: auto;
+	overflow: hidden;
+}
+.banner img{
+	width: 100%;
+}
+.content{
+	width: 1200px;
+	height: auto;
+	margin: 26px auto 60px;
+	overflow: hidden;
+}
+.content .title{
+	width: 100%;
+	height: 94px;
+	margin-bottom: 42px;
+}
+.content .title h2{
+	width: 100%;
+	height: 46px;
+	font-family:"fzltkh";
+	font-size: 40px;
+	font-weight: 400;
+	color: #333;
+	line-height: 46px;
+}
+.content .title h3{
+	width: 100%;
+	height: 26px;
+	font-family:"fzltkh";
+	font-size: 22px;
+	font-weight: 400;
+	color: #333;
+	line-height: 26px;
+}
+.content .title span{
+	display: block;
+	width: 8px;
+	height: 6px;
+	margin-top: 16px;
+	position: relative;
+}
+.content .title span:before{
+	content: "";
+	width: 118px;
+	height: 6px;
+	background: #cc3333;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.content .title span:after{
+	content: "";
+	width: 30px;
+	height: 6px;
+	background: #cc3333;
+	position: absolute;
+	top: 0px;
+	left: 126px;
+}
+.content .map{
+	float: left;
+	width: 540px;
+	height: 338px;
+}
+.content .msg{
+	float: left;
+	width: 510px;
+	height: 338px;
+	color: #666;
+	line-height: 24px;
+	margin-left: 150px;
+}
+.content .msg li{
+	float: left;
+	width: 50%;
+	height: 26px;
+	margin-bottom: 16px;
+}
+.content .msg li:first-of-type{
+	width: 100%;
+}
+.content .msg li:nth-of-type(4){
+	width: 100%;
+}
+.content .msg li:nth-of-type(5){
+	width: 100%;
+	height: 150px;
+	margin-bottom: 22px;
+}
+.content .msg li:nth-of-type(6){
+	width: 30%;
+}
+.content .msg li:nth-of-type(7){
+	width: 30%;
+}
+.content .msg li:nth-of-type(8){
+	width: 40%;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 0px;
+}
+.content .msg li span{
+	float: left;
+	height: 26px;
+}
+.content .msg li input{
+	float: left;
+	width: 154px;
+	height: 24px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 24px;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+	padding: 0 4px;
+}
+.content .msg li:nth-of-type(3) span{
+	margin-left: 45px;
+}
+.content .msg li:nth-of-type(6) span{
+	height: 40px;
+	line-height: 40px;
+}
+.content .msg li:nth-of-type(6) input{
+	width: 80px;
+	height: 38px;
+	line-height: 38px;
+}
+.content .msg li textarea{
+	float: left;
+	width: 454px;
+	height: 148px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 24px;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+	padding: 0 4px;
+	outline: none;
+}
+.content .msg li img{
+	width: 90px;
+	height: 40px;
+	margin-left: 26px;
+}
+.content .msg li:nth-of-type(8) input{
+	cursor: pointer;
+	float: right;
+	width: 156px;
+	height: 40px;
+	background-color: #009999;
+	color: #fff;
+}
