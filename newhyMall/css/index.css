@@ -1,0 +1,230 @@
+/*newpro*/
+.newpro{
+	width: 1200px;
+	height: auto;
+	margin: 20px auto 0;
+	overflow: hidden;
+}
+.newpro h2{
+	width: 120px;
+	height: 42px;
+	font-size: 22px;
+	line-height: 42px;
+	color: #eea615;
+}
+.newpro .newprolist{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.newprolist li{
+	position: relative;
+	float: left;
+	margin: 0 0 10px 10px;
+}
+.newprolist li:hover .np-txt p b{
+	width: 60px;
+	height: 20px;
+}
+.newprolist li:first-of-type{
+	margin-left: 0;
+}
+.newprolist li:nth-of-type(2){
+	float: right;
+}
+.newprolist .np-txt{
+	position: absolute;
+	top: 32px;
+	left: 28px;
+	height: auto;
+	overflow: hidden;
+}
+.newprolist .np-txt p{
+	font-size: 12px;
+	line-height: 20px;
+	color: #fff;
+}
+.newprolist .np-txt p i{
+	font-size: 18px;
+	line-height: 26px;
+}
+.newprolist .np-txt p em{
+	font-size: 18px;
+	line-height: 26px;
+	color: #eea615;
+}
+.newprolist .np-txt p b{
+	display: block;
+	width: 49px;
+	height: 16px;
+	margin-top: 15px;
+	background: url(../img/icon-go.png) no-repeat;
+	background-size: cover;
+}
+
+/*hotpro*/
+.hotpro{
+	width: 1200px;
+	height: auto;
+	margin: 10px auto 28px;
+	overflow: hidden;
+}
+.hotpro h2{
+	width: 120px;
+	height: 44px;
+	font-size: 22px;
+	line-height: 42px;
+	color: #eea615;
+}
+.hotpro .ht-more{
+	width: 70px;
+	height: 22px;
+	margin-top: 11px;
+}
+.hotpro .ht-more a{
+	display: block;
+	font-size: 16px;
+	line-height: 20px;
+	color: #eea615;
+	text-align: center;
+	border: 1px solid #eea615;
+}
+.hotpro .hotprolist{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.hotprolist li{
+	position: relative;
+	float: left;
+	width: 170px;
+	height: auto;
+	margin-left: 36px;
+	overflow: hidden;
+}
+.hotprolist li:first-of-type{
+	margin-left: 0;
+}
+.hotprolist li img{
+	display: block;
+	width: 100%;
+}
+.hotprolist li span{
+	display: block;
+	height: auto;
+	min-height: 28px;
+	padding: 0 10px;
+	font-size: 12px;
+	line-height: 14px;
+}
+.hotprolist li i{
+	display: block;
+	padding: 0 10px;
+	font-size: 12px;
+	color: #e5121d;
+}
+.hotprolist li em{
+	font-size: 14px;
+	line-height: 22px;
+}
+.hotprolist li b{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 216px;
+	line-height: 216px;
+	color: #f5efef;
+	text-align: center;
+	background: rgba(234,173,163,.7);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2eaada3,endColorstr=#B2eaada3);
+}
+.hotprolist li:hover b{
+	display: block;
+}
+/*ad*/
+.ad{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ad img{
+	width: 100%;
+}
+/*bracelet*/
+.bracelet .pro-title{
+	color: #10c814;
+	border-bottom: 2px solid #10c814;
+}
+.bracelet .pro-title li.current{
+	color: #fff;
+	background: #10c814;
+}
+.bracelet .pro-title li:hover{
+	background: #10c814;
+}
+.bracelet .pro-title .pt-more{
+	border-color: #10c814;
+}
+/*ring*/
+.ring .pro-title{
+	color: #c71093;
+	border-bottom: 2px solid #c71093;
+}
+.ring .pro-title li.current{
+	color: #fff;
+	background: #c71093;
+}
+.ring .pro-title li:hover{
+	background: #c71093;
+}
+.ring .pro-title .pt-more{
+	border-color: #c71093;
+}
+/*pendant*/
+.pendant .pro-title{
+	color: #10bcc7;
+	border-bottom: 2px solid #10bcc7;
+}
+.pendant .pro-title li.current{
+	color: #fff;
+	background: #10bcc7;
+}
+.pendant .pro-title li:hover{
+	background: #10bcc7;
+}
+.pendant .pro-title .pt-more{
+	border-color: #10bcc7;
+}
+/*earrings*/
+.earrings .pro-title{
+	color: #1010c7;
+	border-bottom: 2px solid #1010c7;
+}
+.earrings .pro-title li.current{
+	color: #fff;
+	background: #1010c7;
+}
+.earrings .pro-title li:hover{
+	background: #1010c7;
+}
+.earrings .pro-title .pt-more{
+	border-color: #1010c7;
+}
+/*bracelace*/
+.bracelace .pro-title{
+	color: #7710c7;
+	border-bottom: 2px solid #7710c7;
+}
+.bracelace .pro-title li.current{
+	color: #fff;
+	background: #7710c7;
+}
+.bracelace .pro-title li:hover{
+	background: #7710c7;
+}
+.bracelace .pro-title .pt-more{
+	border-color: #7710c7;
+}

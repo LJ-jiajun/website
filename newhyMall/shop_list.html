@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link type="text/css" rel="stylesheet" href="css/common.css" />
+		<link type="text/css" rel="stylesheet" href="css/public.css" />
+		<link type="text/css" rel="stylesheet" href="css/shop_list.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<!--[if lt IE 9]>
+			<script src="js/IE9.js"></script>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		<!--[if lt IE 10]>
+			<script type="text/javascript" src="js/placeholder.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="header">
+			<div class="h-top">
+				<div class="ht-content">
+					<div class="htc-loginbar fl" id="loginbar">
+						<em>Hi，欢迎来到新和谊商城</em>
+						<a href="login.html">登录</a>
+						<a href="register.html">注册</a>
+					</div>
+					<div class="htc-userinfo fl" id="userinfo">
+						<em>Hi，<sapn>13021549278</sapn><i></i></em>
+						<a href="index.html" id="user_exit">退出</a>
+					</div>
+					<div class="htc-topMenu fr">
+						<ul>
+							<li class="htct-mybady">
+								<span class="htct">我的宝贝<i></i></span>
+								<ul class="htct-ul">
+									<li><a href="javascript:;">我的购物车</a></li>
+									<li><a href="javascript:;">我的订单</a></li>
+								</ul>
+							</li>
+							<li class="htct-support">
+								<span class="htct">商家支持<i></i></a></span>
+								<ul class="htct-ul">
+									<li><a href="javascript:;">商家中心</a></li>
+									<li><a href="javascript:;">商家入驻</a></li>
+								</ul>
+							</li>
+							<li class="htct-help">
+								<span class="htct">帮助中心<i></i></a></span>
+								<ul class="htct-ul">
+									<li><a href="javascript:;">订单查询</a></li>
+									<li><a href="javascript:;">在线客服</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+			<div class="h-mid">
+				<div class="hm-logo fl">
+					<a href="index.html">
+						<img src="img/logo.png" alt=""/>
+					</a>
+				</div>
+				<div class="hm-search fl">
+					<form action="javascript:;" method="post">
+						<input class="hms-txt fl" type="text" placeholder="请输入要搜索的关键字"/>
+						<input class="hms-btn fl" type="submit" value="搜索"/>
+					</form>
+					<ul class="hms-hotTxt fl">
+						<li>黄金项链</li>
+						<li class="yellow">镶钻吊坠</li>
+						<li>手镯</li>
+						<li>镂空手链</li>
+						<li class="yellow">24k戒指</li>
+					</ul>
+				</div>
+				<div class="hm-shopCart fr">
+					<a class="hmsc-cart" href="javascript:;">我的购物车</a>
+					<em id="pro-num">0</em>
+				</div>
+			</div>
+			<div class="h-bottom">
+				<div class="hb-proCategory fl">
+					<div class="hbpc-title">
+						<img src="img/icon-all.png" alt="" />
+						<span>所有商品分类</span>
+					</div>
+					<ul class="hbpc-list">
+						<li>
+							<h3><a href="javascript:;">项链</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">双龙头项链</a></li>
+								<li><a href="javascript:;">镀金项链</a></li>
+								<li><a href="javascript:;">竹节链</a></li>
+								<li><a href="javascript:;">黄金项链</a></li>
+								<li><a href="javascript:;">水波项链</a></li>
+								<li><a href="javascript:;">圆珠项链</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+						<li>
+							<h3><a href="javascript:;">手镯</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">开口手镯</a></li>
+								<li><a href="javascript:;">镀金手镯</a></li>
+								<li><a href="javascript:;">牡丹手镯</a></li>
+								<li><a href="javascript:;">磨砂手镯</a></li>
+								<li><a href="javascript:;">牡丹手镯</a></li>
+								<li><a href="javascript:;">花纹手镯</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+						<li>
+							<h3><a href="javascript:;">戒指</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">沙金戒指</a></li>
+								<li><a href="javascript:;">女士戒指</a></li>
+								<li><a href="javascript:;">时尚戒指</a></li>
+								<li><a href="javascript:;">方头男戒</a></li>
+								<li><a href="javascript:;">发字戒指</a></li>
+								<li><a href="javascript:;">百福戒指</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+						<li>
+							<h3><a href="javascript:;">吊坠</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">镂空吊坠</a></li>
+								<li><a href="javascript:;">观音吊坠</a></li>
+								<li><a href="javascript:;">佛像吊坠</a></li>
+								<li><a href="javascript:;">爱心吊坠</a></li>
+								<li><a href="javascript:;">十字架</a></li>
+								<li><a href="javascript:;">方牌吊坠</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+						<li>
+							<h3><a href="javascript:;">耳饰</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">玫瑰耳钉</a></li>
+								<li><a href="javascript:;">镀金耳坠</a></li>
+								<li><a href="javascript:;">镂空耳环</a></li>
+								<li><a href="javascript:;">蝴蝶耳钉</a></li>
+								<li><a href="javascript:;">爱心耳钉</a></li>
+								<li><a href="javascript:;">兰花耳钉</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+						<li>
+							<h3><a href="javascript:;">手链</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">貔貅手链</a></li>
+								<li><a href="javascript:;">水晶手链</a></li>
+								<li><a href="javascript:;">花朵手链</a></li>
+								<li><a href="javascript:;">星星手链</a></li>
+								<li><a href="javascript:;">黄金手链</a></li>
+								<li><a href="javascript:;">水晶手链</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav fl">
+					<ul>
+						<li class="current"><a href="index.html">首页</a></li>
+						<li><a href="javascript:;">品牌专区</a></li>
+						<li><a href="javascript:;">婚定系列</a></li>
+						<li><a href="javascript:;">钻戒系列</a></li>
+						<li><a href="javascript:;">吊坠系列</a></li>
+						<li><a href="javascript:;">配饰</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--header结束-->
+		<!--location开始-->
+		<div class="location">
+			<ul>
+				<li>全部结果&gt;</li>
+				<li><a href="javascript:;">钻石戒指</a></li>
+			</ul>
+		</div>
+		<!--location结束-->
+		<!--categorynav开始-->
+		<div class="categorynav">
+			<form action="javascript:;" method="post">
+				<ul class="cn-category">
+					<li class="cna-brand">
+						<h3>品牌</h3>
+						<ul class="cn-sub">
+							<li><a href="javascript:;">卡地亚</a></li>
+							<li><a href="javascript:;">蒂芬妮</a></li>
+							<li><a href="javascript:;">宝嘉丽</a></li>
+							<li><a href="javascript:;">梵克雅宝</a></li>
+							<li><a href="javascript:;">帝爵</a></li>
+							<li><a href="javascript:;">德米亚尼</a></li>
+							<li><a href="javascript:;">宝诗龙</a></li>
+							<li><a href="javascript:;">周六福</a></li>
+							<li><a href="javascript:;">老凤祥</a></li>
+							<li><a href="javascript:;">周大生</a></li>
+							<li><a href="javascript:;">六福珠宝</a></li>
+							<li><a href="javascript:;">六福珠宝</a></li>
+							<li><a href="javascript:;">六福珠宝</a></li>
+							<li><a href="javascript:;">六福珠宝</a></li>
+							<li><a href="javascript:;">六福珠宝</a></li>
+						</ul>
+						<div class="open">
+							展开<i></i>
+						</div>
+						<div class="multi-select">
+							+多选
+						</div>
+					</li>
+					<li class="cna-style">
+						<h3>风格</h3>
+						<ul class="cn-sub">
+							<li><a href="javascript:;">日韩</a></li>
+							<li><a href="javascript:;">欧美</a></li>
+							<li><a href="javascript:;">复古</a></li>
+							<li><a href="javascript:;">瑞丽</a></li>
+							<li><a href="javascript:;">甜美</a></li>
+							<li><a href="javascript:;">商务</a></li>
+							<li><a href="javascript:;">民族风</a></li>
+						</ul>
+						<div class="multi-select">
+							+多选
+						</div>
+					</li>
+					<li class="cna-pattern">
+						<h3>款式</h3>
+						<ul class="cn-sub">
+							<li><a href="javascript:;">男款</a></li>
+							<li><a href="javascript:;">女款</a></li>
+							<li><a href="javascript:;">对戒</a></li>
+							<li><a href="javascript:;">尾戒</a></li>
+							<li><a href="javascript:;">其他</a></li>
+						</ul>
+						<div class="multi-select">
+							+多选
+						</div>
+					</li>
+					<li class="cna-specs">
+						<h3>规格</h3>
+						<ul class="cn-sub">
+							<li><a href="javascript:;">8号</a></li>
+							<li><a href="javascript:;">9号</a></li>
+							<li><a href="javascript:;">10号</a></li>
+							<li><a href="javascript:;">11号</a></li>
+							<li><a href="javascript:;">12号</a></li>
+							<li><a href="javascript:;">13号</a></li>
+							<li><a href="javascript:;">14号</a></li>
+							<li><a href="javascript:;">15号</a></li>
+							<li><a href="javascript:;">16号</a></li>
+						</ul>
+						<div class="open">
+							展开<i></i>
+						</div>
+						<div class="multi-select">
+							+多选
+						</div>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<!--categorynav结束-->
+		<!--filter开始-->
+		<div class="filter">
+			<form action="javascript:;" method="post">
+				<ul class="filter-content">
+					<li class="active"><a href="javascript:;">综合</a></li>
+					<li><a href="javascript:;">销量</a></li>
+					<li><a href="javascript:;">价格</a></li>
+					<li>
+						<input type="text" id="txt-lowprice" onkeyup="IWS_CheckDecimal(this)" placeholder="￥"/>
+						-
+						<input type="text" id="txt-hightprice" onkeyup="IWS_CheckDecimal(this)" placeholder="￥"/>
+						<input type="submit" id="btn-submit" value="确定"/>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<!--filter结束-->
+		<!--pro开始-->
+		<div class="pro ring">
+			<ul class="pro-list">
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic1.jpg" alt="" />
+						<span class="prodesc" title="ring1">钻戒 白18K金钻石戒指 钻戒女 铂金定制婚戒</span>
+						<i>&yen;<em class="proprice" >19999</em>.00</i>
+						<b>钻戒 白18K金钻石戒指 钻戒女 铂金定制婚戒</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic2.jpg" alt="" />
+						<span class="prodesc" title="ring2">钻戒钻石结婚女戒求婚戒指</span>
+						<i>&yen;<em class="proprice" >16888</em>.00</i>
+						<b>钻戒钻石结婚女戒求婚戒指</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic3.jpg" alt="" />
+						<span class="prodesc" title="ring3">通灵珠宝 女伯爵18K金钻石戒指女 求婚戒指 钻戒女戒</span>
+						<i>&yen;<em class="proprice" >25698</em>.00</i>
+						<b>通灵珠宝 女伯爵18K金钻石戒指女 求婚戒指 钻戒女戒</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic4.jpg" alt="" />
+						<span class="prodesc" title="ring4">星愿钻石戒指 18K金结婚钻戒女戒 婚戒 求婚戒指 礼物</span>
+						<i>&yen;<em class="proprice" >11998</em>.00</i>
+						<b>星愿钻石戒指 18K金结婚钻戒女戒 婚戒 求婚戒指 礼物</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic5.jpg" alt="" />
+						<span class="prodesc" title="ring5">钻戒女18K金钻石戒指 婚戒铂金裸钻定制 克拉女戒 天使之吻</span>
+						<i>&yen;<em class="proprice" >13888</em>.00</i>
+						<b>钻戒女18K金钻石戒指 婚戒铂金裸钻定制 克拉女戒 天使之吻 </b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic6.jpg" alt="" />
+						<span class="prodesc" title="ring6">纯铂纯爱系列 18K金/PT950钻石对戒 定制钻石对戒铂金结婚钻戒</span>
+						<i>&yen;<em class="proprice" >59998</em>.00</i>
+						<b>纯铂纯爱系列 18K金/PT950钻石对戒 定制钻石对戒铂金结婚钻戒</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic7.jpg" alt="" />
+						<span class="prodesc" title="ring7">18K金钻石戒指 30分D色求婚订婚结婚钻戒女款</span>
+						<i>&yen;<em class="proprice" >12888</em>.00</i>
+						<b>18K金钻石戒指 30分D色求婚订婚结婚钻戒女款</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic8.jpg" alt="" />
+						<span class="prodesc" title="ring8">钻戒白18K金钻石戒指女款 铂金求婚结婚戒指 玫瑰情事</span>
+						<i>&yen;<em class="proprice" >15998</em>.00</i>
+						<b>钻戒白18K金钻石戒指女款 铂金求婚结婚戒指 玫瑰情事</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic9.jpg" alt="" />
+						<span class="prodesc" title="ring9">心爱钻戒 结婚钻石戒指女 情侣对戒女款 婚戒求婚戒指</span>
+						<i>&yen;<em class="proprice" >26698</em>.00</i>
+						<b>心爱钻戒 结婚钻石戒指女 情侣对戒女款 婚戒求婚戒指</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic10.jpg" alt="" />
+						<span class="prodesc" title="ring10">18K金钻石戒指天蝎座求婚订婚结婚钻戒</span>
+						<i>&yen;<em class="proprice" >23888</em>.00</i>
+						<b>18K金钻石戒指天蝎座求婚订婚结婚钻戒</b>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--pro结束-->
+		<!--page开始-->
+		<div class="page">
+			<ul>
+				<li class="first"><a href="javascript:void(0);">首页</a></li>
+				<li class="prev"><a href="javascript:void(0);">上一页</a></li>
+				<li class="on"><a href="javascript:void(0);">1</a></li>
+				<li><a href="javascript:void(0);">2</a></li>
+				<li><a href="javascript:void(0);">3</a></li>
+				<li><a href="javascript:void(0);">4</a></li>
+				<li><a href="javascript:void(0);">5</a></li>
+				<li><a href="javascript:void(0);">6</a></li>
+				<li><a href="javascript:void(0);">7</a></li>
+				<li class="more"><a href="javascript:void(0);"></a></li>
+				<li class="next"><a href="javascript:void(0);">下一页</a></li>
+				<li class="last"><a href="javascript:void(0);">末页</a></li>
+			</ul>
+		</div>
+		<!--page结束-->
+		<!--footer开始-->
+		<div class="footer">
+			<div class="f-top">
+				<ul class="ft-content">
+					<li><img src="img/foot-icon1.png" alt=""/><em>品类齐全</em></li>
+					<li><img src="img/foot-icon2.png" alt=""/><em>正品保证</em></li>
+					<li><img src="img/foot-icon3.png" alt=""/><em>七天退换</em></li>
+					<li><img src="img/foot-icon4.png" alt=""/><em>私人订制</em></li>
+					<li><img src="img/foot-icon5.png" alt=""/><em>权威保证</em></li>
+				</ul>
+			</div>
+			<div class="f-mid">
+				<ul class="fm-txt">
+					<li>
+						<h3>购买帮助</h3>
+						<ul>
+							<li><a href="javascript:;">如何购买</a></li>
+							<li><a href="javascript:;">注册/登录</a></li>
+							<li><a href="javascript:;">物流信息</a></li>
+							<li><a href="javascript:;">订单信息</a></li>
+							<li><a href="javascript:;">在线支付</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>店家帮助</h3>
+						<ul>
+							<li><a href="javascript:;">账号</a></li>
+							<li><a href="javascript:;">客服信息</a></li>
+							<li><a href="javascript:;">统计结算</a></li>
+							<li><a href="javascript:;">售后服务</a></li>
+							<li><a href="javascript:;">店铺管理</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>特色服务</h3>
+						<ul>
+							<li><a href="javascript:;">特色定制</a></li>
+							<li><a href="javascript:;">无理由退货</a></li>
+							<li><a href="javascript:;">正品保证</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>售后服务</h3>
+						<ul>
+							<li><a href="javascript:;">退货赔付</a></li>
+							<li><a href="javascript:;">退款说明</a></li>
+							<li><a href="javascript:;">退换货条件</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>联系我们</h3>
+						<ul>
+							<li>电话：0752-2122839</li>
+							<li>地址：广东省惠州市惠城区麦地路集圆大厦6楼6D</li>
+						</ul> 
+					</li>
+				</ul>
+				<ul class="fm-code">
+					<li><img src="img/code.jpg" alt=""/><span>新浪微博</span></li>
+					<li><img src="img/code.jpg" alt=""/><span>手机客户端</span></li>
+					<li><img src="img/code.jpg" alt=""/><span>官方微信公众号</span></li>
+				</ul>
+			</div>
+			<div class="f-copyright">
+				<p>&copy;2013-2017 惠州市新合谊首饰有限公司 版权所有</p>
+			</div>
+		</div>
+		<!--footer结束-->
+	</body>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/shop_list.js"></script>
+</html>

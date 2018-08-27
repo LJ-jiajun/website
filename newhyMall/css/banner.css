@@ -1,0 +1,48 @@
+/*banner*/
+.banner{
+	width: 100%;
+	min-width: 1200px;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.pic-list{
+	height: auto;
+	overflow: hidden;
+}
+.pic-list li{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: none;
+}
+.pic-list li.on{
+	display: block;
+}
+.pic-list li img{
+	display: block;
+	width: 1920px;
+	height: 600px;
+	margin: 0 auto;
+}
+.focus{
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	width: 102px;
+	height: 30px;
+	margin-left: -51px;
+}
+.focus li{
+	float: left;
+	width: 14px;
+	height: 14px;
+	margin: 0 10px;
+	background: url(../img/icon-banner.png) no-repeat;
+	border-radius: 7px;
+	behavior: url(../ie-css3.htc) \9;
+}
+.focus li.on{
+	background: url(../img/icon-banner-on.png) no-repeat;
+}
