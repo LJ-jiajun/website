@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link type="text/css" rel="stylesheet" href="css/common.css" />
+		<link type="text/css" rel="stylesheet" href="css/public.css" />
+		<link type="text/css" rel="stylesheet" href="css/banner.css" />
+		<link type="text/css" rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<!--[if lt IE 9]>
+			<script src="js/IE9.js"></script>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		<!--[if lt IE 10]>
+			<script type="text/javascript" src="js/placeholder.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--header开始-->
+		<div class="header">
+			<div class="h-top">
+				<div class="ht-content">
+					<div class="htc-loginbar fl" id="loginbar">
+						<em>Hi，欢迎来到新和谊商城</em>
+						<a href="login.html">登录</a>
+						<a href="register.html">注册</a>
+					</div>
+					<div class="htc-userinfo fl" id="userinfo">
+						<em>Hi，<sapn>13021549278</sapn><i></i></em>
+						<a href="index.html" id="user_exit">退出</a>
+					</div>
+					<div class="htc-topMenu fr">
+						<ul>
+							<li class="htct-mybady">
+								<span class="htct">我的宝贝<i></i></span>
+								<ul class="htct-ul">
+									<li><a href="javascript:;">我的购物车</a></li>
+									<li><a href="javascript:;">我的订单</a></li>
+								</ul>
+							</li>
+							<li class="htct-support">
+								<span class="htct">商家支持<i></i></a></span>
+								<ul class="htct-ul">
+									<li><a href="javascript:;">商家中心</a></li>
+									<li><a href="javascript:;">商家入驻</a></li>
+								</ul>
+							</li>
+							<li class="htct-help">
+								<span class="htct">帮助中心<i></i></a></span>
+								<ul class="htct-ul">
+									<li><a href="javascript:;">订单查询</a></li>
+									<li><a href="javascript:;">在线客服</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+			<div class="h-mid">
+				<div class="hm-logo fl">
+					<a href="index.html">
+						<img src="img/logo.png" alt=""/>
+					</a>
+				</div>
+				<div class="hm-search fl">
+					<form action="javascript:;" method="post">
+						<input class="hms-txt fl" type="text" placeholder="请输入要搜索的关键字"/>
+						<input class="hms-btn fl" type="submit" value="搜索"/>
+					</form>
+					<ul class="hms-hotTxt fl">
+						<li>黄金项链</li>
+						<li class="yellow">镶钻吊坠</li>
+						<li>手镯</li>
+						<li>镂空手链</li>
+						<li class="yellow">24k戒指</li>
+					</ul>
+				</div>
+				<div class="hm-shopCart fr">
+					<a class="hmsc-cart" href="javascript:;">我的购物车</a>
+					<em id="pro-num">0</em>
+				</div>
+			</div>
+			<div class="h-bottom">
+				<div class="hb-proCategory fl">
+					<div class="hbpc-title">
+						<img src="img/icon-all.png" alt="" />
+						<span>所有商品分类</span>
+					</div>
+					<ul class="hbpc-list">
+						<li>
+							<h3><a href="javascript:;">项链</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">双龙头项链</a></li>
+								<li><a href="javascript:;">镀金项链</a></li>
+								<li><a href="javascript:;">竹节链</a></li>
+								<li><a href="javascript:;">黄金项链</a></li>
+								<li><a href="javascript:;">水波项链</a></li>
+								<li><a href="javascript:;">圆珠项链</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+						<li>
+							<h3><a href="javascript:;">手镯</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">开口手镯</a></li>
+								<li><a href="javascript:;">镀金手镯</a></li>
+								<li><a href="javascript:;">牡丹手镯</a></li>
+								<li><a href="javascript:;">磨砂手镯</a></li>
+								<li><a href="javascript:;">牡丹手镯</a></li>
+								<li><a href="javascript:;">花纹手镯</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+						<li>
+							<h3><a href="javascript:;">戒指</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">沙金戒指</a></li>
+								<li><a href="javascript:;">女士戒指</a></li>
+								<li><a href="javascript:;">时尚戒指</a></li>
+								<li><a href="javascript:;">方头男戒</a></li>
+								<li><a href="javascript:;">发字戒指</a></li>
+								<li><a href="javascript:;">百福戒指</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+						<li>
+							<h3><a href="javascript:;">吊坠</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">镂空吊坠</a></li>
+								<li><a href="javascript:;">观音吊坠</a></li>
+								<li><a href="javascript:;">佛像吊坠</a></li>
+								<li><a href="javascript:;">爱心吊坠</a></li>
+								<li><a href="javascript:;">十字架</a></li>
+								<li><a href="javascript:;">方牌吊坠</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+						<li>
+							<h3><a href="javascript:;">耳饰</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">玫瑰耳钉</a></li>
+								<li><a href="javascript:;">镀金耳坠</a></li>
+								<li><a href="javascript:;">镂空耳环</a></li>
+								<li><a href="javascript:;">蝴蝶耳钉</a></li>
+								<li><a href="javascript:;">爱心耳钉</a></li>
+								<li><a href="javascript:;">兰花耳钉</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+						<li>
+							<h3><a href="javascript:;">手链</a></h3>
+							<ul class="hbpc-sublist">
+								<li><a href="javascript:;">貔貅手链</a></li>
+								<li><a href="javascript:;">水晶手链</a></li>
+								<li><a href="javascript:;">花朵手链</a></li>
+								<li><a href="javascript:;">星星手链</a></li>
+								<li><a href="javascript:;">黄金手链</a></li>
+								<li><a href="javascript:;">水晶手链</a></li>
+							</ul>
+							<a href="javascript:;">&gt;</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav fl">
+					<ul>
+						<li class="current"><a href="index.html">首页</a></li>
+						<li><a href="javascript:;">品牌专区</a></li>
+						<li><a href="javascript:;">婚定系列</a></li>
+						<li><a href="javascript:;">钻戒系列</a></li>
+						<li><a href="javascript:;">吊坠系列</a></li>
+						<li><a href="javascript:;">配饰</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--header结束-->
+		<!--banner开始-->
+		<div class="banner">
+			<ul class="pic-list">
+				<li class="on"><img src="img/banner1.jpg" alt=""/></li>
+				<li><img src="img/banner2.jpg" alt=""/></li>
+				<li><img src="img/banner3.jpg" alt=""/></li>
+			</ul>
+			<ul class="focus">
+				<li class="on"></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!--banner结束-->
+		<!--新品上市 开始-->
+		<div class="newpro">
+			<h2>新品上市</h2>
+			<ul class="newprolist">
+				<li>
+					<a href="javascript:;">
+						<img src="img/index-newpro1.jpg" alt="" />
+						<div class="np-txt">
+							<p>2017首饰新品首发</p>
+							<p><i>初冬</i>-<em>新风尚</em></p>
+							<p><b></b></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/index-newpro6.jpg" alt="" />
+						<div class="np-txt">
+							<p>女神更要有范儿</p>
+							<p><i>女王节</i>-<em>秒变女神</em></p>
+							<p><b></b></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="np-img">
+							<img src="img/index-newpro2.jpg" alt="" />
+						</div>
+						<div class="np-txt">
+							<p>冬季上新</p>
+							<p><i>重磅来袭</i>-<em>精品</em></p>
+							<p><b></b></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/index-newpro3.jpg" alt="" />
+						<div class="np-txt">
+							<p>时尚饰品专场</p>
+							<p><i>美饰</i>-<em>大促销</em></p>
+							<p><b></b></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/index-newpro4.jpg" alt="" />
+						<div class="np-txt">
+							<p>珠宝新时尚</p>
+							<p><i>冬季新品</i>-<em>降价</em></p>
+							<p><b></b></p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/index-newpro5.jpg" alt="" />
+						<div class="np-txt">
+							<p>潮品尖货</p>
+							<p><i>冬季</i>-<em>放肆美</em></p>
+							<p><b></b></p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--新品上市 结束-->
+		<!--爆款推荐 开始-->
+		<div class="hotpro">
+			<h2 class="fl">爆款推荐</h2>
+			<div class="ht-more fr"><a href="javascript:;">更多&gt;&gt;</a></div>
+			<ul class="hotprolist">
+				<li>
+					<a href="javascript:;">
+						<img src="img/index-hotpro1.jpg" alt="" />
+						<span class="prodesc" title="hotpro1">白银 纯银吊坠项链 高25cm宽17cm 重2.3克</span>
+						<i>&yen;<em class="proprice" >88</em>.00</i>
+						<b>纯银吊坠项链</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/index-hotpro2.jpg" alt="" />
+						<span class="prodesc" title="hotpro2">千禧珠宝 珍珠吊坠 12-13 珍珠吊坠 淡水 925银托</span>
+						<i>&yen;<em class="proprice" >120</em>.00</i>
+						<b>珍珠吊坠</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/index-hotpro3.jpg" alt="" />
+						<span class="prodesc" title="hotpro3">皇冠开口银手镯 999纯银 女友生日礼物光面足银手环</span>
+						<i>&yen;<em class="proprice" >212</em>.00</i>
+						<b>皇冠开口银手镯</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/index-hotpro4.jpg" alt="" />
+						<span class="prodesc" title="hotpro4">渭塘宝缘阁珠宝 凤玺款淡水珍珠吊坠 12-13mm 珍珠</span>
+						<i>&yen;<em class="proprice" >380</em>.00</i>
+						<b>凤玺款淡水珍珠吊坠</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/index-hotpro5.jpg" alt="" />
+						<span class="prodesc" title="hotpro5">蓝宝石 s925银蓝宝石（天鹅）吊坠 胸针 </span>
+						<i>&yen;<em class="proprice" >2200</em>.00</i>
+						<b>蓝宝石（天鹅）吊坠</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/index-hotpro6.jpg" alt="" />
+						<span class="prodesc" title="hotpro6">德玉福玉器 和田玉 山水图</span>
+						<i>&yen;<em class="proprice">3000</em>.00</i>
+						<b>德玉福玉器</b>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--爆款推荐 结束-->
+		<!--广告 开始-->
+		<div class="ad">
+			<img src="img/index-AD-pic1.jpg" alt=""/>
+		</div>
+		<!--广告 结束-->
+		<!--necklace开始-->
+		<div class="pro necklace">
+			<div class="pro-title">
+				<h2 class="pro-type fl">1F 项链</h2>
+				<ul class="pt-nav fl">
+					<li class="current"><a href="javascript:;">白银项链</a></li>
+					<li><a href="javascript:;">钻石项链</a></li>
+					<li><a href="javascript:;">翡翠项链</a></li>
+					<li><a href="javascript:;">珍珠项链</a></li>
+					<li><a href="javascript:;">宝石项链</a></li>
+				</ul>
+				<div class="pt-more fr"><a href="javascript:;">更多&gt;&gt;</a></div>
+			</div>
+			<ul class="pro-list">
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-necklace-pic1.jpg" alt="" />
+						<span class="prodesc" title="necklace1">白银 纯银吊坠项链 高25cm宽17cm 重2.3克</span>
+						<i>&yen;<em class="proprice" >338</em>.00</i>
+						<b>白银 纯银吊坠项链 高25cm宽17cm 重2.3克</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-necklace-pic2.jpg" alt="" />
+						<span class="prodesc" title="necklace2">925纯银项链女吊坠日韩刻字项坠七夕情侣项链情人节礼物送男女友</span>
+						<i>&yen;<em class="proprice" >168</em>.00</i>
+						<b>925纯银项链女吊坠日韩刻字项坠七夕情侣项链情人节礼物送男女友</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-necklace-pic3.jpg" alt="" />
+						<span class="prodesc" title="necklace3">S925银情侣项链一对吊坠日韩学生男女创意生日礼物刻字 男黑绳+女银链</span>
+						<i>&yen;<em class="proprice" >234</em>.00</i>
+						<b>S925银情侣项链一对吊坠日韩学生男女创意生日礼物刻字 男黑绳+女银链</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-necklace-pic4.jpg" alt="" />
+						<span class="prodesc" title="necklace4">项链女 日韩版s925纯银立体皇冠公主吊坠配饰 短款锁骨链送女友</span>
+						<i>&yen;<em class="proprice" >200</em>.20</i>
+						<b>项链女 日韩版s925纯银立体皇冠公主吊坠配饰 短款锁骨链送女友</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-necklace-pic5.jpg" alt="" />
+						<span class="prodesc" title="necklace5">S925纯银天然和田白玉项链吊坠 清新玉兰花锁骨女款项链</span>
+						<i>&yen;<em class="proprice" >135</em>.00</i>
+						<b>S925纯银天然和田白玉项链吊坠 清新玉兰花锁骨女款项链</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-necklace-pic6.jpg" alt="" />
+						<span class="prodesc" title="necklace6">珂兰黄金 999千足金 24K金马年黄金吊坠 珠宝正品</span>
+						<i>&yen;<em class="proprice" >698</em>.00</i>
+						<b>珂兰黄金 999千足金 24K金马年黄金吊坠 珠宝正品</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-necklace-pic7.jpg" alt="" />
+						<span class="prodesc" title="necklace7">珂兰钻石 18K白金钻石吊坠项链女正品专柜 浪漫缱绻S</span>
+						<i>&yen;<em class="proprice" >1998</em>.00</i>
+						<b>珂兰钻石 18K白金钻石吊坠项链女正品专柜 浪漫缱绻S</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-necklace-pic8.jpg" alt="" />
+						<span class="prodesc" title="necklace8">Ttmix微镶925银项链女短款锁骨链饰品 配饰白银项链心形银饰吊坠</span>
+						<i>&yen;<em class="proprice" >2988</em>.00</i>
+						<b>Ttmix微镶925银项链女短款锁骨链饰品 配饰白银项链心形银饰吊坠</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-necklace-pic9.jpg" alt="" />
+						<span class="prodesc" title="necklace9">正品S925银项链转运珠吊坠女时尚短款项饰路路通吊坠满天星锁骨链</span>
+						<i>&yen;<em class="proprice" >698</em>.00</i>
+						<b>正品S925银项链转运珠吊坠女时尚短款项饰路路通吊坠满天星锁骨链</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-necklace-pic10.jpg" alt="" />
+						<span class="prodesc" title="necklace10">珂兰钻石 18K白金玫瑰金 时尚项坠吊坠女款 雅韵</span>
+						<i>&yen;<em class="proprice" >1888</em>.00</i>
+						<b>珂兰钻石 18K白金玫瑰金 时尚项坠吊坠女款 雅韵</b>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--necklace结束-->
+		<!--bracelet开始-->
+		<div class="pro bracelet">
+			<div class="pro-title">
+				<h2 class="pro-type fl">2F 手镯</h2>
+				<ul class="pt-nav fl">
+					<li class="current"><a href="javascript:;">翡翠手镯</a></li>
+					<li><a href="javascript:;">钻石手镯</a></li>
+					<li><a href="javascript:;">白银手镯</a></li>
+					<li><a href="javascript:;">金手镯</a></li>
+				</ul>
+				<div class="pt-more fr"><a href="javascript:;">更多&gt;&gt;</a></div>
+			</div>
+			<ul class="pro-list">
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelet-pic1.jpg" alt="" />
+						<span class="prodesc" title="bracelet1">玉玲珑 精美翡翠手镯 超值特惠</span>
+						<i>&yen;<em class="proprice" >738</em>.00</i>
+						<b>玉玲珑 精美翡翠手镯 超值特惠</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelet-pic2.jpg" alt="" />
+						<span class="prodesc" title="bracelet2">七彩云南 翡翠手镯 玉手镯 玉镯子 女士款手镯</span>
+						<i>&yen;<em class="proprice" >1688</em>.00</i>
+						<b>七彩云南 翡翠手镯 玉手镯 玉镯子 女士款手镯</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelet-pic3.jpg" alt="" />
+						<span class="prodesc" title="bracelet3">玉至峰翡翠手镯女款玉镯子冰糯种阳绿玉石手镯</span>
+						<i>&yen;<em class="proprice" >2698</em>.00</i>
+						<b>玉至峰翡翠手镯女款玉镯子冰糯种阳绿玉石手镯</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelet-pic4.jpg" alt="" />
+						<span class="prodesc" title="bracelet4">云润珠宝 翡翠手镯 油青绿翡翠手镯</span>
+						<i>&yen;<em class="proprice" >1198</em>.00</i>
+						<b>云润珠宝 翡翠手镯 油青绿翡翠手镯</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelet-pic5.jpg" alt="" />
+						<span class="prodesc" title="bracelet5">君君美玉 翡翠手镯 柔典天然和田玉平安手镯</span>
+						<i>&yen;<em class="proprice" >1388</em>.00</i>
+						<b>纯银吊坠项链</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelet-pic6.jpg" alt="" />
+						<span class="prodesc" title="bracelet6">Gogan/果敢翡翠 多款T17R缅甸翡翠手镯冰种飘花玉手镯玉镯</span>
+						<i>&yen;<em class="proprice" >4338</em>.00</i>
+						<b>Gogan/果敢翡翠 多款T17R缅甸翡翠手镯冰种飘花玉手镯玉镯</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelet-pic7.jpg" alt="" />
+						<span class="prodesc" title="bracelet7">玉至峰翡翠玉手镯女款玉镯子冰糯种飘花镯子女士玉石玉器镯子</span>
+						<i>&yen;<em class="proprice" >1288</em>.00</i>
+						<b>玉至峰翡翠玉手镯女款玉镯子冰糯种飘花镯子女士玉石玉器镯子</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelet-pic8.jpg" alt="" />
+						<span class="prodesc" title="bracelet8">城市玉光冰种淡绿色女款玉手镯 填充石英岩玉器</span>
+						<i>&yen;<em class="proprice" >1568</em>.00</i>
+						<b>城市玉光冰种淡绿色女款玉手镯 填充石英岩玉器</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelet-pic9.jpg" alt="" />
+						<span class="prodesc" title="bracelet9">金一翡翠 天然满绿春带彩翡翠手镯冰糯种飘花玉手镯 水润细糯带绿</span>
+						<i>&yen;<em class="proprice" >2698</em>.00</i>
+						<b>金一翡翠 天然满绿春带彩翡翠手镯冰糯种飘花玉手镯 水润细糯带绿</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelet-pic10.jpg" alt="" />
+						<span class="prodesc" title="bracelet10">玉至峰缅甸翡翠手镯女款玉镯子冰糯种飘花玉石手镯</span>
+						<i>&yen;<em class="proprice" >2358</em>.00</i>
+						<b>玉至峰缅甸翡翠手镯女款玉镯子冰糯种飘花玉石手镯</b>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--bracelet结束-->
+		<!--ring开始-->
+		<div class="pro ring">
+			<div class="pro-title">
+				<h2 class="pro-type fl">3F 戒指</h2>
+				<ul class="pt-nav fl">
+					<li class="current"><a href="javascript:;">白银戒指</a></li>
+					<li><a href="javascript:;">钻石戒指</a></li>
+					<li><a href="javascript:;">翡翠戒指</a></li>
+					<li><a href="javascript:;">珍珠戒指</a></li>
+					<li><a href="javascript:;">宝石戒指</a></li>
+				</ul>
+				<div class="pt-more fr"><a href="javascript:;">更多&gt;&gt;</a></div>
+			</div>
+			<ul class="pro-list">
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic1.jpg" alt="" />
+						<span class="prodesc" title="ring1">钻戒 白18K金钻石戒指 钻戒女 铂金定制婚戒</span>
+						<i>&yen;<em class="proprice" >19999</em>.00</i>
+						<b>钻戒 白18K金钻石戒指 钻戒女 铂金定制婚戒</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic2.jpg" alt="" />
+						<span class="prodesc" title="ring2">钻戒钻石结婚女戒求婚戒指</span>
+						<i>&yen;<em class="proprice" >16888</em>.00</i>
+						<b>钻戒钻石结婚女戒求婚戒指</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic3.jpg" alt="" />
+						<span class="prodesc" title="ring3">通灵珠宝 女伯爵18K金钻石戒指女 求婚戒指 钻戒女戒</span>
+						<i>&yen;<em class="proprice" >25698</em>.00</i>
+						<b>通灵珠宝 女伯爵18K金钻石戒指女 求婚戒指 钻戒女戒</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic4.jpg" alt="" />
+						<span class="prodesc" title="ring4">星愿钻石戒指 18K金结婚钻戒女戒 婚戒 求婚戒指 礼物</span>
+						<i>&yen;<em class="proprice" >11998</em>.00</i>
+						<b>星愿钻石戒指 18K金结婚钻戒女戒 婚戒 求婚戒指 礼物</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic5.jpg" alt="" />
+						<span class="prodesc" title="ring5">钻戒女18K金钻石戒指 婚戒铂金裸钻定制 克拉女戒 天使之吻</span>
+						<i>&yen;<em class="proprice" >13888</em>.00</i>
+						<b>钻戒女18K金钻石戒指 婚戒铂金裸钻定制 克拉女戒 天使之吻 </b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic6.jpg" alt="" />
+						<span class="prodesc" title="ring6">纯铂纯爱系列 18K金/PT950钻石对戒 定制钻石对戒铂金结婚钻戒</span>
+						<i>&yen;<em class="proprice" >59998</em>.00</i>
+						<b>纯铂纯爱系列 18K金/PT950钻石对戒 定制钻石对戒铂金结婚钻戒</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic7.jpg" alt="" />
+						<span class="prodesc" title="ring7">18K金钻石戒指 30分D色求婚订婚结婚钻戒女款</span>
+						<i>&yen;<em class="proprice" >12888</em>.00</i>
+						<b>18K金钻石戒指 30分D色求婚订婚结婚钻戒女款</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic8.jpg" alt="" />
+						<span class="prodesc" title="ring8">钻戒白18K金钻石戒指女款 铂金求婚结婚戒指 玫瑰情事</span>
+						<i>&yen;<em class="proprice" >15998</em>.00</i>
+						<b>钻戒白18K金钻石戒指女款 铂金求婚结婚戒指 玫瑰情事</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic9.jpg" alt="" />
+						<span class="prodesc" title="ring9">心爱钻戒 结婚钻石戒指女 情侣对戒女款 婚戒求婚戒指</span>
+						<i>&yen;<em class="proprice" >26698</em>.00</i>
+						<b>心爱钻戒 结婚钻石戒指女 情侣对戒女款 婚戒求婚戒指</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-ring-pic10.jpg" alt="" />
+						<span class="prodesc" title="ring10">18K金钻石戒指天蝎座求婚订婚结婚钻戒</span>
+						<i>&yen;<em class="proprice" >23888</em>.00</i>
+						<b>18K金钻石戒指天蝎座求婚订婚结婚钻戒</b>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--ring结束-->
+		<!--pendant开始-->
+		<div class="pro pendant">
+			<div class="pro-title">
+				<h2 class="pro-type fl">4F 吊坠</h2>
+				<ul class="pt-nav fl">
+					<li class="current"><a href="javascript:;">翡翠吊坠</a></li>
+					<li><a href="javascript:;">钻石吊坠</a></li>
+					<li><a href="javascript:;">白银吊坠</a></li>
+					<li><a href="javascript:;">金吊坠</a></li>
+				</ul>
+				<div class="pt-more fr"><a href="javascript:;">更多&gt;&gt;</a></div>
+			</div>
+			<ul class="pro-list">
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-pendant-pic1.jpg" alt="" />
+						<span class="prodesc" title="pendant1">银儿缘 四叶草吊坠项链批发 情侣吊坠韩国项链 情侣一套</span>
+						<i>&yen;<em class="proprice" >2398</em>.00</i>
+						<b>银儿缘 四叶草吊坠项链批发 情侣吊坠韩国项链 情侣一套</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-pendant-pic2.jpg" alt="" />
+						<span class="prodesc" title="pendant2">珂兰钻石18K金约50分彩宝红宝石镶嵌凤凰吊坠 C凤求凰</span>
+						<i>&yen;<em class="proprice" >2398</em>.00</i>
+						<b>珂兰钻石18K金约50分彩宝红宝石镶嵌凤凰吊坠 C凤求凰</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-pendant-pic3.jpg" alt="" />
+						<span class="prodesc" title="pendant3">珂兰黄金 999千足金 24K金马年黄金吊坠 珠宝正品 H龙凤平安扣</span>
+						<i>&yen;<em class="proprice" >1998</em>.00</i>
+						<b>珂兰黄金 999千足金 24K金马年黄金吊坠 珠宝正品 H龙凤平安扣</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-pendant-pic4.jpg" alt="" />
+						<span class="prodesc" title="pendant4">戴欧妮DiONLY 18K白金南非钻钻石吊坠 女士白金吊坠 天使之约 挂坠 项坠子</span>
+						<i>&yen;<em class="proprice" >698</em>.00</i>
+						<b>戴欧妮DiONLY 18K白金南非钻钻石吊坠 女士白金吊坠 天使之约 挂坠 项坠子</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-pendant-pic5.jpg" alt="" />
+						<span class="prodesc" title="pendant5">S925纯银天然和田白玉项链吊坠 清新玉兰花锁骨女款项链</span>
+						<i>&yen;<em class="proprice" >1388</em>.00</i>
+						<b>S925纯银天然和田白玉项链吊坠 清新玉兰花锁骨女款项链</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-pendant-pic6.jpg" alt="" />
+						<span class="prodesc" title="pendant6">Ttmix锁骨链简约短款 衣服配饰项链银饰品满钻吊坠925银项链 女款</span>
+						<i>&yen;<em class="proprice" >998</em>.00</i>
+						<b>Ttmix锁骨链简约短款 衣服配饰项链银饰品满钻吊坠925银项链 女款</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-pendant-pic7.jpg" alt="" />
+						<span class="prodesc" title="pendant7">Ttmix微镶925银项链女短款锁骨链饰品 配饰白银项链心形银饰吊坠</span>
+						<i>&yen;<em class="proprice" >1678</em>.00</i>
+						<b>Ttmix微镶925银项链女短款锁骨链饰品 配饰白银项链心形银饰吊坠</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-pendant-pic8.jpg" alt="" />
+						<span class="prodesc" title="pendant8">天然和田玉玉兰花吊坠 玉质细腻柔润白</span>
+						<i>&yen;<em class="proprice" >3298</em>.00</i>
+						<b>天然和田玉玉兰花吊坠 玉质细腻柔润白</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-pendant-pic9.jpg" alt="" />
+						<span class="prodesc" title="pendant9">吊坠男女款项链和田玉吊坠 玉石情侣皮丘吊坠挂件项链送朋友礼物</span>
+						<i>&yen;<em class="proprice" >1988</em>.00</i>
+						<b>吊坠男女款项链和田玉吊坠 玉石情侣皮丘吊坠挂件项链送朋友礼物</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-pendant-pic10.jpg" alt="" />
+						<span class="prodesc" title="pendant10">豫华冠 翡翠玉石吊坠 男款冰糯种带翠手工雕刻净瓶观音 翡翠玉器</span>
+						<i>&yen;<em class="proprice" >2898</em>.00</i>
+						<b>豫华冠 翡翠玉石吊坠 男款冰糯种带翠手工雕刻净瓶观音 翡翠玉器</b>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--pendant结束-->
+		<!--earrings开始-->
+		<div class="pro earrings">
+			<div class="pro-title">
+				<h2 class="pro-type fl">5F 耳饰</h2>
+				<ul class="pt-nav fl">
+					<li class="current"><a href="javascript:;">白银耳饰</a></li>
+					<li><a href="javascript:;">钻石耳饰</a></li>
+					<li><a href="javascript:;">翡翠耳饰</a></li>
+					<li><a href="javascript:;">珍珠耳饰</a></li>
+					<li><a href="javascript:;">宝石耳饰</a></li>
+				</ul>
+				<div class="pt-more fr"><a href="javascript:;">更多&gt;&gt;</a></div>
+			</div>
+			<ul class="pro-list">
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-earrings-pic1.jpg" alt="" />
+						<span class="prodesc" title="earrings1">千足珠宝珊妮正圆光洁强光7.5mm淡水珍珠银耳钉耳饰OL 白色 7.5-8mm</span>
+						<i>&yen;<em class="proprice" >128</em>.00</i>
+						<b>千足珠宝珊妮正圆光洁强光7.5mm淡水珍珠银耳钉耳饰OL 白色 7.5-8mm</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-earrings-pic2.jpg" alt="" />
+						<span class="prodesc" title="earrings2">明星同款 韩国太阳后裔纯银套装吊坠耳钉戒指时尚爆款 耳饰</span>
+						<i>&yen;<em class="proprice" >988</em>.00</i>
+						<b>明星同款 韩国太阳后裔纯银套装吊坠耳钉戒指时尚爆款 耳饰</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-earrings-pic3.jpg" alt="" />
+						<span class="prodesc" title="earrings3">千足珍珠雅韵8-8.5mm正圆强光淡水珍珠耳饰 白色 8-8.5mm巧韵系列 经典大气 大牌设计</span>
+						<i>&yen;<em class="proprice" >3998</em>.00</i>
+						<b>千足珍珠雅韵8-8.5mm正圆强光淡水珍珠耳饰 白色 8-8.5mm巧韵系列 经典大气 大牌设计</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-earrings-pic4.jpg" alt="" />
+						<span class="prodesc" title="earrings4">千足珍珠 贝悦 圆形强光7-7.5mm 珍珠银耳饰 白色 7-7.5mm</span>
+						<i>&yen;<em class="proprice" >898</em>.00</i>
+						<b>千足珍珠 贝悦 圆形强光7-7.5mm 珍珠银耳饰 白色 7-7.5mm</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-earrings-pic5.jpg" alt="" />
+						<span class="prodesc" title="earrings5">千足珠宝福沁正圆光洁强光9mm淡水珍珠18k金耳钉耳饰 18K黄金白色珍珠 9mm【中国风 复古镂空范】</span>
+						<i>&yen;<em class="proprice" >1398</em>.00</i>
+						<b>千足珠宝福沁正圆光洁强光9mm淡水珍珠18k金耳钉耳饰 18K黄金白色珍珠 9mm【中国风 复古镂空范】</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-earrings-pic6.jpg" alt="" />
+						<span class="prodesc" title="earrings6">千足珍珠宛瑶4-4.5mm小珠圆润强光珍珠流苏耳饰耳钉 白色 4-4.5mm清新风情</span>
+						<i>&yen;<em class="proprice" >1898</em>.00</i>
+						<b>千足珍珠宛瑶4-4.5mm小珠圆润强光珍珠流苏耳饰耳钉 白色 4-4.5mm清新风情</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-earrings-pic7.jpg" alt="" />
+						<span class="prodesc" title="earrings7">千足珠宝“星辰”系列耳饰近圆强光淡水珍珠耳饰潮搭 白色 3-3.5/3.5-4/4-4.5mm</span>
+						<i>&yen;<em class="proprice" >2288</em>.00</i>
+						<b>千足珠宝“星辰”系列耳饰近圆强光淡水珍珠耳饰潮搭 白色 3-3.5/3.5-4/4-4.5mm</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-earrings-pic8.jpg" alt="" />
+						<span class="prodesc" title="earrings8">千足嬅茵正圆光洁9-9.5mm淡水珍珠耳饰18K金配件宝石款耳饰坠 白色 8.5-9mm匹配佳 时尚珠宝 18K金</span>
+						<i>&yen;<em class="proprice" >1598</em>.00</i>
+						<b>千足嬅茵正圆光洁9-9.5mm淡水珍珠耳饰18K金配件宝石款耳饰坠 白色 8.5-9mm匹配佳 时尚珠宝 18K金</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-earrings-pic9.jpg" alt="" />
+						<span class="prodesc" title="earrings9">金一翡翠 天然满绿春带彩翡翠手镯冰糯种飘花玉手镯 水润细糯带绿</span>
+						<i>&yen;<em class="proprice" >2698</em>.00</i>
+						<b>金一翡翠 天然满绿春带彩翡翠手镯冰糯种飘花玉手镯 水润细糯带绿</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-earrings-pic10.jpg" alt="" />
+						<span class="prodesc" title="earrings10">千足珍珠 蝶滢 正圆强亮光洁9-9.5mm淡水珍珠耳饰18K金配件耳饰 白18K金 9-9.5mm</span>
+						<i>&yen;<em class="proprice" >1858</em>.00</i>
+						<b>千足珍珠 蝶滢 正圆强亮光洁9-9.5mm淡水珍珠耳饰18K金配件耳饰 白18K金 9-9.5mm</b>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--earrings结束-->
+		<!--bracelace开始-->
+		<div class="pro bracelace">
+			<div class="pro-title">
+				<h2 class="pro-type fl">6F 手链</h2>
+				<ul class="pt-nav fl">
+					<li class="current"><a href="javascript:;">翡翠手链</a></li>
+					<li><a href="javascript:;">钻石手链</a></li>
+					<li><a href="javascript:;">白银手链</a></li>
+					<li><a href="javascript:;">金手链</a></li>
+				</ul>
+				<div class="pt-more fr"><a href="javascript:;">更多&gt;&gt;</a></div>
+			</div>
+			<ul class="pro-list">
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelace-pic1.jpg" alt="" />
+						<span class="prodesc" title="bracelace1">天然粉晶手链 单圈女款手串生日礼物</span>
+						<i>&yen;<em class="proprice" >1989</em>.00</i>
+						<b>天然粉晶手链 单圈女款手串生日礼物</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelace-pic2.jpg" alt="" />
+						<span class="prodesc" title="bracelace2">银饰990足银手链女款 日韩时尚亲吻鱼圆珠转运珠足银首饰 亲吻鱼 约12g 女款</span>
+						<i>&yen;<em class="proprice" >1688</em>.00</i>
+						<b>银饰990足银手链女款 日韩时尚亲吻鱼圆珠转运珠足银首饰 亲吻鱼 约12g 女款</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelace-pic3.jpg" alt="" />
+						<span class="prodesc" title="bracelace3">精美时尚手链 足银女款甜美时尚简约百搭</span>
+						<i>&yen;<em class="proprice" >2698</em>.00</i>
+						<b>精美时尚手链 足银女款甜美时尚简约百搭</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelace-pic4.jpg" alt="" />
+						<span class="prodesc" title="bracelace4">客瑞思四叶草925纯银手链女款采用施华洛世奇元素新款简约甜美森系学生日韩版时尚饰品生日礼物 简约款白四叶草手链，送香皂花礼盒</span>
+						<i>&yen;<em class="proprice" >1998</em>.00</i>
+						<b>客瑞思四叶草925纯银手链女款采用施华洛世奇元素新款简约甜美森系学生日韩版时尚饰品生日礼物 简约款白四叶草手链，送香皂花礼盒</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelace-pic5.jpg" alt="" />
+						<span class="prodesc" title="bracelace5">客瑞思S925手链女纯银新款学生女士纯银手链银首饰日韩版气质简约情侣饰品手饰送女友生日礼物 红色纯银女士手链 代写贺卡，精美礼盒包装，玫瑰礼盒，七天无理由退货</span>
+						<i>&yen;<em class="proprice" >1388</em>.00</i>
+						<b>客瑞思S925手链女纯银新款学生女士纯银手链银首饰日韩版气质简约情侣饰品手饰送女友生日礼物 红色纯银女士手链 代写贺卡，精美礼盒包装，玫瑰礼盒，七天无理由退货</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelace-pic6.jpg" alt="" />
+						<span class="prodesc" title="bracelace6">客瑞思 S925纯银手链女款简约新款女士手链女纯银韩版学生时尚甜美闺蜜手饰品送女友生日礼物纯银女士手链 代写贺卡，精美礼盒包装，玫瑰礼盒，送证书</span>
+						<i>&yen;<em class="proprice" >5998</em>.00</i>
+						<b>客瑞思 S925纯银手链女款简约新款女士手链女纯银韩版学生时尚甜美闺蜜手饰品送女友生日礼物纯银女士手链 代写贺卡，精美礼盒包装，玫瑰礼盒，送证书</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelace-pic7.jpg" alt="" />
+						<span class="prodesc" title="bracelace7">Ttmix小懒猫925银手链 女韩版装饰简约多层时尚银饰品 淑女配饰</span>
+						<i>&yen;<em class="proprice" >1288</em>.00</i>
+						<b>Ttmix小懒猫925银手链 女韩版装饰简约多层时尚银饰品 淑女配饰</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelace-pic8.jpg" alt="" />
+						<span class="prodesc" title="bracelace8">真唯爱 925银手链 蝴蝶翩翩 女时尚韩版姐妹手链闺蜜饰品生日礼物</span>
+						<i>&yen;<em class="proprice" >1598</em>.00</i>
+						<b>真唯爱 925银手链 蝴蝶翩翩 女时尚韩版姐妹手链闺蜜饰品生日礼物</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelace-pic9.jpg" alt="" />
+						<span class="prodesc" title="bracelace9">金海湾银楼 正品925银手链女 异地恋时尚简约韩版饰品首饰银饰送女友礼物手环</span>
+						<i>&yen;<em class="proprice" >2698</em>.00</i>
+						<b>金海湾银楼 正品925银手链女 异地恋时尚简约韩版饰品首饰银饰送女友礼物手环</b>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/pro-bracelace-pic10.jpg" alt="" />
+						<span class="prodesc" title="bracelace10">真唯爱 925银手链 新款时尚女韩版三生恋饰品配饰手链子手镯</span>
+						<i>&yen;<em class="proprice" >2388</em>.00</i>
+						<b>真唯爱 925银手链 新款时尚女韩版三生恋饰品配饰手链子手镯</b>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--bracelace结束-->
+		<!--footer开始-->
+		<div class="footer">
+			<div class="f-top">
+				<ul class="ft-content">
+					<li><img src="img/foot-icon1.png" alt=""/><em>品类齐全</em></li>
+					<li><img src="img/foot-icon2.png" alt=""/><em>正品保证</em></li>
+					<li><img src="img/foot-icon3.png" alt=""/><em>七天退换</em></li>
+					<li><img src="img/foot-icon4.png" alt=""/><em>私人订制</em></li>
+					<li><img src="img/foot-icon5.png" alt=""/><em>权威保证</em></li>
+				</ul>
+			</div>
+			<div class="f-mid">
+				<ul class="fm-txt">
+					<li>
+						<h3>购买帮助</h3>
+						<ul>
+							<li><a href="javascript:;">如何购买</a></li>
+							<li><a href="javascript:;">注册/登录</a></li>
+							<li><a href="javascript:;">物流信息</a></li>
+							<li><a href="javascript:;">订单信息</a></li>
+							<li><a href="javascript:;">在线支付</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>店家帮助</h3>
+						<ul>
+							<li><a href="javascript:;">账号</a></li>
+							<li><a href="javascript:;">客服信息</a></li>
+							<li><a href="javascript:;">统计结算</a></li>
+							<li><a href="javascript:;">售后服务</a></li>
+							<li><a href="javascript:;">店铺管理</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>特色服务</h3>
+						<ul>
+							<li><a href="javascript:;">特色定制</a></li>
+							<li><a href="javascript:;">无理由退货</a></li>
+							<li><a href="javascript:;">正品保证</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>售后服务</h3>
+						<ul>
+							<li><a href="javascript:;">退货赔付</a></li>
+							<li><a href="javascript:;">退款说明</a></li>
+							<li><a href="javascript:;">退换货条件</a></li>
+						</ul>
+					</li>
+					<li>
+						<h3>联系我们</h3>
+						<ul>
+							<li>电话：0752-2122839</li>
+							<li>地址：广东省惠州市惠城区麦地路集圆大厦6楼6D</li>
+						</ul> 
+					</li>
+				</ul>
+				<ul class="fm-code">
+					<li><img src="img/code.jpg" alt=""/><span>新浪微博</span></li>
+					<li><img src="img/code.jpg" alt=""/><span>手机客户端</span></li>
+					<li><img src="img/code.jpg" alt=""/><span>官方微信公众号</span></li>
+				</ul>
+			</div>
+			<div class="f-copyright">
+				<p>&copy;2013-2017 惠州市新合谊首饰有限公司 版权所有</p>
+			</div>
+		</div>
+		<!--footer结束-->
+	</body>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/banner.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</html>
