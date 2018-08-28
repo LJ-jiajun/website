@@ -2,7 +2,7 @@
 .header{
 	width: 100%;
 	min-width: 1200px;
-	height: 202px;
+	height: auto;
 	border-bottom: 2px solid #eea615;
 	box-sizing: border-box;
 }
@@ -559,24 +559,20 @@
 }
 .page ul li{
 	float: left;
-	width: 24px;
-	height: 24px;
 	margin: 0 5px;
 	border: 1px solid #cdcdcd;
-	box-sizing: border-box;
 }
 .page ul li.more{
 	width: 12px;
+	height: 24px;
 	border: 0;
 	background: url(../img/icon-more.png) no-repeat;
 }
-.page ul li.first,.page ul li.prev,.page ul li.next,.page ul li.last{
-	width: 60px;
-}
 .page ul li a{
 	display: block;
+	padding: 0 8px;
 	font-size: 12px;
-	line-height: 24px;
+	line-height: 22px;
 	color: #666;
 	text-align: center;
 	border: 0;
@@ -588,10 +584,14 @@
 	border: 0;
 }
 .page ul li.on a{
+	padding: 0 9px;
+	line-height: 24px;
 	color: #fff;
 	background: #eea615;
 }
 .page ul li:hover a{
+	padding: 0 9px;
+	line-height: 24px;
 	color: #fff;
 	background: #eea615;
 }

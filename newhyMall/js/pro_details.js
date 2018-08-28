@@ -92,3 +92,18 @@ function changePic(el){
 $(".pi-specs .alist li").click(function(){
 	$(this).addClass("active").siblings().removeClass("active");
 });
+
+//切换商品详情与累计评价
+$(".pms-details").click(function(){
+	$(this).addClass("active").siblings().removeClass("active");
+	$(".pm-details").addClass("active").siblings().removeClass("active");
+});
+$(".pms-evaluat").click(function(){
+	$(this).addClass("active").siblings().removeClass("active");
+	$(".pm-evaluat").addClass("active").siblings().removeClass("active");
+});
+
+//选择评论类型
+$(".evaluatBar li").click(function(){
+	$(this).addClass("active").siblings().removeClass("active");
+});

@@ -418,15 +418,14 @@
 .pro-main .pm-subbar a{
 	position: absolute;
 	top: -2px;
-	width: 160px;
-	height: 50px;
+	width: 156px;
+	height: 46px;
 	font-size: 16px;
-	line-height: 48px;
+	line-height: 46px;
 	color: #333;
 	text-align: center;
 	background: #fff;
 	border: 2px solid #e6e6e6;
-	box-sizing: border-box;
 }
 .pro-main .pm-subbar .pms-details{
 	left: -2px;
@@ -439,20 +438,24 @@
 	color: #e6121d;
 }
 .pro-main .pm-subbar a.active{
+	width: 160px;
+	height: 50px;
 	line-height: 50px;
 	color: #fff;
 	background: #EEA615;
 	border: 0;
 }
-.pro-main .pm-subbar a:hover{
+.pro-main .pm-subbar .pms-details:hover,.pro-main .pm-subbar .pms-evaluat:hover{
+	width: 160px;
+	height: 50px;
 	line-height: 50px;
 	color: #fff;
 	background: #EEA615;
 	border: 0;
 }
 /*pm-details*/
-.pro-main div.active{
-	-display: block;
+.pro-main>div.active{
+	display: block;
 }
 .pro-main .pm-details{
 	display: none;
@@ -460,7 +463,6 @@
 	height: auto;
 	overflow: hidden;
 }
-
 .pro-main .pm-details .pmd-txt{
 	width: 100%;
 	height: auto;
@@ -489,7 +491,7 @@
 }
 /*pm-evaluat*/
 .pro-main .pm-evaluat{
-	-display: none;
+	display: none;
 	width: 1018px;
 	height: auto;
 	border-left: 1px solid #e6e6e6;
@@ -524,4 +526,88 @@
 	width: 110px;
 	height: 22px;
 	background: url(../img/icon-star.png);
+}
+.pm-evaluat .evaluatBar{
+	width: 710px;
+	height: 46px;
+	margin-top: 54px;
+	padding-left: 4px;
+	border: 1px solid #cdcdcd;
+}
+.pm-evaluat .evaluatBar li{
+	float: left;
+	height: 46px;
+}
+.pm-evaluat .evaluatBar li a{
+	float: left;
+	margin: 15px 18px;
+	font-size: 12px;
+	color: #333;
+}
+.pm-evaluat .evaluatBar li i{
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin: 2px 10px 0 0;
+	background: url(../img/icon-round.png) no-repeat;
+}
+.pm-evaluat .evaluatBar li a:hover{
+	color: #333;
+}
+.pm-evaluat .evaluatBar li a:hover i{
+	background: url(../img/icon-round-on.png) no-repeat;
+}
+.pm-evaluat .evaluatBar li.active a i{
+	background: url(../img/icon-round-on.png) no-repeat;
+}
+.pm-evaluat .evaluatList{
+	width: 100%;
+	height: auto;
+	margin: 12px 0;
+	overflow: hidden;
+}
+.pm-evaluat .evaluatList ul{
+	width: 950px;
+	height: auto;
+	margin-left: 70px;
+	overflow: hidden;
+}
+.pm-evaluat .evaluatList li{
+	width: 100%;
+	height: auto;
+	margin-bottom: 16px;
+	overflow: hidden;
+}
+.pm-evaluat .evaluatList li p{
+	float: left;
+	font-size: 12px;
+	line-height: 24px;
+	color: #999;
+}
+.pm-evaluat .evaluatList li p:nth-of-type(2){
+	width: 750px;
+}
+.pm-evaluat .evaluatList li span{
+	float: left;
+	width: 125px;
+	line-height: 48px;
+	color: #333;
+}
+.pm-evaluat .evaluatList li b{
+	float: left;
+	font-weight: normal;
+}
+.pm-evaluat .evaluatList li i{
+	float: left;
+	width: 110px;
+	height: 22px;
+	margin-top: 1px;
+	background: url(../img/icon-star.png);
+}
+.pm-evaluat .evaluatList li em{
+	float: left;
+	color: #333;
+}
+.pm-evaluat .page{
+	margin-top: 0;
 }
