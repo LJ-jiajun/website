@@ -29,8 +29,48 @@
 		<!--header结束-->
 		<!--content开始-->
 		<div class="content">
-			<div class="loginImg"><img src="img/loginImg.jpg" alt="" /></div>
-			div.loginContainer
+			<div class="wrapper">
+				<div class="loginImg fl">
+					<img src="img/loginImg.jpg" alt="" />
+				</div>
+				<div class="container fl">
+					<div class="title">
+						<h2>用户登录</h2>
+						<a href="register.html">注册新账号</a>
+					</div>
+					<div class="loginForm">
+						<form action="javascript:;" method="post">
+							<div class="l-form-item">
+								<p>
+									<span>用户名：</span>
+									<input type="text" name="username" id="username" placeholder="邮箱/手机/账号"/>
+								</p>
+							</div>
+							<div class="l-form-item">
+								<p>
+									<span>密码：</span>
+									<input type="password" name="password" id="password" placeholder="请输入密码"/>
+								</p>
+							</div>
+							<div class="l-form-item">
+								<p>
+									<span>验证码：</span>
+									<input type="text" name="code" id="code" placeholder="请输入验证码"/>
+								</p>
+								<b id="codeImg"><img src="img/logincode.jpg" alt=""/></b>
+								<a href="javascript:;">换一张</a>
+							</div>
+							<div class="l-form-other-item">
+								<input type="checkbox" id="remember"/>记住我
+								<a href="javascript:;">忘记密码？<i>自主找回密码</i></a>
+							</div>
+							<div class="l-form-item">
+								<input type="submit" id="loginSubmit" value="登录"/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!--content结束-->
 		<!--footer开始-->
