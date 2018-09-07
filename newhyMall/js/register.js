@@ -12,4 +12,9 @@ function checkForm(){
 	var msgbtn = $("#msgbtn");
 	var remember = $("#remember").val();
 	
+	checkUserName(userName);
+	checkPassword(pwd);
+	checkRepassword(repwd);
+	checkEmail(userEmail);
+	checkPhone(userPhone);
 }
