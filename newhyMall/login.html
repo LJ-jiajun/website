@@ -7,6 +7,7 @@
 		<link type="text/css" rel="stylesheet" href="css/public.css" />
 		<link type="text/css" rel="stylesheet" href="css/login.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript" src="js/gVerify.js" ></script>
 		<!--[if lt IE 9]>
 			<script src="js/IE9.js"></script>
 			<script src="js/html5shiv.js"></script>
@@ -57,8 +58,10 @@
 									<span>验证码：</span>
 									<input type="text" name="code" id="code" placeholder="请输入验证码"/>
 								</p>
-								<b id="codeImg"><img src="img/logincode.jpg" alt=""/></b>
-								<a href="javascript:;">换一张</a>
+								<div id="v_container" style="width:116px;height:50px;">
+					　　　　　　　　	<canvas id="verifyCanvas" width="116" height="50" style="cursor: pointer;"></canvas>
+					　　　　　　	</div>
+								<a href="javascript:;" id="changeCode">换一张</a>
 							</div>
 							<div class="l-form-other-item">
 								<input type="checkbox" id="remember"/>记住我
@@ -143,5 +146,6 @@
 		<!--footer结束-->
 	</body>
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/checkForm.js" ></script>
 	<script type="text/javascript" src="js/login.js"></script>
 </html>

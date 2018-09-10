@@ -3,7 +3,7 @@
 function checkUserName(userName){
 	//正则表达式，匹配长度为2到20的字母和数字集合
 	var Reg=/^[a-zA-Z0-9]{1,19}$/; 
-	if(userName == "")){ 
+	if(userName == ""){ 
 		alert("用户名不能为空！");
 		return false; 
 	}else if(!Reg.test(userName)){ 
@@ -18,7 +18,7 @@ function checkUserName(userName){
 function checkPassword(pwd){
 	//正则表达式，匹配长度为6到18的字母和数字集合
 	var Reg=/^[a-zA-Z]\w{5,17}$/; 
-	if(pwd == "")){ 
+	if(pwd == ""){ 
 		alert("密码不能为空！");
 		return false; 
 	}else if(!Reg.test(pwd)){ 
@@ -33,7 +33,7 @@ function checkPassword(pwd){
 function checkRepassword(repwd){
 	var pwd = document.getElementById("password").val();
 	
-	if(repwd == "")){
+	if(repwd == ""){
 		alert("确认密码不能为空！");
 		return false; 
 	}else if( pwd != repwd){ 
@@ -48,7 +48,7 @@ function checkRepassword(repwd){
 function checkEmail(email){
 	//正则表达式，匹配邮箱地址
 	var Reg=/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/; 
-	if(email == "")){ 
+	if(email == ""){ 
 		alert("密码不能为空！");
 		return false; 
 	}else if(!Reg.test(email)){ 
@@ -63,7 +63,7 @@ function checkEmail(email){
 function checkPhone(phone){
 	//正则表达式，匹配手机号码
 	var Reg=/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/; 
-	if(phone == "")){ 
+	if(phone == ""){ 
 		alert("手机号码不能为空！");
 		return false; 
 	}else if(!Reg.test(phone)){ 
@@ -78,7 +78,7 @@ function checkPhone(phone){
 function checkMoney(money){
 	//正则表达式，匹配金额
 	var Reg=/^[0-9]+(.[0-9]{1,2})?$/; 
-	if(money == "")){ 
+	if(money == ""){ 
 		//alert("money为空！");
 		//return false; 
 		money = 0.00;
@@ -91,25 +91,26 @@ function checkMoney(money){
 }
 
 //验证url
-function checkUrl(url){
-	//正则表达式，匹配url
-	var Reg=/[a-zA-z]+://[^\s]* 或 ^http://([\w-]+\.)+[\w-]+(/[\w-./?%&=]*)?$/; 
-	if(url == "")){ 
-		alert("url不能为空！");
-		return false; 
-	}else if(!Reg.test(url)){ 
-		alert("请输入正确格式的url！");
-		return false; 
-	}else{
-		return true;
-	}
-}
+//function checkUrl(url){
+//	//正则表达式，匹配url
+//	var Reg= /^http://([\w-]+\.)+[\w-]+(/[\w-./?%&=]*)?$/;
+////	或 ^http://([\w-]+\.)+[\w-]+(/[\w-./?%&=]*)?$/;
+//	if(url == ""){ 
+//		alert("url不能为空！");
+//		return false; 
+//	}else if(!Reg.test(url)){ 
+//		alert("请输入正确格式的url！");
+//		return false; 
+//	}else{
+//		return true;
+//	}
+//}
 
 //验证qq号
 function checkQQ(qq){
 	//正则表达式，匹配qq
 	var Reg=/[1-9][0-9]{4,}/; 
-	if(qq == "")){ 
+	if(qq == ""){ 
 		alert("qq不能为空！");
 		return false; 
 	}else if(!Reg.test(qq)){ 
@@ -124,7 +125,7 @@ function checkQQ(qq){
 function checkZipcode(Zipcode){
 	//正则表达式，匹配邮政编码
 	var Reg=/[1-9]\d{5}(?!\d)/; 
-	if(Zipcode == "")){ 
+	if(Zipcode == ""){ 
 		alert("邮政编码不能为空！");
 		return false; 
 	}else if(!Reg.test(Zipcode)){ 
@@ -139,7 +140,7 @@ function checkZipcode(Zipcode){
 function checkCode(code){
 	//正则表达式，匹配验证码(4位数)
 	var Reg=/^[A-Za-z]{4}$/; 
-	if(code == "")){ 
+	if(code == ""){ 
 		alert("验证码不能为空！");
 		return false; 
 	}else if(!Reg.test(code)){ 
@@ -154,7 +155,7 @@ function checkCode(code){
 function checkMsgCode(msgCode){
 	//正则表达式，匹配短信验证码
 	var Reg=/^\d{4}$/; 
-	if(msgCode == "")){ 
+	if(msgCode == ""){ 
 		alert("短信验证码不能为空！");
 		return false; 
 	}else if(!Reg.test(msgCode)){ 

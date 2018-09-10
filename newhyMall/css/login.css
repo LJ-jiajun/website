@@ -78,16 +78,16 @@
 .loginForm .l-form-item #code{
 	width: 85px;
 }
-.loginForm .l-form-item #codeImg{
+.loginForm .l-form-item #v_container{
 	float: left;
 	width: 116px;
 	height: 50px;
 	margin-left: 24px;
 	border: 1px solid #cdcdcd;
 }
-.loginForm .l-form-item #codeImg img{
-	width: 100%;
-	height: 100%;
+.loginForm .l-form-item #v_container canvas{
+	float: left;
+	margin-top: -16px;
 }
 .loginForm .l-form-item a{
 	float: right;
