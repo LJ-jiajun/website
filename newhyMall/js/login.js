@@ -24,16 +24,24 @@ function login(){
 	var username = $("#username").val();
 	var pwd = $("#password").val();
 	var code = $("#code").val();
-	if(checkLoginForm(username,pwd,code);){
-		
+	
+	if(checkLoginForm(username,pwd,code)){
 		var res = verifyCode.validate(code);
 	    if(res){
 	        alert("验证正确");
 	    }else{
 	        alert("验证码错误");
+	        verifyCode.refresh();
 	    }
 	}
 	
-	
-	
+	for(var i=0;i<User.length;i++){
+		if(User[i].username==username||User[i].email==username||User[i].phone==username){
+//			alert("");
+			if(){
+				
+			}
+		}
+	}
+	console.log(User);
 }
