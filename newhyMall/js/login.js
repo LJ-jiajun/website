@@ -37,11 +37,13 @@ function login(){
 	
 	for(var i=0;i<User.length;i++){
 		if(User[i].username==username||User[i].email==username||User[i].phone==username){
-//			alert("");
-			if(){
-				
+			if(pwd == User[i].password){
+				alert("登录成功！");
 			}
+		}else{
+			alert("用户名或密码输入错误！");
 		}
 	}
+	//window.localStorage = "username"
 	console.log(User);
 }
