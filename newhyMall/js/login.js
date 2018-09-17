@@ -1,13 +1,38 @@
+
+var users = null;
 var loginSubmit = $("#loginSubmit");
 var verifyCode = new GVerify("v_container");
 var changeCode = document.getElementById("changeCode");
+var Storage = window.localStorage;
+//页面加载完执行，进行初始化页面
+$(document).ready(function(){
+	setUser();
+  	initLogin();
+ });
 
+function initLogin(){
+	//读取 localStage 本地存储，填充信息；
+  	users = JSON.parse(Storage.getItem("user"));
+	//console.log(users);//输出
+	if(users[0].isstorePwd==true){
+		//lacoste  已经保存 登陆信息 直接登陆  
+        $("#username").val(users[0].loginName);
+        $("#password").val(users[0].pwd);
+        document.getElementById("isRememberPwd").checked = true;
+	}else{
+		$("#username").val(users[0].loginName);
+	}
+}
+
+//刷新验证码
 changeCode.onclick = function(){
 	verifyCode.refresh();
 }
 
+//点击登录按钮，进行登录验证
 loginSubmit.click(login);
 
+//验证表单数据格式
 function checkLoginForm(username,pwd,code){
 	if(!checkUserName(username) && !checkEmail(username) && !checkPhone(username)){
 		return false;
@@ -20,6 +45,7 @@ function checkLoginForm(username,pwd,code){
 	}
 }
 
+//登录函数
 function login(){
 	var username = $("#username").val();
 	var pwd = $("#password").val();
@@ -45,5 +71,26 @@ function login(){
 		}
 	}
 	//window.localStorage = "username"
-	console.log(User);
+	
+	//console.log(window.localStorage);
 }
+
+//设置
+function setUser(){
+	if(!Storage.getItem("user")){
+		users = [
+			{
+				"username":"admin",
+				"pwd":"admin1",
+				"email":"757737611@qq.com",
+				"phone":"15223412345",
+				"loginName":"admin",
+				"loginTime":new Date().getTime(),
+				"isstorePwd":true
+			}
+		];
+		//JSON.stringify(users)转化为JSON字符串
+　　		Storage.setItem("user",JSON.stringify(users));
+	}
+}
+	
