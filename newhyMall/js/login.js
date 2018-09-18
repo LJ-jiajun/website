@@ -32,17 +32,28 @@ changeCode.onclick = function(){
 //点击登录按钮，进行登录验证
 loginSubmit.click(login);
 
+function checkLoginName(username){
+	//分别用户名，邮箱，手机号验证登录名
+	if(checkUserName(username)>0 || checkEmail(username)>0 || checkPhone(username)>0){
+		return true;
+	}else{
+		return false;
+	}
+}
 //验证表单数据格式
 function checkLoginForm(username,pwd,code){
-	if(!checkUserName(username) && !checkEmail(username) && !checkPhone(username)){
+	if(checkUserName(username) || checkEmail(username) || checkPhone(username)){
+		if(!checkPassword(pwd)){
+			return false;
+		}else{
+			if(!checkCode(code)){
+				return false;
+			}
+		}
+	}else{
 		return false;
 	}
-	if(!checkPassword(pwd)){
-		return false;
-	}
-	if(!checkCode(code)){
-		return false;
-	}
+	return true;
 }
 
 //登录函数
@@ -86,7 +97,7 @@ function setUser(){
 				"phone":"15223412345",
 				"loginName":"admin",
 				"loginTime":new Date().getTime(),
-				"isstorePwd":true
+				"isstorePwd":false
 			}
 		];
 		//JSON.stringify(users)转化为JSON字符串
