@@ -1,26 +1,28 @@
 
-var users = null;
+var loginUser = null;
 var loginSubmit = $("#loginSubmit");
 var verifyCode = new GVerify("v_container");
 var changeCode = document.getElementById("changeCode");
 var Storage = window.localStorage;
+var allUser = JSON.parse(Storage.getItem("user"));
 //页面加载完执行，进行初始化页面
 $(document).ready(function(){
-	setUser();
   	initLogin();
  });
 
 function initLogin(){
 	//读取 localStage 本地存储，填充信息；
-  	users = JSON.parse(Storage.getItem("user"));
+  	loginUser = JSON.parse(Storage.getItem("loginUser"));
 	//console.log(users);//输出
-	if(users[0].isstorePwd==true){
-		//lacoste  已经保存 登陆信息 直接登陆  
-        $("#username").val(users[0].loginName);
-        $("#password").val(users[0].pwd);
-        document.getElementById("isRememberPwd").checked = true;
-	}else{
-		$("#username").val(users[0].loginName);
+	if(loginUser){
+		if(loginUser[0].isstorePwd==true){
+			//lacoste  已经保存 登陆信息 直接登陆  
+	        $("#username").val(loginUser[0].loginName);
+	        $("#password").val(loginUser[0].pwd);
+	        document.getElementById("isRememberPwd").checked = true;
+		}else{
+			$("#username").val(loginUser[0].loginName);
+		}
 	}
 }
 
@@ -40,9 +42,16 @@ function checkLoginName(username){
 		return false;
 	}
 }
+
 //验证表单数据格式
 function checkLoginForm(username,pwd,code){
-	if(checkUserName(username) || checkEmail(username) || checkPhone(username)){
+	if(checkUserName(username)==0 && checkEmail(username)==0 && checkPhone(username)==0){
+		alert("请输入用户名！");
+		return false;
+	}else if(checkUserName(username)==-1 && checkEmail(username)==-1 && checkPhone(username)==-1){
+		alert("请输入正确格式的用户名！");
+		return false;
+	}else if(checkUserName(username)==1 || checkEmail(username)==1 || checkPhone(username)==1){
 		if(!checkPassword(pwd)){
 			return false;
 		}else{
@@ -50,8 +59,6 @@ function checkLoginForm(username,pwd,code){
 				return false;
 			}
 		}
-	}else{
-		return false;
 	}
 	return true;
 }
@@ -61,47 +68,70 @@ function login(){
 	var username = $("#username").val();
 	var pwd = $("#password").val();
 	var code = $("#code").val();
-	
+	var isRemember = $("#isRememberPwd")[0].checked;
+	//检查用户名，密码，验证码的格式
 	if(checkLoginForm(username,pwd,code)){
-		var res = verifyCode.validate(code);
-	    if(res){
-	        alert("验证正确");
+		//判断验证码是否正确
+	    if(verifyCode.validate(code)){
+	    	var isok = false;
+	        for(var i=0;i<allUser.length;i++){
+				if(allUser[i].username==username||allUser[i].email==username||allUser[i].phone==username){
+					if(pwd == allUser[i].pwd){
+						console.log("登录成功！");
+						isok = true;
+						setLoginUser(i,username,isRemember);
+//						var	users = [
+//								{
+//									"username":username,
+//									"pwd":pwd,
+//									"email":"757737611@qq.com",
+//									"phone":"15223412345",
+//									"loginName":username,
+//									"loginState":true,
+//									"loginTime":new Date().getTime(),
+//									"isstorePwd":isRemember
+//								}
+//							];
+//						Storage.setItem("loginUser",JSON.stringify(users));
+//						var	users1 = [
+//								{
+//									"username":username,
+//									"pwd":pwd,
+//									"email":"757737611@qq.com",
+//									"phone":"15223412345"
+//								}
+//							];
+//						Storage.setItem("user",JSON.stringify(users1));
+					}
+				}
+			}
+	        if(!isok){
+	        	//alert("登录失败！");
+	        	console.log("登录失败！");
+	        }
 	    }else{
 	        alert("验证码错误");
+	        $("#code").val("");
 	        verifyCode.refresh();
 	    }
 	}
-	
-	for(var i=0;i<User.length;i++){
-		if(User[i].username==username||User[i].email==username||User[i].phone==username){
-			if(pwd == User[i].password){
-				alert("登录成功！");
-			}
-		}else{
-			alert("用户名或密码输入错误！");
-		}
-	}
-	//window.localStorage = "username"
-	
-	//console.log(window.localStorage);
 }
 
 //设置
-function setUser(){
-	if(!Storage.getItem("user")){
-		users = [
+function setLoginUser(num,loginname,isRemember){
+	var	loginUser = [
 			{
-				"username":"admin",
-				"pwd":"admin1",
-				"email":"757737611@qq.com",
-				"phone":"15223412345",
-				"loginName":"admin",
+				"username":allUser[num].username,
+				"pwd":allUser[num].pwd,
+				"email":allUser[num].email,
+				"phone":allUser[num].phone,
+				"loginName":loginname,
+				"loginState":true,
 				"loginTime":new Date().getTime(),
-				"isstorePwd":false
+				"isstorePwd":isRemember
 			}
 		];
-		//JSON.stringify(users)转化为JSON字符串
-　　		Storage.setItem("user",JSON.stringify(users));
-	}
+	//JSON.stringify(loginUser)转化为JSON字符串
+　　	Storage.setItem("loginUser",JSON.stringify(loginUser));
 }
 	

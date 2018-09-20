@@ -5,7 +5,6 @@ function checkUserName(userName){
 	var Reg=/^[a-zA-Z0-9]{1,19}$/; 
 	if(userName == ""){ 
 		//alert("用户名不能为空！");
-		results = 
 		return 0; 
 	}else if(!Reg.test(userName)){ 
 		//alert("请输入正确格式的用户名，2到20的字母和数字集合");
