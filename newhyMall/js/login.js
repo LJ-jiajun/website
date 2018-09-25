@@ -4,7 +4,8 @@ var loginSubmit = $("#loginSubmit");
 var verifyCode = new GVerify("v_container");
 var changeCode = document.getElementById("changeCode");
 var Storage = window.localStorage;
-var allUser = JSON.parse(Storage.getItem("user"));
+var allUser = (new Function('','return '+Storage.getItem("user")))();
+
 //页面加载完执行，进行初始化页面
 $(document).ready(function(){
   	initLogin();
@@ -12,7 +13,7 @@ $(document).ready(function(){
 
 function initLogin(){
 	//读取 localStage 本地存储，填充信息；
-  	loginUser = JSON.parse(Storage.getItem("loginUser"));
+  	loginUser = (new Function('','return '+Storage.getItem("loginUser")))();
 	//console.log(users);//输出
 	if(loginUser){
 		if(loginUser[0].isstorePwd==true){
