@@ -30,9 +30,7 @@ function checkPassword(pwd){
 }
 
 //验证确认密码，以字母开头，长度在6~18之间，只能包含字母、数字和下划线
-function checkRepassword(repwd){
-	var pwd = document.getElementById("password").val();
-	
+function checkRepassword(pwd,repwd){
 	if(repwd == ""){
 		alert("确认密码不能为空！");
 		return false; 

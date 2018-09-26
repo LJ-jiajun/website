@@ -81,28 +81,6 @@ function login(){
 						console.log("登录成功！");
 						isok = true;
 						setLoginUser(i,username,isRemember);
-//						var	users = [
-//								{
-//									"username":username,
-//									"pwd":pwd,
-//									"email":"757737611@qq.com",
-//									"phone":"15223412345",
-//									"loginName":username,
-//									"loginState":true,
-//									"loginTime":new Date().getTime(),
-//									"isstorePwd":isRemember
-//								}
-//							];
-//						Storage.setItem("loginUser",JSON.stringify(users));
-//						var	users1 = [
-//								{
-//									"username":username,
-//									"pwd":pwd,
-//									"email":"757737611@qq.com",
-//									"phone":"15223412345"
-//								}
-//							];
-//						Storage.setItem("user",JSON.stringify(users1));
 					}
 				}
 			}
