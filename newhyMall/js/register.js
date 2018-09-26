@@ -5,9 +5,15 @@ var allUser = (new Function('','return '+Storage.getItem("user")))();
 
 
 msgbtn.click(function(){
-	
+//	var verifyCode = new GVerify("v_container");
 });
+
 registerSubmit.click(register);
+
+////刷新验证码
+//changeCode.onclick = function(){
+//	verifyCode.refresh();
+//}
 
 //验证表单数据格式
 function checkRegisterForm(user){
@@ -74,19 +80,19 @@ function register(){
 	        for(var i=0;i<allUser.length;i++){
 				if(allUser[i].username==username||allUser[i].email==username||allUser[i].phone==username){
 					if(pwd == allUser[i].pwd){
-						console.log("登录成功！");
+						console.log("注册成功！");
 						isok = true;
 						setLoginUser(i,username,isRemember);
 					}
 				}
 			}
 	        if(!isok){
-	        	//alert("登录失败！");
-	        	console.log("登录失败！");
+	        	//alert("注册失败！");
+	        	console.log("注册失败！");
 	        }
 	    }else{
 	        alert("验证码错误");
-	        $("#code").val("");
+	        $("#msgCode").val("");
 	        verifyCode.refresh();
 	    }
 	}
