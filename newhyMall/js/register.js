@@ -1,19 +1,13 @@
-var registerSubmit = $("#registerSubmit");
-var msgbtn = $("#msgbtn");
 var Storage = window.localStorage;
-var allUser = (new Function('','return '+Storage.getItem("user")))();
+var allUser = null;
 
-
-msgbtn.click(function(){
-//	var verifyCode = new GVerify("v_container");
+//获取短信验证码
+$("#msgbtn").click(function(){
+	var code = getMsgCode(4);
+	$(this).val(code)
 });
 
-registerSubmit.click(register);
-
-////刷新验证码
-//changeCode.onclick = function(){
-//	verifyCode.refresh();
-//}
+$("#registerSubmit").click(register);
 
 //验证表单数据格式
 function checkRegisterForm(user){
@@ -62,7 +56,7 @@ function register(){
 	var userEmail = $("#userEmail").val();
 	var userPhone = $("#userPhone").val();
 	var msgCode = $("#msgCode").val();
-	var isok = $("#isok").val();
+	var isok = document.getElementById("isok").checked;
 	var user = {
 		username : userName,
 		pwd : pwd,
@@ -75,33 +69,51 @@ function register(){
 	//检查注册表单的格式
 	if(checkRegisterForm(user)){
 		//判断验证码是否正确
-	    if(verifyCode.validate(code)){
-	    	var isok = false;
-	        for(var i=0;i<allUser.length;i++){
-				if(allUser[i].username==username||allUser[i].email==username||allUser[i].phone==username){
-					if(pwd == allUser[i].pwd){
-						console.log("注册成功！");
-						isok = true;
-						setLoginUser(i,username,isRemember);
+	    if(msgCode == $("#msgbtn").val()){
+	    	allUser = (new Function('','return '+Storage.getItem("user")))();
+	    	if(allUser){
+	    		for(var i=0;i<allUser.length;i++){
+					if(allUser[i].username==userName){
+						alert("此用户名已被注册，请重试！");
+						return;
+					}
+					if(allUser[i].email==userEmail){
+						alert("此邮箱已被注册，请重试！");
+						return;
+					}
+					if(allUser[i].phone==userPhone){
+						alert("此手机号已被注册，请重试！");
+						return;
 					}
 				}
-			}
-	        if(!isok){
-	        	//alert("注册失败！");
-	        	console.log("注册失败！");
-	        }
+	    		var newUser = {
+					"username":user.username,
+					"pwd":user.pwd,
+					"email":user.email,
+					"phone":user.phone
+				};
+				allUser.push(newUser);
+	    		Storage.setItem("user",JSON.stringify(allUser));
+	    		console.log("注册成功！");
+		        console.log(allUser);
+	    	}else{
+	    		console.log("可以注册");
+	    		var newUser = [{
+					"username":user.username,
+					"pwd":user.pwd,
+					"email":user.email,
+					"phone":user.phone
+				}];
+	    		Storage.setItem("user",JSON.stringify(newUser));
+	    		console.log("注册成功！");
+	    	}
+	        
 	    }else{
 	        alert("验证码错误");
 	        $("#msgCode").val("");
-	        verifyCode.refresh();
+//	        verifyCode.refresh();
 	    }
 	}
-}
-
-//生成随机短信验证码
-function getMsgCode(){
-	var str = "0123456789";
-	
 }
 
 //function checkForm(){
@@ -167,22 +179,18 @@ function getMsgCode(){
 
 
 
-//设置
-//function setLoginUser(num,loginname,isRemember){
-//	var	loginUser = [
-//			{
-//				"username":allUser[num].username,
-//				"pwd":allUser[num].pwd,
-//				"email":allUser[num].email,
-//				"phone":allUser[num].phone,
-//				"loginName":loginname,
-//				"loginState":true,
-//				"loginTime":new Date().getTime(),
-//				"isstorePwd":isRemember
-//			}
-//		];
-//	//JSON.stringify(loginUser)转化为JSON字符串
-//　　	Storage.setItem("loginUser",JSON.stringify(loginUser));
-//}
-//	
+//设置默认用户
+function setDUser(user){
+	var	dUser = [
+			{
+				"username":user.username,
+				"pwd":user.pwd,
+				"email":user.email,
+				"phone":user.phone
+			}
+		];
+	//JSON.stringify(loginUser)转化为JSON字符串
+　　	Storage.setItem("user",JSON.stringify(dUser));
+}
+	
 

@@ -16,6 +16,10 @@ function initLogin(){
   	loginUser = (new Function('','return '+Storage.getItem("loginUser")))();
 	//console.log(users);//输出
 	if(loginUser){
+		if(loginUser[0].loginState){
+			alert("此用户未注销，不要再次登录");
+			window.location = "index.html";
+		}
 		if(loginUser[0].isstorePwd==true){
 			//lacoste  已经保存 登陆信息 直接登陆  
 	        $("#username").val(loginUser[0].loginName);
