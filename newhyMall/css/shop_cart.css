@@ -1,0 +1,92 @@
+.c-content{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.c-content .c-title{
+	width: 100%;
+	height: 56px;
+	border-bottom: 1px solid #c2c2c2;
+}
+.c-content .c-title span{
+	margin-right: 15px;
+	font-size: 18px;
+	line-height: 56px;
+	color: #333;
+}
+.c-content .c-list{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.c-list thead{
+	width: 100%;
+	height: 48px;
+}
+.c-list thead th{
+	font-size: 12px;
+	line-height: 48px;
+	color: #333;
+}
+.c-list tbody td{
+	font-size: 12px;
+	line-height: 18px;
+	color: #333;
+	padding-bottom: 30px;
+	vertical-align: top;
+}
+.c-list tbody td input{
+	float: left;
+}
+.c-list tbody td img{
+	float: left;
+	width: 80px;
+	margin: 0 6px;
+}
+.c-list thead th:nth-of-type(1),.c-list tbody td:nth-of-type(1),.c-list tfoot td:nth-of-type(1){
+	width: 105px;
+	padding-left: 30px;
+}
+.c-list thead th:nth-of-type(2),.c-list tbody td:nth-of-type(2){
+	width: 210px;
+	padding-right: 90px;
+}
+.c-list thead th:nth-of-type(3),.c-list tbody td:nth-of-type(3){
+	width: 180px;
+}
+.c-list thead th:nth-of-type(4),.c-list tbody td:nth-of-type(4){
+	width: 210px;
+}
+.c-list thead th:nth-of-type(5),.c-list tbody td:nth-of-type(5){
+	width: 165px;
+}
+.c-list thead th:nth-of-type(6),.c-list tbody td:nth-of-type(6){
+	width: 200px;
+}
+.numbox{
+	width: 88px;
+	height: 18px;
+	border: 1px solid #333;
+}
+.numbox .num{
+	float: left;
+	width: 50px;
+	height: 18px;
+	text-align: center;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+}
+.numbox em{
+	float: left;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	cursor: pointer;
+}
+#inventory{
+	margin-left: 18px;
+	line-height: 32px;
+	color: #666;
+}

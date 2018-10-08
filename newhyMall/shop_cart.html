@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>商品列表</title>
+		<title>购物车</title>
 		<link type="text/css" rel="stylesheet" href="css/common.css" />
 		<link type="text/css" rel="stylesheet" href="css/public.css" />
-		<link type="text/css" rel="stylesheet" href="css/shop_list.css" />
+		<link type="text/css" rel="stylesheet" href="css/shop_cart.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 		<!--[if lt IE 9]>
 			<script src="js/IE9.js"></script>
@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<!--header开始-->
-		<div class="header">
+ 		<div class="header">
 			<div class="h-top">
 				<div class="ht-content">
 					<div class="htc-loginbar fl" id="loginbar">
@@ -174,6 +174,76 @@
 			</div>
 		</div>
 		<!--header结束-->
+		<!--content开始-->
+		<div class="c-content">
+			<div class="c-title">
+				<span>我的购物车</span>
+				<span>全部商品<i>3</i></span>
+			</div>
+			<div class="c-list">
+				<table id="cl-table" border="0" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr>
+							<th><input type="checkbox" id="allCheckH"/>全选</th>
+							<th>商品</th>
+							<th>单价</th>
+							<th>数量</th>
+							<th>小计</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" class="aCheck"/><img src="img/pro-ring-pic1.jpg" alt="" /></td>
+							<td>天使之吻钻戒 女 正品钻石戒指 求结婚订婚 30分钻戒 GIA国际证书</td>
+							<td>￥25998.00</td>
+							<td>
+								<div class="numbox">
+									<em class="subtract">-</em>
+									<input type="text" value="1" class="num"/>
+					            	<em class="add">+</em>
+								</div>
+								<p>库存：666</p>
+							</td>
+							<td>￥25998.00</td>
+							<td>
+								<p><a href="javascript:;">删除</a></p>
+								<p><a href="javascript:;">移到我的收藏</a></p>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="aCheck"/><img src="img/pro_details_pic02.jpg" alt="" /></td>
+							<td>天使之吻钻戒 女 正品钻石戒指 求结婚订婚 30分钻戒 GIA国际证书</td>
+							<td>￥25998.00</td>
+							<td>
+								<div class="numbox">
+									<em class="subtract">-</em>
+									<input type="text" value="1" class="num"/>
+					            	<em class="add">+</em>
+								</div>
+								<p id="inventory">库存：<span>666</span></p>
+							</td>
+							<td>￥25998.00</td>
+							<td>
+								<p><a href="javascript:;">删除</a></p>
+								<p><a href="javascript:;">移到我的收藏</a></p>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td><input type="checkbox" id="allCheckF"/>全选</td>
+							<td><a href="javascript:;">删除选中的产品</a></td>
+							<td><a href="javascript:;">移动到我的收藏</a></td>
+							<td>已选<i id="allNum">3</i>件商品</td>
+							<td>总价：<b>￥<i id="allPrice">91994.00</i></b></td>
+							<td><a id="settlement" href="javascript:;">结算</a></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		<!--content结束-->
 		<!--footer开始-->
 		<div class="footer">
 			<div class="f-top">
