@@ -203,7 +203,7 @@
 									<input type="text" value="1" class="num"/>
 					            	<em class="add">+</em>
 								</div>
-								<p>库存：666</p>
+								<p id="inventory">库存：666</p>
 							</td>
 							<td>￥25998.00</td>
 							<td>
@@ -233,10 +233,14 @@
 					<tfoot>
 						<tr>
 							<td><input type="checkbox" id="allCheckF"/>全选</td>
-							<td><a href="javascript:;">删除选中的产品</a></td>
-							<td><a href="javascript:;">移动到我的收藏</a></td>
+							<td><a id="delAll" href="javascript:;">删除选中的产品</a><a id="favorites" href="javascript:;">移动到我的收藏</a></td>
+							<td></td>
 							<td>已选<i id="allNum">3</i>件商品</td>
-							<td>总价：<b>￥<i id="allPrice">91994.00</i></b></td>
+							<td>
+								<p>
+									总价：<b>￥<i id="allPrice">91994.00</i></b>
+								</p>
+							</td>
 							<td><a id="settlement" href="javascript:;">结算</a></td>
 						</tr>
 					</tfoot>
@@ -316,3 +320,4 @@
 	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript" src="js/shop_cart.js"></script>
 </html>
+ 

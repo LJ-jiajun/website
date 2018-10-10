@@ -22,7 +22,6 @@
 }
 .c-list thead{
 	width: 100%;
-	height: 48px;
 }
 .c-list thead th{
 	font-size: 12px;
@@ -64,6 +63,49 @@
 .c-list thead th:nth-of-type(6),.c-list tbody td:nth-of-type(6){
 	width: 200px;
 }
+.c-list tfoot{
+	width: 100%;
+	border: 1px solid #eea615;
+}
+.c-list tfoot td{
+	font-size: 12px;
+	line-height: 50px;
+	color: #333;
+}
+.c-list tfoot td #delAll{
+	
+}
+.c-list tfoot td #favorites{
+	margin-left: 60px;
+}
+.c-list tfoot td #allNum{
+	margin: 0 5px;
+	color: #e5121d;
+}
+.c-list tfoot td p{
+	margin-left: -36px;
+}
+.c-list tfoot td #allPrice{
+	
+}
+/*.c-list tfoot td:nth-of-type(1){
+	width: 165px;
+}*/
+/*.c-list tfoot td:nth-of-type(2){
+	width: 165px;
+}
+.c-list tfoot td:nth-of-type(3){
+	width: 165px;
+}
+.c-list tfoot td:nth-of-type(4){
+	width: 165px;
+}
+.c-list tfoot td:nth-of-type(5){
+	width: 165px;
+}
+.c-list tfoot td:nth-of-type(6){
+	width: 165px;
+}*/
 .numbox{
 	width: 88px;
 	height: 18px;
@@ -86,7 +128,7 @@
 	cursor: pointer;
 }
 #inventory{
-	margin-left: 18px;
-	line-height: 32px;
+	margin-left: 16px;
+	line-height: 30px;
 	color: #666;
 }
