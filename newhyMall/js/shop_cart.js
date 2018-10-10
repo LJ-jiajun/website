@@ -16,6 +16,22 @@ aChecks.click(function(){
 	aCheck(this);
 	getAllNum();
 });
+//加
+$(".add").click(function(){
+		var n=$(this).prev().val();
+		var num=parseInt(n)+1;
+		if(num>50){ return;}
+		$(this).prev().val(num);
+		getAllNum();
+});
+//减的效果
+$(".subtract").click(function(){
+	var n=$(this).next().val();
+	var num=parseInt(n)-1;
+	if(num<1){ return;}
+	$(this).next().val(num);
+	getAllNum();
+});
 //单选
 function aCheck(obj){
 	if(allcheckh.checked){
@@ -46,25 +62,12 @@ function allCheck(){
 }
 //得到所有
 function getAllNum(){
-	var allname = 0;
+	var allnum = 0;
 	for(var i=0;i<aChecks.length;i++){
 		if(aChecks[i].checked){
-			console.log(aChecks[i].parentNode.parentNode);
+			var num = aChecks[i].parentNode.parentNode.getElementsByClassName("num")[0].value;
+			allnum += Number(num);
 		}
 	}
+	$("#allNum")[0].innerHTML = allnum;
 }
-
-//加
-$(".add").click(function(){
-		var n=$(this).prev().val();
-		var num=parseInt(n)+1;
-		if(num>50){ return;}
-		$(this).prev().val(num);
-});
-//减的效果
-$(".subtract").click(function(){
-	var n=$(this).prev().prev().val();
-	var num=parseInt(n)-1;
-	if(num<1){ return;}
-	$(this).prev().prev().val(num);
-});
