@@ -235,7 +235,7 @@
 							<td><input type="checkbox" id="allCheckF"/>全选</td>
 							<td><a id="delAll" href="javascript:;">删除选中的产品</a><a id="favorites" href="javascript:;">移动到我的收藏</a></td>
 							<td></td>
-							<td>已选<i id="allNum">3</i>件商品</td>
+							<td>已选<i id="allNum">0</i>件商品</td>
 							<td>
 								<p>
 									总价：<b>￥<i id="allPrice">91994.00</i></b>
@@ -319,5 +319,21 @@
 	</body>
 	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript" src="js/shop_cart.js"></script>
+	<!-- <script type="text/javascript">
+		//加
+		$(".add").click(function(){
+				var n=$(this).prev().val();
+				var num=parseInt(n)+1;
+				if(num>50){ return;}
+				$(this).prev().val(num);
+		});
+		//减的效果
+		$(".subtract").click(function(){
+			var n=$(this).prev().prev().val();
+			var num=parseInt(n)-1;
+			if(num<1){ return;}
+			$(this).prev().prev().val(num);
+		});
+	</script> -->
 </html>
  

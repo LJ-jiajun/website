@@ -83,10 +83,19 @@
 	color: #e5121d;
 }
 .c-list tfoot td p{
-	margin-left: -36px;
+	margin-left: -40px;
 }
-.c-list tfoot td #allPrice{
-	
+.c-list tfoot td p b{
+	font-size: 18px;
+	color: #e5121d;
+}
+.c-list tfoot td #settlement{
+	float: right;
+	width: 80px;
+	color: #fff;
+	text-align: center;
+	background: #eea615;
+	border: 1px solid #eea615;
 }
 /*.c-list tfoot td:nth-of-type(1){
 	width: 165px;

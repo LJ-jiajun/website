@@ -1,4 +1,4 @@
-/*放大镜效果*/
+
 var objCentent = $(".pro-pic");
 var objSmall = $(".pp-small");
 var objMark = $("#mark");
