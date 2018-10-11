@@ -136,7 +136,7 @@
 	text-align: center;
 	cursor: pointer;
 }
-#inventory{
+.inventory{
 	margin-left: 16px;
 	line-height: 30px;
 	color: #666;

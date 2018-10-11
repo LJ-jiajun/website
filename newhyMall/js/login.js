@@ -78,11 +78,7 @@ function login(){
 	    if(verifyCode.validate(code)){
 	    	var isok = false;
 			if(!allUser){
-// 				alert("该用户未注册！");
-// 				return;
 				allUser = setDUser();
-				console.log(allUser);
-				return;
 			}
 	        for(var i=0;i<allUser.length;i++){
 				if(allUser[i].username==username||allUser[i].email==username||allUser[i].phone==username){
@@ -94,8 +90,8 @@ function login(){
 				}
 			}
 	        if(!isok){
-	        	//alert("登录失败！");
-	        	console.log("登录失败！");
+	        	alert("登录失败！");
+	        	// console.log("登录失败！");
 	        }
 	    }else{
 	        alert("验证码错误");

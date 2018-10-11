@@ -26,15 +26,15 @@
 						<a href="register.html">注册</a>
 					</div>
 					<div class="htc-userinfo fl" id="userinfo">
-						<em>Hi，<sapn>13021549278</sapn><i></i></em>
-						<a href="index.html" id="user_exit">退出</a>
+						<em>Hi，<span>13021549278</span><i></i></em>
+						<a href="login.html" id="user_exit">退出</a>
 					</div>
 					<div class="htc-topMenu fr">
 						<ul>
 							<li class="htct-mybady">
 								<span class="htct">我的宝贝<i></i></span>
 								<ul class="htct-ul">
-									<li><a href="javascript:;">我的购物车</a></li>
+									<li><a href="shop_cart.html">我的购物车</a></li>
 									<li><a href="javascript:;">我的订单</a></li>
 								</ul>
 							</li>
@@ -194,36 +194,18 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td><input type="checkbox" class="aCheck"/><img src="img/pro-ring-pic1.jpg" alt="" /></td>
-							<td>天使之吻钻戒 女 正品钻石戒指 求结婚订婚 30分钻戒 GIA国际证书</td>
-							<td>￥25998.00</td>
-							<td>
-								<div class="numbox">
-									<em class="subtract">-</em>
-									<input type="text" value="1" class="num"/>
-					            	<em class="add">+</em>
-								</div>
-								<p id="inventory">库存：666</p>
-							</td>
-							<td>￥25998.00</td>
-							<td>
-								<p><a href="javascript:;">删除</a></p>
-								<p><a href="javascript:;">移到我的收藏</a></p>
-							</td>
-						</tr>
-						<tr>
 							<td><input type="checkbox" class="aCheck"/><img src="img/pro_details_pic02.jpg" alt="" /></td>
 							<td>天使之吻钻戒 女 正品钻石戒指 求结婚订婚 30分钻戒 GIA国际证书</td>
-							<td>￥25998.00</td>
+							<td>￥<i class="price">25998.50</i></td>
 							<td>
 								<div class="numbox">
 									<em class="subtract">-</em>
 									<input type="text" value="1" class="num"/>
 					            	<em class="add">+</em>
 								</div>
-								<p id="inventory">库存：<span>666</span></p>
+								<p class="inventory">库存：<i>666</i></p>
 							</td>
-							<td>￥25998.00</td>
+							<td>￥<i class="money">25998.00</i></td>
 							<td>
 								<p><a href="javascript:;">删除</a></p>
 								<p><a href="javascript:;">移到我的收藏</a></p>
@@ -235,10 +217,10 @@
 							<td><input type="checkbox" id="allCheckF"/>全选</td>
 							<td><a id="delAll" href="javascript:;">删除选中的产品</a><a id="favorites" href="javascript:;">移动到我的收藏</a></td>
 							<td></td>
-							<td>已选<i id="allNum">0</i>件商品</td>
+							<td>已选<i id="totalNum">0</i>件商品</td>
 							<td>
 								<p>
-									总价：<b>￥<i id="allPrice">91994.00</i></b>
+									总价：<b>￥<i id="totalMoney">0.00</i></b>
 								</p>
 							</td>
 							<td><a id="settlement" href="javascript:;">结算</a></td>

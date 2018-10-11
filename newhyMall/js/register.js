@@ -106,7 +106,7 @@ function register(){
 				window.location.href = "login.html";
 			}
 	    }else{
-	        alert("验证码错误");
+	        alert("验证码错误！");
 	        $("#msgCode").val("");
 	    }
 	}

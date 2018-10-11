@@ -42,6 +42,7 @@ function initPage(){
 		if(loginUser[0].loginState){
 			$("#userinfo").show();
 			$("#loginbar").hide();
+			$("#userinfo span")[0].innerHTML = loginUser[0].username;
 		}else{
 			$("#userinfo").hide();
 			$("#loginbar").show();
