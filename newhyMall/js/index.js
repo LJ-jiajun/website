@@ -16,6 +16,6 @@ loginInfo();
 function loginInfo(){
 	var loginUser = Storage.getItem("loginUser");
 	loginUser = (new Function('','return '+loginUser))();
-	console.log(loginUser);
+	// console.log(loginUser);
 }
 

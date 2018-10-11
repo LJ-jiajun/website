@@ -94,10 +94,8 @@ function register(){
 				};
 				allUser.push(newUser);
 	    		Storage.setItem("user",JSON.stringify(allUser));
-	    		console.log("注册成功！");
-		        console.log(allUser);
-	    	}else{
-	    		console.log("可以注册");
+				window.location.href = "login.html";
+			}else{
 	    		var newUser = [{
 					"username":user.username,
 					"pwd":user.pwd,
@@ -105,92 +103,12 @@ function register(){
 					"phone":user.phone
 				}];
 	    		Storage.setItem("user",JSON.stringify(newUser));
-	    		console.log("注册成功！");
-	    	}
-	        
+				window.location.href = "login.html";
+			}
 	    }else{
 	        alert("验证码错误");
 	        $("#msgCode").val("");
-//	        verifyCode.refresh();
 	    }
 	}
 }
-
-//function checkForm(){
-//	var userName = $("#username").val();
-//	var pwd = $("#password").val();
-//	var repwd = $("#repassword").val();
-//	var userEmail = $("#userEmail").val();
-//	var userPhone = $("#userPhone").val();
-//	var msgCode = $("#msgCode").val();
-//	var msgbtn = $("#msgbtn");
-//	var remember = $("#remember").val();
-//	
-//	checkUserName(userName);
-//	checkPassword(pwd);
-//	checkRepassword(repwd);
-//	checkEmail(userEmail);
-//	checkPhone(userPhone);
-//}
-
-
-
-
-//var changeCode = document.getElementById("changeCode");
-
-
-////页面加载完执行，进行初始化页面
-//$(document).ready(function(){
-//	initRegister();
-// });
-//
-//function initRegister(){
-//	//读取 localStage 本地存储，填充信息；
-//	loginUser = (new Function('','return '+Storage.getItem("loginUser")))();
-//	//console.log(users);//输出
-//	if(loginUser){
-//		if(loginUser[0].isstorePwd==true){
-//			//lacoste  已经保存 登陆信息 直接登陆  
-//	        $("#username").val(loginUser[0].loginName);
-//	        $("#password").val(loginUser[0].pwd);
-//	        document.getElementById("isRememberPwd").checked = true;
-//		}else{
-//			$("#username").val(loginUser[0].loginName);
-//		}
-//	}
-//}
-
-////刷新验证码
-//changeCode.onclick = function(){
-//	verifyCode.refresh();
-//}
-
-////点击登录按钮，进行登录验证
-//loginSubmit.click(login);
-
-//function checkLoginName(username){
-//	//分别用户名，邮箱，手机号验证登录名
-//	if(checkUserName(username)>0 || checkEmail(username)>0 || checkPhone(username)>0){
-//		return true;
-//	}else{
-//		return false;
-//	}
-//}
-
-
-
-//设置默认用户
-function setDUser(user){
-	var	dUser = [
-			{
-				"username":user.username,
-				"pwd":user.pwd,
-				"email":user.email,
-				"phone":user.phone
-			}
-		];
-	//JSON.stringify(loginUser)转化为JSON字符串
-　　	Storage.setItem("user",JSON.stringify(dUser));
-}
-	
 

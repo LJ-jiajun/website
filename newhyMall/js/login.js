@@ -3,8 +3,6 @@ var loginUser = null;
 var loginSubmit = $("#loginSubmit");
 var verifyCode = new GVerify("v_container");
 var changeCode = document.getElementById("changeCode");
-var Storage = window.localStorage;
-var allUser = (new Function('','return '+Storage.getItem("user")))();
 
 //页面加载完执行，进行初始化页面
 $(document).ready(function(){
@@ -16,7 +14,7 @@ function initLogin(){
   	loginUser = (new Function('','return '+Storage.getItem("loginUser")))();
 	//console.log(users);//输出
 	if(loginUser){
-		if(loginUser[0].loginState){
+		if( [0].loginState){
 			alert("此用户未注销，不要再次登录");
 			window.location = "index.html";
 		}
@@ -79,12 +77,19 @@ function login(){
 		//判断验证码是否正确
 	    if(verifyCode.validate(code)){
 	    	var isok = false;
+			if(!allUser){
+// 				alert("该用户未注册！");
+// 				return;
+				allUser = setDUser();
+				console.log(allUser);
+				return;
+			}
 	        for(var i=0;i<allUser.length;i++){
 				if(allUser[i].username==username||allUser[i].email==username||allUser[i].phone==username){
 					if(pwd == allUser[i].pwd){
-						console.log("登录成功！");
 						isok = true;
 						setLoginUser(i,username,isRemember);
+						window.location.href = "index.html";
 					}
 				}
 			}
@@ -99,22 +104,3 @@ function login(){
 	    }
 	}
 }
-
-//设置
-function setLoginUser(num,loginname,isRemember){
-	var	loginUser = [
-			{
-				"username":allUser[num].username,
-				"pwd":allUser[num].pwd,
-				"email":allUser[num].email,
-				"phone":allUser[num].phone,
-				"loginName":loginname,
-				"loginState":true,
-				"loginTime":new Date().getTime(),
-				"isstorePwd":isRemember
-			}
-		];
-	//JSON.stringify(loginUser)转化为JSON字符串
-　　	Storage.setItem("loginUser",JSON.stringify(loginUser));
-}
-	
