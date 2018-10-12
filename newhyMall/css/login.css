@@ -74,7 +74,8 @@
 	width: 270px;
 	margin-right: 8px;
 	font-size: 12px;
-	line-height: 50px;
+	line-height: 20px;
+	margin-top: 15px;
 }
 .loginForm .l-form-item #code{
 	width: 85px;

@@ -76,6 +76,7 @@ function getTotal(){
 			totalmoney += money;
 		}
 	}
+	console.log(totalnum,totalmoney)
 	$("#totalNum")[0].innerHTML = totalnum;
 	$("#totalMoney")[0].innerHTML = toDecimal(totalmoney,2);
 }

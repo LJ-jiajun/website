@@ -1,5 +1,6 @@
 var Storage = window.localStorage;
-var allUser = (new Function('','return '+Storage.getItem("user")))();
+console.log(Storage);
+//var allUser = (new Function('','return '+Storage.getItem("user")))();
 
 var htctcss = {top:'30px'};
 var bascss = {top:'-28px'};
