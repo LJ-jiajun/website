@@ -107,7 +107,7 @@
 	line-height: 40px;
 	color: #fff;
 	text-align: center;
-	background: #eea615;
+	background: #eea615 !important;
 	border-radius: 4px;
 	behavior: url(../ie-css3.htc);
 }

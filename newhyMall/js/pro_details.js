@@ -107,3 +107,9 @@ $(".pms-evaluat").click(function(){
 $(".evaluatBar li").click(function(){
 	$(this).addClass("active").siblings().removeClass("active");
 });
+
+
+//加入购物车
+$(".btn-cart").click(function(){
+	console.log();
+});

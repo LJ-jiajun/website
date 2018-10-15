@@ -70,10 +70,11 @@
 .registerForm .r-form-item p input{
 	float: left;
 	width: 270px;
-	margin-right: 8px;
+	height: 20px;
+	margin: 15px 8px 15px 0;
 	padding-left: 4px;
 	font-size: 12px;
-	line-height: 50px;
+	line-height: 20px;
 }
 .registerForm .r-form-item #msgCode{
 	width: 150px;
@@ -113,7 +114,7 @@
 	line-height: 40px;
 	color: #fff;
 	text-align: center;
-	background: #eea615;
+	background: #eea615 !important;
 	border-radius: 4px;
 	behavior: url(../ie-css3.htc);
 	cursor: pointer;

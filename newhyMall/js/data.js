@@ -1,21 +1,11 @@
-/* cc_52-1: {"id":52,"imgSrc":"img/ff02.jpg","titles":"银饰990足银手链女款 日韩时尚亲吻鱼圆珠转运珠足银首饰 亲吻鱼 约12g ","golding":"1688","sale":"1470","brand":"老凤祥欧美男款对戒其它8号9号10号11号12号13号14号15号16号17号18号19号","xl":19,"zh":10,"num":1,"tp":"18分I-J色SI1"},
+/* cc_52-1: {"id":52,"imgSrc":"img/pro-bracelace-pic2.jpg","titles":"银饰990足银手链女款 日韩时尚亲吻鱼圆珠转运珠足银首饰 亲吻鱼 约12g ","golding":"1688","sale":"1470","brand":"老凤祥欧美男款对戒其它8号9号10号11号12号13号14号15号16号17号18号19号","xl":19,"zh":10,"num":1,"tp":"18分I-J色SI1"},
 shopSum: "1"
 shuju: "[{"urName":"asd","urPsw":"asdfgh","urEmail":"qww@qwe.com","urPhone":"15223484216"}]"
  */
-var data = {
-	uu_0: {
-		"id": 1,
-		"imgSrc": "img/af01.jpg",
-		"titles": "银儿缘 四叶草吊坠项链批发 情侣吊坠 韩国项链 情侣一套",
-		"golding": "338",
-		"sale": "300",
-		"brand": "卡地亚甜美女款男款8号9号10号11号12号13号14号15号16号17号18号19号",
-		"xl": 15,
-		"zh": 16
-	},
+var prodataobj = {
 	uu_1: {
 		"id": 1,
-		"imgSrc": "img/af01.jpg",
+		"imgSrc": "img/pro-necklace-pic1.jpg",
 		"titles": "银儿缘 四叶草吊坠项链批发 情侣吊坠 韩国项链 情侣一套",
 		"golding": "338",
 		"sale": "300",
@@ -25,7 +15,7 @@ var data = {
 	},
 	uu_2: {
 		"id": 2,
-		"imgSrc": "img/af02.jpg",
+		"imgSrc": "img/pro-necklace-pic2.jpg",
 		"titles": "925纯银项链女吊坠日韩刻字项坠七夕情侣项链情人节礼物送男女友",
 		"golding": "168",
 		"sale": "110",
@@ -35,7 +25,7 @@ var data = {
 	},
 	uu_3: {
 		"id": 3,
-		"imgSrc": "img/af03.jpg",
+		"imgSrc": "img/pro-necklace-pic3.jpg",
 		"titles": "S925银情侣项链一对吊坠日韩学生男女创意生日礼物刻字 男黑绳+女银链",
 		"golding": "234",
 		"sale": "199",
@@ -45,7 +35,7 @@ var data = {
 	},
 	uu_4: {
 		"id": 4,
-		"imgSrc": "img/af04.jpg",
+		"imgSrc": "img/pro-necklace-pic4.jpg",
 		"titles": "项链女 日韩版S925纯银立体皇冠公主吊坠配饰 短款锁骨链送女友",
 		"golding": "200",
 		"sale": "188",
@@ -55,17 +45,17 @@ var data = {
 	},
 	uu_5: {
 		"id": 5,
-		"imgSrc": "img/af05.jpg",
+		"imgSrc": "img/pro-necklace-pic5.jpg",
 		"titles": "S925纯银天然和田白玉吊坠 清新玉兰花锁骨女款项链",
-		"golding": "1358",
-		"sale": "1100",
+		"golding": "135",
+		"sale": "110",
 		"brand": "卡地亚甜美女款男款8号9号10号11号12号13号14号15号16号17号18号19号",
 		"xl": 188,
 		"zh": 32
 	},
 	uu_6: {
 		"id": 6,
-		"imgSrc": "img/af06.jpg",
+		"imgSrc": "img/pro-necklace-pic6.jpg",
 		"titles": "柯兰黄金 999千足金 24K金马年黄金吊坠 珠宝正品",
 		"golding": "698",
 		"sale": "588",
@@ -75,7 +65,7 @@ var data = {
 	},
 	uu_7: {
 		"id": 7,
-		"imgSrc": "img/af07.jpg",
+		"imgSrc": "img/pro-necklace-pic7.jpg",
 		"titles": "柯兰钻石 18K白金钻石吊坠项链女正品专柜 浪漫",
 		"golding": "1998",
 		"sale": "1888",
@@ -85,7 +75,7 @@ var data = {
 	},
 	uu_8: {
 		"id": 8,
-		"imgSrc": "img/af08.jpg",
+		"imgSrc": "img/pro-necklace-pic8.jpg",
 		"titles": "Ttmix微镶925银项链女短款锁骨链饰品 配饰白银项链心形银饰吊坠",
 		"golding": "2988",
 		"sale": "2666",
@@ -95,7 +85,7 @@ var data = {
 	},
 	uu_9: {
 		"id": 9,
-		"imgSrc": "img/af09.jpg",
+		"imgSrc": "img/pro-necklace-pic9.jpg",
 		"titles": "正品S925银项链转运珠吊坠女时尚短款项饰路路通吊坠满天星锁骨链",
 		"golding": "698",
 		"sale": "650",
@@ -105,7 +95,7 @@ var data = {
 	},
 	uu_10: {
 		"id": 10,
-		"imgSrc": "img/af10.jpg",
+		"imgSrc": "img/pro-necklace-pic10.jpg",
 		"titles": "珂兰钻石 18K白金玫瑰金 时尚项坠吊坠女款 雅韵 ",
 		"golding": "1888",
 		"sale": "1666",
@@ -115,7 +105,7 @@ var data = {
 	},
 	uu_11: {
 		"id": 11,
-		"imgSrc": "img/bf01.jpg",
+		"imgSrc": "img/pro-bracelet-pic1.jpg",
 		"titles": "玉玲珑 精美翡翠手镯 超值特惠",
 		"golding": "738",
 		"sale": "500",
@@ -125,7 +115,7 @@ var data = {
 	},
 	uu_12: {
 		"id": 12,
-		"imgSrc": "img/bf02.jpg",
+		"imgSrc": "img/pro-bracelet-pic2.jpg",
 		"titles": "七彩云南 翡翠手镯 玉手镯 玉镯子 女士款手镯",
 		"golding": "1688",
 		"sale": "1500",
@@ -135,7 +125,7 @@ var data = {
 	},
 	uu_13: {
 		"id": 13,
-		"imgSrc": "img/bf03.jpg",
+		"imgSrc": "img/pro-bracelet-pic3.jpg",
 		"titles": "玉至峰翡翠手镯女款玉镯子冰糯种阳绿玉石手镯",
 		"golding": "2698",
 		"sale": "2000",
@@ -145,7 +135,7 @@ var data = {
 	},
 	uu_14: {
 		"id": 14,
-		"imgSrc": "img/bf04.jpg",
+		"imgSrc": "img/pro-bracelet-pic4.jpg",
 		"titles": "云润珠宝 翡翠手镯 油青绿翡翠手镯 ",
 		"golding": "1198",
 		"sale": "990",
@@ -155,7 +145,7 @@ var data = {
 	},
 	uu_15: {
 		"id": 15,
-		"imgSrc": "img/bf05.jpg",
+		"imgSrc": "img/pro-bracelet-pic5.jpg",
 		"titles": "君君美玉 翡翠手镯 柔典天然和田玉平安手镯",
 		"golding": "1388",
 		"sale": "1000",
@@ -165,7 +155,7 @@ var data = {
 	},
 	uu_16: {
 		"id": 16,
-		"imgSrc": "img/bf06.jpg",
+		"imgSrc": "img/pro-bracelet-pic6.jpg",
 		"titles": "Gogan/果敢翡翠 多款T17R缅甸翡翠手镯冰种飘花玉手镯玉镯",
 		"golding": "4338",
 		"sale": "3000",
@@ -175,7 +165,7 @@ var data = {
 	},
 	uu_17: {
 		"id": 17,
-		"imgSrc": "img/bf07.jpg",
+		"imgSrc": "img/pro-bracelet-pic7.jpg",
 		"titles": "玉至峰翡翠玉手镯女款玉镯子冰糯种飘花镯子女士玉石玉器镯子",
 		"golding": "1288",
 		"sale": "1000",
@@ -185,7 +175,7 @@ var data = {
 	},
 	uu_18: {
 		"id": 18,
-		"imgSrc": "img/bf08.jpg",
+		"imgSrc": "img/pro-bracelet-pic8.jpg",
 		"titles": "城市玉光冰种淡绿色女款玉手镯 填充石英岩玉器",
 		"golding": "1568",
 		"sale": "1200",
@@ -195,7 +185,7 @@ var data = {
 	},
 	uu_19: {
 		"id": 19,
-		"imgSrc": "img/bf09.jpg",
+		"imgSrc": "img/pro-bracelet-pic9.jpg",
 		"titles": "金一翡翠 天然满绿春带彩翡翠手镯冰糯种飘花玉手镯 水润细糯带绿",
 		"golding": "2698",
 		"sale": "2000",
@@ -205,7 +195,7 @@ var data = {
 	},
 	uu_20: {
 		"id": 20,
-		"imgSrc": "img/bf10.jpg",
+		"imgSrc": "img/pro-bracelet-pic10.jpg",
 		"titles": "玉至峰缅甸翡翠手镯女款玉镯子冰糯种飘花玉石手镯",
 		"golding": "2358",
 		"sale": "2000",
@@ -215,7 +205,7 @@ var data = {
 	},
 	uu_21: {
 		"id": 21,
-		"imgSrc": "img/cf01.jpg",
+		"imgSrc": "img/pro-bracelet-pic1.jpg",
 		"titles": "钻戒 白18K金钻石戒指 钻戒女 铂金订制婚戒",
 		"golding": "19999",
 		"sale": "17999",
@@ -225,7 +215,7 @@ var data = {
 	},
 	uu_22: {
 		"id": 22,
-		"imgSrc": "img/cf02.jpg",
+		"imgSrc": "img/pro-bracelet-pic2.jpg",
 		"titles": "钻戒钻石结婚女戒求婚戒指",
 		"golding": "16888",
 		"sale": "14999",
@@ -235,7 +225,7 @@ var data = {
 	},
 	uu_23: {
 		"id": 23,
-		"imgSrc": "img/cf03.jpg",
+		"imgSrc": "img/pro-bracelet-pic3.jpg",
 		"titles": "通灵珠宝 女伯爵18K金钻石戒指女 求婚戒指 钻戒女戒",
 		"golding": "25698",
 		"sale": "18999",
@@ -245,7 +235,7 @@ var data = {
 	},
 	uu_24: {
 		"id": 24,
-		"imgSrc": "img/cf04.jpg",
+		"imgSrc": "img/pro-bracelet-pic4.jpg",
 		"titles": "星愿钻石戒指 18K金结婚钻戒女戒 婚戒 求婚戒指 礼物 ",
 		"golding": "11998",
 		"sale": "9999",
@@ -255,7 +245,7 @@ var data = {
 	},
 	uu_25: {
 		"id": 25,
-		"imgSrc": "img/cf05.jpg",
+		"imgSrc": "img/pro-bracelet-pic5.jpg",
 		"titles": "钻戒女18K金钻石戒指 婚戒铂金裸钻定制 克拉女戒 天使之吻 ",
 		"golding": "13880",
 		"sale": "11199",
@@ -265,7 +255,7 @@ var data = {
 	},
 	uu_26: {
 		"id": 26,
-		"imgSrc": "img/cf06.jpg",
+		"imgSrc": "img/pro-bracelet-pic6.jpg",
 		"titles": "纯铂纯爱系列 18K金/PT950钻石对戒 定制钻石对戒铂金结婚钻戒",
 		"golding": "59998",
 		"sale": "51999",
@@ -275,7 +265,7 @@ var data = {
 	},
 	uu_27: {
 		"id": 27,
-		"imgSrc": "img/cf07.jpg",
+		"imgSrc": "img/pro-bracelet-pic7.jpg",
 		"titles": "18K金钻石戒指 30分D色求婚订婚结婚钻戒女款",
 		"golding": "12880",
 		"sale": "11999",
@@ -285,7 +275,7 @@ var data = {
 	},
 	uu_28: {
 		"id": 28,
-		"imgSrc": "img/cf08.jpg",
+		"imgSrc": "img/pro-bracelet-pic8.jpg",
 		"titles": "钻戒白18K金钻石戒指女款 铂金求婚结婚戒指 玫瑰情事",
 		"golding": "15998",
 		"sale": "14999",
@@ -295,7 +285,7 @@ var data = {
 	},
 	uu_29: {
 		"id": 29,
-		"imgSrc": "img/cf09.jpg",
+		"imgSrc": "img/pro-bracelet-pic9.jpg",
 		"titles": "心爱钻戒 结婚钻石戒指女 情侣对戒女款 婚戒求婚戒指",
 		"golding": "26698",
 		"sale": "15999",
@@ -305,7 +295,7 @@ var data = {
 	},
 	uu_30: {
 		"id": 30,
-		"imgSrc": "img/cf10.jpg",
+		"imgSrc": "img/pro-bracelet-pic10.jpg",
 		"titles": "18K金钻石戒指天蝎座求婚订婚结婚钻戒",
 		"golding": "23888",
 		"sale": "19999",
@@ -315,7 +305,7 @@ var data = {
 	},
 	uu_31: {
 		"id": 31,
-		"imgSrc": "img/df01.jpg",
+		"imgSrc": "img/pro-pendant-pic1.jpg",
 		"titles": "银儿缘 四叶草吊坠项链批发 情侣吊坠韩国项链 情侣一套",
 		"golding": "2398",
 		"sale": "2000",
@@ -325,7 +315,7 @@ var data = {
 	},
 	uu_32: {
 		"id": 32,
-		"imgSrc": "img/df02.jpg",
+		"imgSrc": "img/pro-pendant-pic2.jpg",
 		"titles": "珂兰钻石18K金约50分彩宝红宝石镶嵌凤凰吊坠 C凤求凰",
 		"golding": "2398",
 		"sale": "2000",
@@ -335,7 +325,7 @@ var data = {
 	},
 	uu_33: {
 		"id": 33,
-		"imgSrc": "img/df03.jpg",
+		"imgSrc": "img/pro-pendant-pic3.jpg",
 		"titles": "珂兰黄金 999千足金 24K金马年黄金吊坠 珠宝正品 H龙凤平安扣 ",
 		"golding": "1998",
 		"sale": "2000",
@@ -345,7 +335,7 @@ var data = {
 	},
 	uu_34: {
 		"id": 34,
-		"imgSrc": "img/df04.jpg",
+		"imgSrc": "img/pro-pendant-pic4.jpg",
 		"titles": "戴欧妮DiONLY 18K白金南非钻钻石吊坠 女士白金吊坠 天使之约 挂坠 项链",
 		"golding": "698",
 		"sale": "500",
@@ -355,7 +345,7 @@ var data = {
 	},
 	uu_35: {
 		"id": 35,
-		"imgSrc": "img/df05.jpg",
+		"imgSrc": "img/pro-pendant-pic5.jpg",
 		"titles": "S925纯银天然和田白玉项链吊坠 清新玉兰花锁骨女款项链",
 		"golding": "1388",
 		"sale": "1110",
@@ -365,7 +355,7 @@ var data = {
 	},
 	uu_36: {
 		"id": 36,
-		"imgSrc": "img/df06.jpg",
+		"imgSrc": "img/pro-pendant-pic6.jpg",
 		"titles": "Ttmix锁骨链简约短款 衣服配饰项链银饰品满钻吊坠925银项链 女款",
 		"golding": "988",
 		"sale": "880",
@@ -375,7 +365,7 @@ var data = {
 	},
 	uu_37: {
 		"id": 37,
-		"imgSrc": "img/df07.jpg",
+		"imgSrc": "img/pro-pendant-pic7.jpg",
 		"titles": "Ttmix微镶925银项链女短款锁骨链饰品 配饰白银项链心形银饰吊坠",
 		"golding": "1678",
 		"sale": "1500",
@@ -385,7 +375,7 @@ var data = {
 	},
 	uu_38: {
 		"id": 38,
-		"imgSrc": "img/df08.jpg",
+		"imgSrc": "img/pro-pendant-pic8.jpg",
 		"titles": "天然和田玉玉兰花吊坠 玉质细腻柔润白",
 		"golding": "3298",
 		"sale": "3000",
@@ -395,7 +385,7 @@ var data = {
 	},
 	uu_39: {
 		"id": 39,
-		"imgSrc": "img/df09.jpg",
+		"imgSrc": "img/pro-pendant-pic9.jpg",
 		"titles": "吊坠男女款项链和田玉吊坠 玉石情侣皮丘吊坠挂件项链送朋友礼物",
 		"golding": "1988",
 		"sale": "1800",
@@ -405,7 +395,7 @@ var data = {
 	},
 	uu_40: {
 		"id": 40,
-		"imgSrc": "img/df10.jpg",
+		"imgSrc": "img/pro-pendant-pic10.jpg",
 		"titles": "豫华冠 翡翠玉石吊坠 男款冰糯种带翠手工雕刻净瓶观音 翡翠玉器",
 		"golding": "2898",
 		"sale": "2000",
@@ -415,7 +405,7 @@ var data = {
 	},
 	uu_41: {
 		"id": 41,
-		"imgSrc": "img/ef01.jpg",
+		"imgSrc": "img/pro-earrings-pic1.jpg",
 		"titles": "千足珠宝珊妮正圆光洁强光7.5mm淡水珍珠银耳钉耳饰OL 白色 7.5-8mm",
 		"golding": "128",
 		"sale": "99",
@@ -425,7 +415,7 @@ var data = {
 	},
 	uu_42: {
 		"id": 42,
-		"imgSrc": "img/ef02.jpg",
+		"imgSrc": "img/pro-earrings-pic2.jpg",
 		"titles": "明星同款 韩国太阳后裔纯银套装吊坠耳钉戒指时尚爆款 耳饰",
 		"golding": "988",
 		"sale": "888",
@@ -435,7 +425,7 @@ var data = {
 	},
 	uu_43: {
 		"id": 43,
-		"imgSrc": "img/ef03.jpg",
+		"imgSrc": "img/pro-earrings-pic3.jpg",
 		"titles": "千足珍珠雅韵8-8.5mm正圆强光淡水珍珠耳饰 白色 8-8.5mm巧韵系列 经典大气 大牌设计",
 		"golding": "3998",
 		"sale": "3666",
@@ -445,7 +435,7 @@ var data = {
 	},
 	uu_44: {
 		"id": 44,
-		"imgSrc": "img/ef04.jpg",
+		"imgSrc": "img/pro-earrings-pic4.jpg",
 		"titles": "千足珍珠 贝悦 圆形强光7-7.5mm 珍珠银耳饰 白色 7-7.5mm",
 		"golding": "898",
 		"sale": "788",
@@ -455,7 +445,7 @@ var data = {
 	},
 	uu_45: {
 		"id": 45,
-		"imgSrc": "img/ef05.jpg",
+		"imgSrc": "img/pro-earrings-pic5.jpg",
 		"titles": "千足珠宝福沁正圆光洁强光9mm淡水珍珠18k金耳钉耳饰 18K黄金白色珍珠 9mm【中国风 复古镂空范】",
 		"golding": "1398",
 		"sale": "1188",
@@ -465,7 +455,7 @@ var data = {
 	},
 	uu_46: {
 		"id": 46,
-		"imgSrc": "img/ef06.jpg",
+		"imgSrc": "img/pro-earrings-pic6.jpg",
 		"titles": "千足珍珠宛瑶4-4.5mm小珠圆润强光珍珠流苏耳饰耳钉 白色 4-4.5mm清新风情",
 		"golding": "1898",
 		"sale": "1666",
@@ -475,7 +465,7 @@ var data = {
 	},
 	uu_47: {
 		"id": 47,
-		"imgSrc": "img/ef07.jpg",
+		"imgSrc": "img/pro-earrings-pic7.jpg",
 		"titles": "千足珠宝“星辰”系列耳饰近圆强光淡水珍珠耳饰潮搭 白色3-3.5/3.5-4/4-4.5mm",
 		"golding": "2288",
 		"sale": "1999",
@@ -485,7 +475,7 @@ var data = {
 	},
 	uu_48: {
 		"id": 48,
-		"imgSrc": "img/ef08.jpg",
+		"imgSrc": "img/pro-earrings-pic8.jpg",
 		"titles": "千足嬅茵正圆光洁9-9.5mm淡水珍珠耳饰18K金配件宝石款耳饰坠 白色8.5-9mm匹配佳 时尚珠宝 18K金",
 		"golding": "1598",
 		"sale": "1398",
@@ -495,7 +485,7 @@ var data = {
 	},
 	uu_49: {
 		"id": 49,
-		"imgSrc": "img/ef09.jpg",
+		"imgSrc": "img/pro-earrings-pic9.jpg",
 		"titles": "金一翡翠 天然满绿春带彩翡翠手镯冰糯种飘花玉手镯 水润细糯带绿",
 		"golding": "2698",
 		"sale": "2666",
@@ -505,7 +495,7 @@ var data = {
 	},
 	uu_50: {
 		"id": 50,
-		"imgSrc": "img/ef10.jpg",
+		"imgSrc": "img/pro-earrings-pic10.jpg",
 		"titles": "千足珍珠 蝶滢 正圆强亮光洁9-9.5mm淡水珍珠耳饰18K金配件耳饰 白18K金 9-9.5mm",
 		"golding": "1858",
 		"sale": "1788",
@@ -515,7 +505,7 @@ var data = {
 	},
 	uu_51: {
 		"id": 51,
-		"imgSrc": "img/ff01.jpg",
+		"imgSrc": "img/pro-bracelace-pic1.jpg",
 		"titles": "天然粉晶手链 单圈女款手串生日礼物",
 		"golding": "1989",
 		"sale": "1700",
@@ -525,7 +515,7 @@ var data = {
 	},
 	uu_52: {
 		"id": 52,
-		"imgSrc": "img/ff02.jpg",
+		"imgSrc": "img/pro-bracelace-pic2.jpg",
 		"titles": "银饰990足银手链女款 日韩时尚亲吻鱼圆珠转运珠足银首饰 亲吻鱼 约12g ",
 		"golding": "1688",
 		"sale": "1470",
@@ -535,7 +525,7 @@ var data = {
 	},
 	uu_53: {
 		"id": 53,
-		"imgSrc": "img/ff03.jpg",
+		"imgSrc": "img/pro-bracelace-pic3.jpg",
 		"titles": "精美时尚手链 足银女款甜美时尚简约百搭",
 		"golding": "2698",
 		"sale": "2000",
@@ -545,7 +535,7 @@ var data = {
 	},
 	uu_54: {
 		"id": 54,
-		"imgSrc": "img/ff04.jpg",
+		"imgSrc": "img/pro-bracelace-pic4.jpg",
 		"titles": "客瑞思四叶草925纯银手链女款采用施华洛世奇元素新款简约甜美森系学生日韩版时尚饰品生日礼物 简约款白四叶草手链，送香皂花礼盒",
 		"golding": "1998",
 		"sale": "1700",
@@ -555,7 +545,7 @@ var data = {
 	},
 	uu_55: {
 		"id": 55,
-		"imgSrc": "img/ff05.jpg",
+		"imgSrc": "img/pro-bracelace-pic5.jpg",
 		"titles": "客瑞思S925手链女纯银新款学生女士纯银手链银首饰日韩版气质简约情侣饰品手饰送女友生日礼物 红色纯银女士手链 代写贺卡，精美礼盒包装，玫瑰礼盒，七天无理由退货",
 		"golding": "1388",
 		"sale": "1100",
@@ -565,7 +555,7 @@ var data = {
 	},
 	uu_56: {
 		"id": 56,
-		"imgSrc": "img/ff06.jpg",
+		"imgSrc": "img/pro-bracelace-pic6.jpg",
 		"titles": "客瑞思 S925纯银手链女款简约新款女士手链女纯银韩版学生时尚甜美闺蜜手饰品送女友生日礼物纯银女士手链 代写贺卡，精美礼盒包装，玫瑰礼盒，送证书",
 		"golding": "5998",
 		"sale": "4000",
@@ -575,7 +565,7 @@ var data = {
 	},
 	uu_57: {
 		"id": 57,
-		"imgSrc": "img/ff07.jpg",
+		"imgSrc": "img/pro-bracelace-pic7.jpg",
 		"titles": "Ttmix小懒猫925银手链 女韩版装饰简约多层时尚银饰品 淑女配饰",
 		"golding": "1288",
 		"sale": "1000",
@@ -585,7 +575,7 @@ var data = {
 	},
 	uu_58: {
 		"id": 58,
-		"imgSrc": "img/ff08.jpg",
+		"imgSrc": "img/pro-bracelace-pic8.jpg",
 		"titles": "真唯爱 925银手链 蝴蝶翩翩 女时尚韩版姐妹手链闺蜜饰品生日礼物",
 		"golding": "1598",
 		"sale": "1400",
@@ -595,7 +585,7 @@ var data = {
 	},
 	uu_59: {
 		"id": 59,
-		"imgSrc": "img/ff09.jpg",
+		"imgSrc": "img/pro-bracelace-pic9.jpg",
 		"titles": "金海湾银楼 正品925银手链女 异地恋时尚简约韩版饰品首饰银饰送女友礼物手环",
 		"golding": "2698",
 		"sale": "2000",
@@ -605,7 +595,7 @@ var data = {
 	},
 	uu_60: {
 		"id": 60,
-		"imgSrc": "img/ff10.jpg",
+		"imgSrc": "img/pro-bracelace-pic10.jpg",
 		"titles": "真唯爱 925银手链 新款时尚女韩版三生恋饰品配饰手链子手镯",
 		"golding": "2388",
 		"sale": "2000",
@@ -615,7 +605,7 @@ var data = {
 	},
 	uu_61: {
 		"id": 61,
-		"imgSrc": "img/hot01.jpg",
+		"imgSrc": "img/index-hotpro01.jpg",
 		"titles": "白银 纯银吊坠项链 高25cm宽17cm 重2.3克",
 		"golding": "338",
 		"sale": "300",
@@ -625,7 +615,7 @@ var data = {
 	},
 	uu_62: {
 		"id": 62,
-		"imgSrc": "img/hot02.jpg",
+		"imgSrc": "img/index-hotpro02.jpg",
 		"titles": "千禧珠宝 珍珠吊坠 12-13 珍珠吊坠 淡水 925银托",
 		"golding": "120",
 		"sale": "100",
@@ -635,7 +625,7 @@ var data = {
 	},
 	uu_63: {
 		"id": 63,
-		"imgSrc": "img/hot03.jpg",
+		"imgSrc": "img/index-hotpro03.jpg",
 		"titles": "皇冠开口银手镯 999纯银 女友生日礼物光面足银手环",
 		"golding": "212",
 		"sale": "200",
@@ -645,7 +635,7 @@ var data = {
 	},
 	uu_64: {
 		"id": 64,
-		"imgSrc": "img/hot04.jpg",
+		"imgSrc": "img/index-hotpro04.jpg",
 		"titles": "渭塘宝缘阁珠宝 凤玺款淡水珍珠吊坠 12-13mm 珍珠",
 		"golding": "380",
 		"sale": "350",
@@ -655,7 +645,7 @@ var data = {
 	},
 	uu_65: {
 		"id": 65,
-		"imgSrc": "img/hot05.jpg",
+		"imgSrc": "img/index-hotpro05.jpg",
 		"titles": "蓝宝石 s925银蓝宝石（天鹅）吊坠 胸针 ",
 		"golding": "2200",
 		"sale": "2088",
@@ -665,7 +655,7 @@ var data = {
 	},
 	uu_66: {
 		"id": 66,
-		"imgSrc": "img/hot06.jpg",
+		"imgSrc": "img/index-hotpro06.jpg",
 		"titles": "德玉福玉器 和田玉 山水图",
 		"golding": "3000",
 		"sale": "2888",

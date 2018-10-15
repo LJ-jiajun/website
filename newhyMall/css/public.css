@@ -129,14 +129,14 @@
 	overflow: hidden;
 }
 .hm-search .hms-txt{
-	width: 502px;
-	height: 40px;
+	width: 463px;
+	height: 36px;
 	padding: 0 5px 0 30px;
 	font-size: 12px;
+	line-height: 36px;
 	color: #ccc;
 	background: url(../img/icon-search.png) no-repeat 10px center;
 	border: 2px solid #eea615;
-	box-sizing: border-box;
 }
 .hm-search .hms-txt::-webkit-input-placeholder { /* WebKit browsers */
 	color: #ccc;

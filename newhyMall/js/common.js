@@ -1,11 +1,17 @@
 var Storage = window.localStorage;
 console.log(Storage);
-//var allUser = (new Function('','return '+Storage.getItem("user")))();
+var allUser = (new Function('','return '+Storage.getItem("user")))();
+
+var navas = $('.nav li a');
+for(var i=1;i<navas.length;i++){
+	navas[i].href = "shop_list.html";
+}
 
 var htctcss = {top:'30px'};
 var bascss = {top:'-28px'};
 $(".htct").click(function(){
-	setTimeout(htctMove(this),100);
+	var that = this;
+	setTimeout(htctMove(that),100);
 });
 
 function htctMove(t){
@@ -18,24 +24,26 @@ function htctMove(t){
     }
     $(t).next().animate(htctcss,1000);
 }
-
-$(".hbpc-title").mouseover(function(){
-	$(".hbpc-list").show();
-	event.stopPropagation();
-	$(".hbpc-list").click(function(){
-		$(this).show();
-		event.stopPropagation();
-	});
-});
+var onoff = true;
 
 $("body").click(function(){
-	$(".hbpc-list").hide();
+	if(onoff){
+		$(".hbpc-list").hide();
+	}
+});
+$(".hbpc-title").mouseover(function(){
+	$(".hbpc-list").show();
+});
+$(".hbpc-list").mouseenter(function(){
+	onoff = false;
+});
+$(".hbpc-list").mouseleave(function(){
+	onoff = true;
 });
 
 $('#user_exit').click(exit);
 
 initPage();
-
 function initPage(){
 	//读取localStage本地存储，获取信息；
 	var loginUser = (new Function('','return '+Storage.getItem("loginUser")))();
@@ -92,7 +100,6 @@ function exit(){
 	initPage();
 	console.log("注销成功");
 }
-
 //设置默认用户
 function setDUser(){
 	var	dUser = [
