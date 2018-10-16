@@ -43,8 +43,8 @@ $(".hbpc-list").mouseleave(function(){
 
 $('#user_exit').click(exit);
 
-initUser();
-function initUser(){
+initCommon();
+function initCommon(){
 	//读取localStage本地存储，获取信息；
 	var loginUser = (new Function('','return '+Storage.getItem("loginUser")))();
 	if(loginUser){
@@ -61,7 +61,14 @@ function initUser(){
 		$("#loginbar").show();
 	}
 	
-	
+	var shopCartProes = (new Function('','return '+Storage.getItem("shopcart")))();
+	var shopCartNum = 0;
+	if(shopCartProes){
+		for(var i=0;i<shopCartProes.length;i++){
+			shopCartNum += Number(shopCartProes[i].num);
+		}
+	}
+	$('#pro-num').html(shopCartNum);
 }
 
 //存储用户登录信息
