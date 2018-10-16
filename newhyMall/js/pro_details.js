@@ -113,3 +113,5 @@ $(".evaluatBar li").click(function(){
 $(".btn-cart").click(function(){
 	console.log();
 });
+
+

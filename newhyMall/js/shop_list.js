@@ -97,3 +97,37 @@ function IWS_CheckDecimal(obj) {
         IWS_CheckDecimal(obj);
     }
 }
+
+initPro();
+function initPro(){
+	var search = window.location.search;
+	if(search){
+		search=search.split("protype=")[1];
+	}else{
+		window.location.search = "protype=1";
+		search=1;
+	}
+	
+	if(){
+		
+	}
+	
+	
+	var data = {};
+	var str = "";
+	for(var attr in prodataobj){
+		if(prodataobj[attr].id>(search-1)*10 && prodataobj[attr].id<=(search*10)){
+			data[attr] = prodataobj[attr];
+			str += '<li>' +
+						'<a href="pro_details.html?protype=1#pro='+attr+'">' +
+							'<img src="'+prodataobj[attr].imgSrc+'" alt="" />' +
+							'<span class="prodesc" title="ring2">'+prodataobj[attr].titles+'</span>' +
+							'<i>&yen;<em class="proprice" >'+prodataobj[attr].golding+'</em>.00</i>' +
+							'<b>'+prodataobj[attr].titles+'</b>' +
+						'</a>' +
+					'</li>';
+		}
+	}
+	$(".pro-list").html(str);
+	console.log(data);
+}
