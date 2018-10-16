@@ -108,10 +108,71 @@ $(".evaluatBar li").click(function(){
 	$(this).addClass("active").siblings().removeClass("active");
 });
 
-
+var proObj = {};
 //加入购物车
 $(".btn-cart").click(function(){
-	console.log();
+	proObj.num = $('.num').val();
+	setShopCartPro(proObj);
 });
 
+initProDetails();
+function initProDetails(){
+	var search = window.location.search;
+	var hash = window.location.hash;
+	if(search){
+		search=search.split("protype=")[1];
+	}else{
+		window.location.search = "protype=1";
+		search=1;
+	}
+	if(hash){
+		hash=hash.split("pro=")[1];
+	}else{
+		window.location.hash = "pro=1";
+		hash=1;
+	}
+	
+	var navs = $('.nav li');
+	for(var i=0;i<navs.length;i++){
+		if(i==search){
+			console.log(i)
+			$(navs[i]).addClass('current').siblings('li').removeClass('current');
+		}
+	}
+	
+	var data = {};
+	for(var attr in prodataobj){
+		if(prodataobj[attr].id == hash){
+			proObj = prodataobj[attr];
+			data[attr] = prodataobj[attr];
+			$('.proImg').attr("src",prodataobj[attr].imgSrc);
+			$('.pro-name').html(prodataobj[attr].titles);
+			$('.pro-name').attr("proid",prodataobj[attr].id);
+			$('.golding').html(prodataobj[attr].golding);
+			$('.sale').html(prodataobj[attr].sale);
+		}
+	}
+//	console.log(data);
+}
 
+
+//设置默认用户
+function setShopCartPro(obj){
+	var shopCartProes = (new Function('','return '+Storage.getItem("shopcart")))();
+	var isit = true;
+	if(shopCartProes){
+		for(var i=0;i<shopCartProes.length;i++){
+			if(shopCartProes[i].id == obj.id){
+				shopCartProes[i].num = Number(shopCartProes[i].num) + Number(obj.num);
+				isit = false;
+			}
+		}
+		if(isit){
+			shopCartProes.push(obj);
+		}
+	}else{
+		shopCartProes = [obj];
+	}
+//		console.log(shopCartProes);
+　Storage.setItem("shopcart",JSON.stringify(shopCartProes));
+}

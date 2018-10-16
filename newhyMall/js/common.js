@@ -4,7 +4,7 @@ var allUser = (new Function('','return '+Storage.getItem("user")))();
 
 var navas = $('.nav li a');
 for(var i=1;i<navas.length;i++){
-	navas[i].href = "shop_list.html";
+	navas[i].href = "shop_list.html?protype="+i;
 }
 
 var htctcss = {top:'30px'};
@@ -43,8 +43,8 @@ $(".hbpc-list").mouseleave(function(){
 
 $('#user_exit').click(exit);
 
-initPage();
-function initPage(){
+initUser();
+function initUser(){
 	//读取localStage本地存储，获取信息；
 	var loginUser = (new Function('','return '+Storage.getItem("loginUser")))();
 	if(loginUser){
@@ -60,6 +60,8 @@ function initPage(){
 		$("#userinfo").hide();
 		$("#loginbar").show();
 	}
+	
+	
 }
 
 //存储用户登录信息

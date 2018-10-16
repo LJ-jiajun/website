@@ -205,7 +205,7 @@ var prodataobj = {
 	},
 	uu_21: {
 		"id": 21,
-		"imgSrc": "img/pro-bracelet-pic1.jpg",
+		"imgSrc": "img/pro-ring-pic1.jpg",
 		"titles": "钻戒 白18K金钻石戒指 钻戒女 铂金订制婚戒",
 		"golding": "19999",
 		"sale": "17999",
@@ -215,7 +215,7 @@ var prodataobj = {
 	},
 	uu_22: {
 		"id": 22,
-		"imgSrc": "img/pro-bracelet-pic2.jpg",
+		"imgSrc": "img/pro-ring-pic2.jpg",
 		"titles": "钻戒钻石结婚女戒求婚戒指",
 		"golding": "16888",
 		"sale": "14999",
@@ -225,7 +225,7 @@ var prodataobj = {
 	},
 	uu_23: {
 		"id": 23,
-		"imgSrc": "img/pro-bracelet-pic3.jpg",
+		"imgSrc": "img/pro-ring-pic3.jpg",
 		"titles": "通灵珠宝 女伯爵18K金钻石戒指女 求婚戒指 钻戒女戒",
 		"golding": "25698",
 		"sale": "18999",
@@ -235,7 +235,7 @@ var prodataobj = {
 	},
 	uu_24: {
 		"id": 24,
-		"imgSrc": "img/pro-bracelet-pic4.jpg",
+		"imgSrc": "img/pro-ring-pic4.jpg",
 		"titles": "星愿钻石戒指 18K金结婚钻戒女戒 婚戒 求婚戒指 礼物 ",
 		"golding": "11998",
 		"sale": "9999",
@@ -245,7 +245,7 @@ var prodataobj = {
 	},
 	uu_25: {
 		"id": 25,
-		"imgSrc": "img/pro-bracelet-pic5.jpg",
+		"imgSrc": "img/pro-ring-pic5.jpg",
 		"titles": "钻戒女18K金钻石戒指 婚戒铂金裸钻定制 克拉女戒 天使之吻 ",
 		"golding": "13880",
 		"sale": "11199",
@@ -255,7 +255,7 @@ var prodataobj = {
 	},
 	uu_26: {
 		"id": 26,
-		"imgSrc": "img/pro-bracelet-pic6.jpg",
+		"imgSrc": "img/pro-ring-pic6.jpg",
 		"titles": "纯铂纯爱系列 18K金/PT950钻石对戒 定制钻石对戒铂金结婚钻戒",
 		"golding": "59998",
 		"sale": "51999",
@@ -265,7 +265,7 @@ var prodataobj = {
 	},
 	uu_27: {
 		"id": 27,
-		"imgSrc": "img/pro-bracelet-pic7.jpg",
+		"imgSrc": "img/pro-ring-pic7.jpg",
 		"titles": "18K金钻石戒指 30分D色求婚订婚结婚钻戒女款",
 		"golding": "12880",
 		"sale": "11999",
@@ -275,7 +275,7 @@ var prodataobj = {
 	},
 	uu_28: {
 		"id": 28,
-		"imgSrc": "img/pro-bracelet-pic8.jpg",
+		"imgSrc": "img/pro-ring-pic8.jpg",
 		"titles": "钻戒白18K金钻石戒指女款 铂金求婚结婚戒指 玫瑰情事",
 		"golding": "15998",
 		"sale": "14999",
@@ -285,7 +285,7 @@ var prodataobj = {
 	},
 	uu_29: {
 		"id": 29,
-		"imgSrc": "img/pro-bracelet-pic9.jpg",
+		"imgSrc": "img/pro-ring-pic9.jpg",
 		"titles": "心爱钻戒 结婚钻石戒指女 情侣对戒女款 婚戒求婚戒指",
 		"golding": "26698",
 		"sale": "15999",
@@ -295,7 +295,7 @@ var prodataobj = {
 	},
 	uu_30: {
 		"id": 30,
-		"imgSrc": "img/pro-bracelet-pic10.jpg",
+		"imgSrc": "img/pro-ring-pic10.jpg",
 		"titles": "18K金钻石戒指天蝎座求婚订婚结婚钻戒",
 		"golding": "23888",
 		"sale": "19999",

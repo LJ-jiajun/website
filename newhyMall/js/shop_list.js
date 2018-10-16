@@ -98,8 +98,8 @@ function IWS_CheckDecimal(obj) {
     }
 }
 
-initPro();
-function initPro(){
+initProlist();
+function initProlist(){
 	var search = window.location.search;
 	if(search){
 		search=search.split("protype=")[1];
@@ -108,18 +108,43 @@ function initPro(){
 		search=1;
 	}
 	
-	if(){
-		
+//	if(){
+//		
+//	}
+	var protype = '';
+	switch (Number(search)){
+		case 1:protype="项链";
+			break;
+		case 2:protype="手镯";
+			break;
+		case 3:protype="戒指";
+			break;
+		case 4:protype="吊坠";
+			break;
+		case 5:protype="耳饰";
+			break;
+		case 6:protype="手链";
+			break;
+		default:
+			break;
 	}
+	console.log(protype);
+	$('#protype').html(protype);
 	
-	
+	var navs = $('.nav li');
+	for(var i=0;i<navs.length;i++){
+		if(i==search){
+			console.log(i)
+			$(navs[i]).addClass('current').siblings('li').removeClass('current');
+		}
+	}
 	var data = {};
 	var str = "";
 	for(var attr in prodataobj){
 		if(prodataobj[attr].id>(search-1)*10 && prodataobj[attr].id<=(search*10)){
 			data[attr] = prodataobj[attr];
 			str += '<li>' +
-						'<a href="pro_details.html?protype=1#pro='+attr+'">' +
+						'<a href="pro_details.html?protype='+search+'#pro='+prodataobj[attr].id+'">' +
 							'<img src="'+prodataobj[attr].imgSrc+'" alt="" />' +
 							'<span class="prodesc" title="ring2">'+prodataobj[attr].titles+'</span>' +
 							'<i>&yen;<em class="proprice" >'+prodataobj[attr].golding+'</em>.00</i>' +
