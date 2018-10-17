@@ -1,8 +1,69 @@
 
+initShopCart();
+function initShopCart(){
+	var shopCartProes = (new Function('','return '+Storage.getItem("shopcart")))();
+	var str = '';
+	var shopcartnum = 0;
+	if(shopCartProes){
+		for(var i=0;i<shopCartProes.length;i++){
+			str += '<tr>' +
+						'<td><input type="checkbox" class="aCheck"/><img src="'+shopCartProes[i].imgSrc+'" alt="" /></td>' +
+						'<td>'+shopCartProes[i].titles+'</td>' +
+						'<td>￥<i class="price">'+shopCartProes[i].sale+'.00</i></td>' +
+						'<td>' +
+							'<div class="numbox">' +
+								'<em class="subtract">-</em>' +
+								'<input type="text" value="'+shopCartProes[i].num+'" class="num"/>' +
+				            	'<em class="add">+</em>' +
+							'</div>' +
+							'<p class="inventory">库存：<i>666</i></p>' +
+						'</td>' +
+						'<td>￥<i class="money">'+(Number(shopCartProes[i].sale)*Number(shopCartProes[i].num)) +'.00</i></td>' +
+						'<td>' +
+							'<p><a class="del" name="'+shopCartProes[i].id+'" href="javascript:;">删除</a></p>' +
+							'<p><a class="favorite" href="javascript:;">移到我的收藏</a></p>' +
+						'</td>' +
+					'</tr>';
+			shopcartnum += Number(shopCartProes[i].num);
+		}
+	}
+	if(shopcartnum==0){
+		shopcartnum="";
+	}
+	$('#shopcartnum').html(shopcartnum);
+	$('#shopcart').html(str);
+}
+
 var isAll = true;
 var allcheckh = document.getElementById("allCheckH");
 var allcheckf = document.getElementById("allCheckF");
+var dels = $('.del');
 var aChecks = $(".aCheck");
+
+dels.click(function(){
+	
+})
+
+delShopCartPro();
+function delShopCartPro(){
+	var shopCartProes = (new Function('','return '+Storage.getItem("shopcart")))();
+	var isit = true;
+	if(shopCartProes){
+		for(var i=0;i<shopCartProes.length;i++){
+			if(shopCartProes[i].id == obj.id){
+				shopCartProes[i].num = Number(shopCartProes[i].num) + Number(obj.num);
+				isit = false;
+			}
+		}
+		if(isit){
+			shopCartProes.push(obj);
+		}
+	}else{
+		shopCartProes = [obj];
+	}
+//		console.log(shopCartProes);
+　	Storage.setItem("shopcart",JSON.stringify(shopCartProes));
+}
 
 allcheckh.onclick = function(){
 	allCheck();
@@ -13,7 +74,6 @@ allcheckf.onclick = function(){
 	getTotal();
 }
 aChecks.click(function(){
-//	aChecks = $(".aCheck");
 	aCheck(this);
 	getTotal();
 });
@@ -96,7 +156,6 @@ function getTotal(){
 			totalmoney += money;
 		}
 	}
-//	console.log(totalnum,totalmoney)
 	$("#totalNum")[0].innerHTML = totalnum;
 	$("#totalMoney")[0].innerHTML = toDecimal(totalmoney,2);
 }
@@ -131,3 +190,5 @@ function toDecimal(x,n){
 	} 
 	return s; 
 } 
+
+

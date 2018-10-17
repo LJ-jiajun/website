@@ -108,9 +108,6 @@ function initProlist(){
 		search=1;
 	}
 	
-//	if(){
-//		
-//	}
 	var protype = '';
 	switch (Number(search)){
 		case 1:protype="项链";

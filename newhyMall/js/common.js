@@ -69,6 +69,8 @@ function initCommon(){
 		}
 	}
 	$('#pro-num').html(shopCartNum);
+	
+	$('.hmsc-cart').attr('href','shop_cart.html');
 }
 
 //存储用户登录信息

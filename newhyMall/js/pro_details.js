@@ -113,6 +113,7 @@ var proObj = {};
 $(".btn-cart").click(function(){
 	proObj.num = $('.num').val();
 	setShopCartPro(proObj);
+	window.location.href = "shop_cart.html";
 });
 
 initProDetails();
@@ -148,8 +149,8 @@ function initProDetails(){
 			$('.proImg').attr("src",prodataobj[attr].imgSrc);
 			$('.pro-name').html(prodataobj[attr].titles);
 			$('.pro-name').attr("proid",prodataobj[attr].id);
-			$('.golding').html(prodataobj[attr].golding);
-			$('.sale').html(prodataobj[attr].sale);
+			$('.golding').html(prodataobj[attr].golding+".00");
+			$('.sale').html(prodataobj[attr].sale+".00");
 		}
 	}
 //	console.log(data);
