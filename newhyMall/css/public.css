@@ -297,6 +297,46 @@
 	background: #eea615;
 }
 
+/*u-content*/
+.u-content{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.u-content .subnav{
+	float: left;
+	width: 138px;
+	height: auto;
+	margin-top: 28px;
+	overflow: hidden;
+}
+.u-content .subnav h2{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 42px;
+	color: #333;
+}
+.u-content .subnav ul{
+	width: 96px;
+	margin-left: 10px;
+	padding: 5px 0;
+}
+.u-content .subnav ul.my{
+	padding-top: 0;
+	border-bottom: 1px solid #999;
+}
+.u-content .subnav ul.info{
+	border-bottom: 1px solid #999;
+}
+.u-content .subnav ul li{
+	font-size: 14px;
+	line-height: 24px;
+	text-indent: 10px;
+}
+.u-content .subnav ul li.active a{
+	color: #eea615;
+}
 /*footer*/
 .footer{
 	width: 100%;
