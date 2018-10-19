@@ -142,6 +142,9 @@
 	width: 100px;
 	padding-right: 100px;
 }
+.my-order .order-table td:nth-of-type(5){
+	color: #e5121d;
+}
 .my-order .order-table td:nth-of-type(3){
 	/*padding-bottom: 30px;*/
 }
