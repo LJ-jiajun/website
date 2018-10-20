@@ -6,6 +6,7 @@
 	overflow: hidden;
 }
 .order-center .order-details{
+	float: left;
 	width: 1060px;
 	height: 150px;
 	font-size: 14px;
@@ -118,4 +119,34 @@
 .my-order .order-table img{
 	width: 61px;
 	height: 54px;
+}
+.order-center .order-total{
+	float: left;
+	width: 100%;
+	height: 110px;
+	padding-top: 15px;
+}
+.order-total p{
+	width: 100%;
+	height: 22px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #333;
+	text-align: right;
+}
+.order-total p:nth-of-type(4){
+	line-height: 36px;
+}
+.order-total p span{
+	/*float: left;*/
+}
+.order-total p i{
+	float: right;
+	width: 110px;
+	text-align: left;
+}
+.order-total p i b{
+	font-size: 18px;
+	font-weight: normal;
+	color: #e5121d;
 }
