@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>用户中心</title>
+		<title>地址管理</title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"   />
 		<link type="text/css" rel="stylesheet" href="css/public.css" />
-		<link type="text/css" rel="stylesheet" href="css/order.css" />
+		<link type="text/css" rel="stylesheet" href="css/address.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 		<!--[if lt IE 9]>
 			<script src="js/IE9.js"></script>
@@ -181,13 +181,13 @@
 				<ul class="my">
 					<li><a href="user.html">我的用户中心</a></li>
 					<li><a href="shop_cart.html">我的购物车</a></li>
-					<li class="active"><a href="order.html">我的订单</a></li>
+					<li><a href="order.html">我的订单</a></li>
 					<li><a href="javascript:;">我的收藏</a></li>
 					<li><a href="javascript:;">我的评价</a></li>
 					<li><a href="javascript:;">我的余额</a></li>
 				</ul>
 				<ul class="info">
-					<li><a href="javascript:;">地址管理</a></li>
+					<li class="active"><a href="javascript:;">地址管理</a></li>
 					<li><a href="javascript:;">个人信息</a></li>
 				</ul>
 				<ul>
@@ -196,75 +196,77 @@
 					<li><a href="javascript:;">举报管理</a></li>
 				</ul>
 			</div>
-			<div class="order-center">
-				<div class="ordertype">
-					<p>
-						<img src="img/icon1.png" alt="" />
-						待付款
-						<span>2</span>
-					</p>
-					<p>
-						<img src="img/icon2.png" alt="" />
-						待收货
-						<span>4</span>
-					</p>
-					<p>
-						<img src="img/icon3.png" alt="" />
-						待评价
-						<span>3</span>
-					</p>
-					<p>
-						<img src="img/icon4.png" alt="" />
-						已完成
-						<span>5</span>
-					</p>
-				</div>
-				<div class="my-order">
-					<h3>我的订单</h3>
-					<table class="order-table">
-						<tr>
-							<th></th>
-							<th>商品</th>
-							<th>单价</th>
-							<th>数量</th>
-							<th>小计</th>
-							<th>操作</th>
-						</tr>
-						<tr>
-							<td><img src="img/pro-ring-pic1.jpg" alt=""/></td>
-							<td>天使之吻钻戒 女 正品钻石戒指 求结婚订婚 30分钻戒 GIA国际证书</td>
-							<td>￥25998.00</td>
-							<td>1</td>
-							<td>￥25998.00</td>
-							<td>
-								<input type="button" class="btn-pay" value="付款" />
-								<input type="button" class="btn-cancel" value="取消订单" />
-							</td>
-						</tr>
-						<tr>
-							<td><img src="img/pro-ring-pic2.jpg" alt=""/></td>
-							<td>通灵珠宝 女伯爵18K金钻石戒指女 求婚戒指 钻戒女戒</td>
-							<td>￥49998.00</td>
-							<td>1</td>
-							<td>￥49998.00</td>
-							<td>
-								<input type="button" class="btn-pay" value="付款" />
-								<input type="button" class="btn-cancel" value="取消订单" />
-							</td>
-						</tr>
-						<tr>
-							<td><img src="img/pro-ring-pic3.jpg" alt=""/></td>
-							<td>钻戒白18K金钻石戒指女款 铂金求婚结婚戒指 玫瑰情事</td>
-							<td>￥15998.00</td>
-							<td>1</td>
-							<td>￥15998.00</td>
-							<td>
-								<input type="button" class="btn-pay" value="付款" />
-								<input type="button" class="btn-cancel" value="取消订单" />
-							</td>
-						</tr>
-					</table>
-				</div>
+			<div class="user-address">
+				<h3>收货地址管理</h3>
+				<table class="address-table">
+					<tr>
+						<th>收货人姓名</th>
+						<th>所在地区</th>
+						<th>详细地址</th>
+						<th>联系电话</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td>李小明</td>
+						<td>广州</td>
+						<td>天河区五山路中公教育大厦371号</td>
+						<td>130****1648</td>
+						<td>
+							<a class="achange" href="javascript:;">编辑</a>
+							/
+							<a class="adel" href="javascript:;">删除</a>
+							<input type="button" class="setDefault active" value="默认地址"/>
+						</td>
+					</tr>
+					<tr>
+						<td>李小小</td>
+						<td>广州</td>
+						<td>黄埔区五山路中公大厦371号</td>
+						<td>130****1958</td>
+						<td>
+							<a class="achange" href="javascript:;">编辑</a>
+							/
+							<a class="adel" href="javascript:;">删除</a>
+							<input type="button" class="setDefault" value="默认地址"/>
+						</td>
+					</tr>
+					<tr>
+						<td>李小明</td>
+						<td>广州</td>
+						<td>天河区五山路中公教育大厦371号</td>
+						<td>130****1648</td>
+						<td>
+							<a class="achange" href="javascript:;">编辑</a>
+							/
+							<a class="adel" href="javascript:;">删除</a>
+							<input type="button" class="setDefault" value="默认地址"/>
+						</td>
+					</tr>
+					<tr>
+						<td>王尼尼</td>
+						<td>广州</td>
+						<td>白云区五山路万达广场大厦360号</td>
+						<td>156****1601</td>
+						<td>
+							<a class="achange" href="javascript:;">编辑</a>
+							/
+							<a class="adel" href="javascript:;">删除</a>
+							<input type="button" class="setDefault" value="默认地址"/>
+						</td>
+					</tr>
+					<tr>
+						<td>李小明</td>
+						<td>广州</td>
+						<td>天河区五山路中公教育大厦371号</td>
+						<td>130****1648</td>
+						<td>
+							<a class="achange" href="javascript:;">编辑</a>
+							/
+							<a class="adel" href="javascript:;">删除</a>
+							<input type="button" class="setDefault" value="默认地址"/>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 		<!--content结束-->
@@ -356,6 +358,6 @@
 		<!--footer结束-->
 	</body>
 	<script type="text/javascript" src="js/common.js"></script>
-	<script type="text/javascript" src="js/order.js"></script>
+	<script type="text/javascript" src="js/address.js"></script>
 </html>
  
