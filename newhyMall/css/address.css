@@ -40,15 +40,14 @@
 	line-height: 24px;
 }
 .address-table th:nth-of-type(3),.address-table td:nth-of-type(3){
-	width: 240px;
+	width: 260px;
 }
 .address-table th:nth-of-type(5),.address-table td:nth-of-type(5){
+	width: 130px;
 	padding-right: 0px;
 }
 .address-table td:nth-of-type(3){
 	/*padding-bottom: 30px;*/
-}
-.address-table td a{
 }
 .address-table td input{
 	width: 65px;
