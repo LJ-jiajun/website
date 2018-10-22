@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>确认订单</title>
+		<title>支付提交</title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"   />
 		<link type="text/css" rel="stylesheet" href="css/public.css" />
-		<link type="text/css" rel="stylesheet" href="css/confirm_order.css" />
+		<link type="text/css" rel="stylesheet" href="css/pay.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 		<!--[if lt IE 9]>
 			<script src="js/IE9.js"></script>
@@ -177,22 +177,17 @@
 		<!--content开始-->
 		<div class="u-content">
 			<div class="order-steps">
-				<p>确认订单信息</p>
+				<p>支付提交</p>
 				<ul class="steps">
 					<li class="step1"><a href="shop_cart.html">1.我的购物车</a></li>
-					<li class="step2">2.填写核对购物信息</li>
+					<li class="step2"><a href="confirm_order.html">2.填写核对购物信息</a></li>
 					<li class="step3">3.支付提交</li>
 					<li class="step4">4.订单完成</li>
 				</ul>
 			</div>
-			<div class="consignee-info">
-				<p>收货人信息 <a class="new-address" href="address.html">+ 添加新地址</a></p>
-				<p class="consignee">
-					<span>李小明</span>
-					<i>广州市<em>天河区五山路</em>中公教育大厦371号</i>
-					<span>130****1648</span>
-				</p>
-				<p><a class="more-addresss" href="address.html">更多地址&gt;&gt;</a></p>
+			<div class="pay-info">
+				<p>订单提交成功，请您尽快支付！订单号：<i class="order-num">1234567890123456</i><span>应付金额：<em><i class="money">92014.00</i> 元</em></span></p>
+				<p>请您在提交订单后<i class="remaintime">30</i>分钟内完成支付<a class="more-addresss" href="address.html">更多地址&gt;&gt;</a></p>
 			</div>
 			<div class="order-center">
 				<div class="my-order">
@@ -310,6 +305,6 @@
 		<!--footer结束-->
 	</body>
 	<script type="text/javascript" src="js/common.js"></script>
-	<script type="text/javascript" src="js/confirm_order.js"></script>
+	<script type="text/javascript" src="js/pay.js"></script>
 </html>
  
