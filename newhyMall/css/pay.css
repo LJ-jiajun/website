@@ -74,6 +74,9 @@
 .pay-info p a:hover{
 	color: #eea615;
 }
+.pay-content{
+	position: relative;
+}
 .my-pay{
 	width: 998px;
 	height: auto;
@@ -183,9 +186,120 @@
 .pay-ok .btn-payok{
 	width: 90px;
 	height: 30px;
+	margin-bottom: 20px;
 	font-size: 12px;
 	line-height: 30px;
 	color: #fefefe;
 	background: #eea615;
 	cursor: pointer;
+}
+.pay-success{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.7);
+}
+.pay-success img{
+	margin-top: 150px;
+}
+.pay-success p{
+	font-size: 12px;
+	line-height: 48px;
+	color: #fff;
+	text-align: center;
+}
+.pay-success p.pay-txt{
+	margin-top: 10px;
+	font-size: 24px;
+	line-height: 46px;
+}
+.pay-success p.pay-status{
+	font-size: 14px;
+	line-height: 20px;
+}
+.pay-success p.pay-status em{
+	margin-right: 10px;
+	color: #e5121d;
+}
+.pay-success p.pay-status span{
+	padding-left: 10px;
+	border-left: 2px solid #999;
+}
+.pay-success a{
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+}
+.pay-success a.to-order{
+	width: 110px;
+	height: 32px;
+	font-size: 18px;
+	line-height: 32px;
+	background: #eea615;
+}
+.pay-success a.to-index{
+	width: 80px;
+	height: 20px;
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.pay-success .to-index:hover{
+	color: #eea615;
+}
+.pay-failure{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.7);
+}
+.pay-failure img{
+	margin-top: 150px;
+}
+.pay-failure p{
+	color: #fff;
+	text-align: center;
+}
+.pay-failure p.pay-txt{
+	margin-top: 10px;
+	font-size: 24px;
+	line-height: 46px;
+}
+.pay-failure p.pay-status{
+	font-size: 14px;
+	line-height: 20px;
+}
+.pay-failure p.pay-status em{
+	margin-right: 10px;
+	color: #e5121d;
+}
+.pay-failure a{
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+}
+.pay-failure a.to-order{
+	width: 110px;
+	height: 32px;
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 32px;
+	background: #eea615;
+}
+.pay-failure a.close{
+	width: 80px;
+	height: 20px;
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.pay-failure .close:hover{
+	color: #eea615;
 }

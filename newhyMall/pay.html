@@ -189,37 +189,54 @@
 				<p>订单提交成功，请您尽快支付！订单号：<i class="order-num">1234567890123456</i><span>应付金额：<em><i class="money">92014.00</i> 元</em></span></p>
 				<p>请您在提交订单后<i class="countdown">30</i>分钟内完成支付<a class="order-details" href="order_details.html">订单详情&gt;&gt;</a></p>
 			</div>
-			<div class="my-pay">
-				<ul class="pay-list">
-					<li class="active"><span></span>网银支付</li>
-					<li><span></span>快捷支付</li>
-					<li><span></span>新卡支付</li>
-				</ul>
-				<ul class="pay-banks">
-					<li class="active"><img src="img/bank01.png" alt="" /></li>
-					<li><img src="img/bank02.png" alt="" /></li>
-					<li><img src="img/bank03.png" alt="" /></li>
-					<li><img src="img/bank04.png" alt="" /></li>
-					<li><img src="img/bank05.png" alt="" /></li>
-					<li><img src="img/bank06.png" alt="" /></li>
-					<li><img src="img/bank07.png" alt="" /></li>
-					<li><img src="img/bank08.png" alt="" /></li>
-				</ul>
-			</div>
-			<div class="pay-ok">
-				<p><span></span>您在安全环境中，请放心使用！</p>
-				<p>支付密码：</p>
-				<p class="pass-list">
-					<input type="text" maxlength="1"/>
-					<input type="text" maxlength="1"/>
-					<input type="text" maxlength="1"/>
-					<input type="text" maxlength="1"/>
-					<input type="text" maxlength="1"/>
-					<input type="text" maxlength="1"/>
-					<a href="javascript:;">忘记密码？</a>
-					<i>请输入6位数支付密码</i>
-				</p>
-				<p><input type="button" class="btn-payok" value="确认支付"/></p>
+			<div class="pay-content">
+				<div class="my-pay">
+					<ul class="pay-list">
+						<li class="active"><span></span>网银支付</li>
+						<li><span></span>快捷支付</li>
+						<li><span></span>新卡支付</li>
+					</ul>
+					<ul class="pay-banks">
+						<li class="active"><img src="img/bank01.png" alt="" /></li>
+						<li><img src="img/bank02.png" alt="" /></li>
+						<li><img src="img/bank03.png" alt="" /></li>
+						<li><img src="img/bank04.png" alt="" /></li>
+						<li><img src="img/bank05.png" alt="" /></li>
+						<li><img src="img/bank06.png" alt="" /></li>
+						<li><img src="img/bank07.png" alt="" /></li>
+						<li><img src="img/bank08.png" alt="" /></li>
+					</ul>
+				</div>
+				<div class="pay-ok">
+					<p><span></span>您在安全环境中，请放心使用！</p>
+					<p>支付密码：</p>
+					<p class="pass-list">
+						<input type="text" maxlength="1"/>
+						<input type="text" maxlength="1"/>
+						<input type="text" maxlength="1"/>
+						<input type="text" maxlength="1"/>
+						<input type="text" maxlength="1"/>
+						<input type="text" maxlength="1"/>
+						<a href="javascript:;">忘记密码？</a>
+						<i>请输入6位数支付密码</i>
+					</p>
+					<p><input type="button" class="btn-payok" value="确认支付"/></p>
+				</div>
+				<div class="pay-success">
+					<img src="img/pay_success.png" alt=""/>
+					<p class="pay-txt">支付成功！</p>
+					<p class="pay-status">已付款：<em>￥<i class="ps-money">92014.00</i></em><span>订单正在处理中......</span></p>
+					<p>收货地址：<i class="ps-addresss">广东省广州市天河区五山路中公教育大厦371号</i></p>
+					<a href="order_details.html" class="to-order">查看订单</a>
+					<a class="to-index" href="index.html">继续购买&gt;&gt;</a>
+				</div>
+				<div class="pay-failure">
+					<img src="img/pay_failure.png" alt=""/>
+					<p class="pay-txt">支付失败！</p>
+					<p class="pay-status">付款失败：<em>卡内余额不足！</em></p>
+					<a href="order_details.html" class="to-order">查看订单</a>
+					<a class="close" href="javascript:;">返回支付&gt;&gt;</a>
+				</div>
 			</div>
 		</div>
 		<!--content结束-->
