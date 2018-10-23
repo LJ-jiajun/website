@@ -187,51 +187,39 @@
 			</div>
 			<div class="pay-info">
 				<p>订单提交成功，请您尽快支付！订单号：<i class="order-num">1234567890123456</i><span>应付金额：<em><i class="money">92014.00</i> 元</em></span></p>
-				<p>请您在提交订单后<i class="remaintime">30</i>分钟内完成支付<a class="more-addresss" href="address.html">更多地址&gt;&gt;</a></p>
+				<p>请您在提交订单后<i class="countdown">30</i>分钟内完成支付<a class="order-details" href="order_details.html">订单详情&gt;&gt;</a></p>
 			</div>
-			<div class="order-center">
-				<div class="my-order">
-					<h3>购物清单</h3>
-					<table class="order-table">
-						<tr>
-							<th></th>
-							<th>商品</th>
-							<th>单价</th>
-							<th>数量</th>
-							<th>小计</th>
-						</tr>
-						<tr>
-							<td><img src="img/pro-ring-pic1.jpg" alt=""/></td>
-							<td>天使之吻钻戒 女 正品钻石戒指 求结婚订婚 30分钻戒 GIA国际证书</td>
-							<td>￥25998.00</td>
-							<td>1</td>
-							<td>￥25998.00</td>
-						</tr>
-						<tr>
-							<td><img src="img/pro-ring-pic2.jpg" alt=""/></td>
-							<td>通灵珠宝 女伯爵18K金钻石戒指女 求婚戒指 钻戒女戒</td>
-							<td>￥49998.00</td>
-							<td>1</td>
-							<td>￥49998.00</td>
-						</tr>
-						<tr>
-							<td><img src="img/pro-ring-pic3.jpg" alt=""/></td>
-							<td>钻戒白18K金钻石戒指女款 铂金求婚结婚戒指 玫瑰情事</td>
-							<td>￥15998.00</td>
-							<td>1</td>
-							<td>￥15998.00</td>
-						</tr>
-					</table>
-				</div>
-				<div class="order-total">
-					<p><span>共 3 件商品，总商品金额：</span><i>￥91994.00</i></p>
-					<p><span>运费：</span><i>￥20.00</i></p>
-					<p><span>优惠：</span><i>￥0.00</i></p>
-					<p><span>总金额：</span><i><b>￥92014.00</b></i></p>
-				</div>
-				<div class="btnok">
-					<input type="button" id="btnok" value="确认订单" />
-				</div>
+			<div class="my-pay">
+				<ul class="pay-list">
+					<li class="active"><span></span>网银支付</li>
+					<li><span></span>快捷支付</li>
+					<li><span></span>新卡支付</li>
+				</ul>
+				<ul class="pay-banks">
+					<li class="active"><img src="img/bank01.png" alt="" /></li>
+					<li><img src="img/bank02.png" alt="" /></li>
+					<li><img src="img/bank03.png" alt="" /></li>
+					<li><img src="img/bank04.png" alt="" /></li>
+					<li><img src="img/bank05.png" alt="" /></li>
+					<li><img src="img/bank06.png" alt="" /></li>
+					<li><img src="img/bank07.png" alt="" /></li>
+					<li><img src="img/bank08.png" alt="" /></li>
+				</ul>
+			</div>
+			<div class="pay-ok">
+				<p><span></span>您在安全环境中，请放心使用！</p>
+				<p>支付密码：</p>
+				<p class="pass-list">
+					<input type="text" maxlength="1"/>
+					<input type="text" maxlength="1"/>
+					<input type="text" maxlength="1"/>
+					<input type="text" maxlength="1"/>
+					<input type="text" maxlength="1"/>
+					<input type="text" maxlength="1"/>
+					<a href="javascript:;">忘记密码？</a>
+					<i>请输入6位数支付密码</i>
+				</p>
+				<p><input type="button" class="btn-payok" value="确认支付"/></p>
 			</div>
 		</div>
 		<!--content结束-->

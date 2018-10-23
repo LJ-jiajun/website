@@ -5,7 +5,7 @@
 }
 .order-steps p{
 	float: left;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 80px;
 }
 .order-steps .steps{
@@ -19,6 +19,7 @@
 	width: 170px;
 	height: 36px;
 	margin-left: -18px;
+	font-size: 14px;
 	line-height: 36px;
 	text-align: center;
 }
@@ -31,168 +32,157 @@
 }
 .order-steps .steps li.step2{
 	width: 190px;
-	color: #fff;
-	background: url(../img/confirmBG21.png) no-repeat;
+	background: url(../img/confirmBG2.png) no-repeat;
 }
 .order-steps .steps li.step3{
-	background: url(../img/confirmBG3.png) no-repeat;
+	color: #fff;
+	background: url(../img/confirmBG31.png) no-repeat;
 }
 .order-steps .steps li.step4{
 	margin-left: -16px;
 	background: url(../img/confirmBG4.png) no-repeat;
 }
-.consignee-info{
-	width: 100%;
+.pay-info{
+	width: 1000px;
 	height: auto;
-	margin: 10px 0 20px;
+	margin: 20px 0;
+	padding: 8px 100px;
+	background: #1a1a1a;
 	overflow: hidden;
 }
-.consignee-info p{
+.pay-info p{
 	width: 100%;
 	height: 34px;
 	font-size: 14px;
+	color: #fefefe;
 	line-height: 34px;
 }
-.consignee-info p .new-address{
+.pay-info p span{
 	float: right;
 }
-.consignee-info p span{
-	float: left;
-	margin: 0 20px;
+.pay-info p em{
+	color: #e5121d;
 }
-.consignee-info p i{
-	float: left;
-	margin: 0 70px;
-}
-.consignee-info p em{
-	margin: 0 25px;
-}
-.consignee-info p .more-addresss{
-	float: right;
+.pay-info p .countdown{
+	margin: 0 4px;
 	color: #eea615;
-	margin-right: 68px;
 }
-.order-center{
-	width: 1198px;
+.pay-info p a{
+	float: right;
+	color: #fefefe;
+}
+.pay-info p a:hover{
+	color: #eea615;
+}
+.my-pay{
+	width: 998px;
 	height: auto;
-	border: 1px solid #dadada;
+	padding: 28px 100px;
+	border: 1px solid #999;
 	overflow: hidden;
 }
-.order-center .my-order{
-	height: auto;
-	margin: 20px 8px 0;
-	border-bottom: 1px solid #eea615;
-	overflow: hidden;
-}
-.order-center .my-order h3{
-	font-size: 14px;
-	line-height: 16px;
-}
-.order-center .my-order .order-table{
+.my-pay .pay-list{
 	width: 100%;
-	height: auto;
-	padding-left: 50px;
-	overflow: hidden;
+	height: 31px;
+	border-bottom: 1px solid #999;
 }
-.my-order .order-table tr{
-	font-size: 12px;
-	color: #333;
-}
-.my-order .order-table th{
-	height: 32px;
-	line-height: 32px;
-}
-.my-order .order-table td{
-	height: 54px;
-	padding: 20px 0 10px 0;
-	vertical-align: top;
-}
-.my-order .order-table th:nth-of-type(1),.my-order .order-table td:nth-of-type(1){
-	width: 90px;
-	text-align: center;
-}
-.my-order .order-table th:nth-of-type(2),.my-order .order-table td:nth-of-type(2){
-	width: 210px;
-	padding-right: 90px;
-}
-.my-order .order-table th:nth-of-type(3),.my-order .order-table td:nth-of-type(3){
-	width: 100px;
-	padding-right: 80px;
-	line-height: 18px;
-}
-.my-order .order-table th:nth-of-type(4),.my-order .order-table td:nth-of-type(4){
-	width: 100px;
-	padding-right: 100px;
-}
-.my-order .order-table th:nth-of-type(5),.my-order .order-table td:nth-of-type(5){
-	width: 100px;
-	padding-right: 100px;
-}
-.my-order .order-table th:nth-of-type(6),.my-order .order-table td:nth-of-type(6){
-	text-align: center;
-}
-.my-order .order-table td:nth-of-type(5){
-	color: #e5121d;
-}
-.my-order .order-table td input{
-	width: 90px;
-	height: 28px;
-	border: 1px solid #eea615;
-	background: #fff;
-}
-.my-order .order-table td input:nth-of-type(1){
-	margin-top: -22px;
-	color: #fefefe;
-	background: #eea615;
-}
-.my-order .order-table td input:hover{
-	color: #fefefe;
-	background: #eea615;
-}
-.my-order .order-table img{
-	width: 61px;
-	height: 54px;
-}
-.order-center .order-total{
+.my-pay .pay-list li{
 	float: left;
-	width: 100%;
-	height: 110px;
-	padding-top: 15px;
-}
-.order-total p{
-	width: 100%;
-	height: 22px;
+	width: 90px;
+	height: 32px;
+	margin-right: 30px;
 	font-size: 12px;
-	line-height: 22px;
+	line-height: 32px;
 	color: #333;
-	text-align: right;
+	cursor: pointer;
 }
-.order-total p:nth-of-type(4){
-	line-height: 36px;
+.my-pay .pay-list li span{
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 8px 3px 0 12px;
 }
-.order-total p span{
-	/*float: left;*/
+.my-pay .pay-list li.active{
+	color: #fff;
+	background: #eea615;
 }
-.order-total p i{
-	float: right;
-	width: 110px;
-	text-align: left;
+.my-pay .pay-list li.active span{
+	background: url(../img/onlinebank.png) no-repeat;
 }
-.order-total p i b{
-	font-size: 18px;
-	font-weight: normal;
-	color: #e5121d;
+.my-pay .pay-list li:hover{
+	color: #fff;
+	background: #eea615;
 }
-.btnok{
+.my-pay .pay-list li:hover span{
+	background: url(../img/onlinebank.png) no-repeat;
+}
+.my-pay .pay-banks{
 	width: 100%;
-	height: 30px;
+	height: auto;
+	margin: 36px 0 40px;
+	overflow: hidden;
 }
-.btnok input{
-	float: right;
+.my-pay .pay-banks li{
+	float: left;
+	width: 180px;
+	height: 56px;
+	margin: 20px 92px 20px 0;
+	line-height: 56px;
+	text-align: center;
+	background: url(../img/bankbd0.png);
+}
+.my-pay .pay-banks li:nth-of-type(4n){
+	margin-right: 0;
+}
+.my-pay .pay-banks li.active{
+	background: url(../img/bankbd1.png);
+}
+.pay-ok{
+	width: 100%;
+	height: auto;
+	padding-top: 30px;
+	overflow: hidden;
+}
+.pay-ok p{
+	margin-left: 100px;
+	font-size: 12px;
+	line-height: 30px;
+	color: #333;
+}
+.pay-ok p span{
+	float: left;
+	width: 14px;
+	height: 14px;
+	margin: 8px 5px 0 0;
+	background: url(../img/payok.png) no-repeat;
+}
+.pay-ok p.pass-list{
+	height: 44px;
+	margin-bottom: 15px;
+	line-height: 22px;
+}
+.pay-ok p.pass-list input{
+	float: left;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border: 1px solid #333;
+	border-right: 0;
+}
+.pay-ok p.pass-list input:last-of-type{
+	margin-right: 9px;
+	border-right: 1px solid #333;
+}
+.pay-ok p.pass-list a{
+	width: ;
+}
+.pay-ok p.pass-list i{
+	display: block;
+}
+.pay-ok .btn-payok{
 	width: 90px;
 	height: 30px;
-	margin-bottom: 8px;
-	margin-right: 10px;
 	font-size: 12px;
 	line-height: 30px;
 	color: #fefefe;
