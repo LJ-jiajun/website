@@ -140,6 +140,9 @@
 .my-pay .pay-banks li.active{
 	background: url(../img/bankbd1.png);
 }
+.my-pay .pay-banks li:hover{
+	background: url(../img/bankbd1.png);
+}
 .pay-ok{
 	width: 100%;
 	height: auto;
@@ -252,6 +255,7 @@
 	color: #eea615;
 }
 .pay-failure{
+	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
