@@ -82,11 +82,13 @@
 	vertical-align: bottom;
 }
 .com-type p{
+	width: 100%;
 	margin: 30px 0 5px;
 	line-height: 20px;
 	color: #666;
 }
 .com-type .com-stars{
+	float: left;
 	width: 220px;
 	height: auto;
 	overflow: hidden;
@@ -105,8 +107,45 @@
 	float: left;
 	width: 22px;
 	height: 20px;
-	margin: 0 35x;
+	margin: 0 5px;
 }
+.com-type .com-img{
+	float: left;
+	width: 230px;
+	height: 62px;
+	margin-left: 30px;
+	line-height: 62px;
+}
+.com-type .com-img span{
+	float: left;
+	height: 100%;
+}
+.com-type .com-img label{
+	float: left;
+	width: 68px;
+	height: 60px;
+	margin: 0 10px;
+	border: 1px solid #9a9a9a;
+	background: url(../img/photo.png) no-repeat center center;
+	cursor: pointer;
+}
+.com-type .com-img label input{
+	display: none;
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.com-type .com-img i{
+	float: left;
+	width: 68px;
+	height: 60px;
+	margin-left: 10px;
+	font-size: 14px;
+	line-height: 60px;
+	text-align: center;
+	border: 1px solid #9a9a9a;
+}
+
 .my-com .com-txt{
 	float: left;
 	width: 402px;
