@@ -150,6 +150,26 @@
 	float: left;
 	width: 402px;
 	height: auto;
-	margin-top: 34px;
+	margin-top: 24px;
 	overflow: hidden;
+}
+.my-com .com-txt p{
+	height: 32px;
+	line-height: 32px;
+}
+.my-com .com-txt textarea{
+	width: 390px;
+	height: 128px;
+	padding: 0 5px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: justify;
+}
+.my-com .com-txt input{
+	display: block;
+	width: 90px;
+	height: 30px;
+	margin: 10px auto 0;
+	background: #eea615;
+	font-size: 12px;
 }

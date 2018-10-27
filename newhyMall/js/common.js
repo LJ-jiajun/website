@@ -61,6 +61,13 @@ function initCommon(){
 		$("#loginbar").show();
 	}
 	
+	$('.hmsc-cart').attr('href','shop_cart.html');
+	
+	getShopCartNum();
+}
+
+
+function getShopCartNum(){
 	var shopCartProes = (new Function('','return '+Storage.getItem("shopcart")))();
 	var shopCartNum = 0;
 	if(shopCartProes){
@@ -69,8 +76,6 @@ function initCommon(){
 		}
 	}
 	$('#pro-num').html(shopCartNum);
-	
-	$('.hmsc-cart').attr('href','shop_cart.html');
 }
 
 //存储用户登录信息

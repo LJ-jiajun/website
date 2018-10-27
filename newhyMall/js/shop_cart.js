@@ -7,7 +7,7 @@ function initShopCart(){
 	if(shopCartProes){
 		for(var i=0;i<shopCartProes.length;i++){
 			str += '<tr>' +
-						'<td><input type="checkbox" class="aCheck"/><img src="'+shopCartProes[i].imgSrc+'" alt="" /></td>' +
+						'<td><input type="checkbox" name="'+shopCartProes[i].id+'" class="aCheck"/><img src="'+shopCartProes[i].imgSrc+'" alt="" /></td>' +
 						'<td>'+shopCartProes[i].titles+'</td>' +
 						'<td>￥<i class="price">'+shopCartProes[i].sale+'.00</i></td>' +
 						'<td>' +
@@ -37,32 +37,53 @@ function initShopCart(){
 var isAll = true;
 var allcheckh = document.getElementById("allCheckH");
 var allcheckf = document.getElementById("allCheckF");
-var dels = $('.del');
+var dels = $('#shopcart .del');
 var aChecks = $(".aCheck");
+var btnClearing = $("#clearing");
+
+btnClearing.click(function(){
+	clearShopCart();
+});
+
+function clearShopCart(){
+	var orderArr = [];
+	for(var i=0;i<aChecks.length;i++){
+		if(aChecks[i].checked){
+			orderArr.push(aChecks[i].name);
+			
+//			var num = aChecks[i].parentNode.parentNode.getElementsByClassName("num")[0].value;
+//			var price = aChecks[i].parentNode.parentNode.getElementsByClassName("price")[0].innerHTML;
+//			var money = parseFloat(num)*parseFloat(price);
+//			aChecks[i].parentNode.parentNode.getElementsByClassName("money")[0].innerHTML = toDecimal(money,2);
+//			totalnum += parseFloat(num);
+//			totalmoney += money;
+		}
+	}
+	if(orderArr.length==0){
+		alert("请选择商品！");
+	}else{
+		console.log(orderArr);
+	}
+}
 
 dels.click(function(){
-	
-})
+	if(confirm("确认删除？")){
+		delShopCartPro(this.name);
+	}
+});
 
-delShopCartPro();
-function delShopCartPro(){
+function delShopCartPro(id){
 	var shopCartProes = (new Function('','return '+Storage.getItem("shopcart")))();
-	var isit = true;
 	if(shopCartProes){
 		for(var i=0;i<shopCartProes.length;i++){
-			if(shopCartProes[i].id == obj.id){
-				shopCartProes[i].num = Number(shopCartProes[i].num) + Number(obj.num);
-				isit = false;
+			if(shopCartProes[i].id == id){
+				shopCartProes.splice(i,1);
+　				Storage.setItem("shopcart",JSON.stringify(shopCartProes));
+				initShopCart();
+				getShopCartNum();
 			}
 		}
-		if(isit){
-			shopCartProes.push(obj);
-		}
-	}else{
-		shopCartProes = [obj];
 	}
-//		console.log(shopCartProes);
-　	Storage.setItem("shopcart",JSON.stringify(shopCartProes));
 }
 
 allcheckh.onclick = function(){
