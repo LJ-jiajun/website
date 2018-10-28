@@ -49,8 +49,18 @@ function clearShopCart(){
 	var orderArr = [];
 	for(var i=0;i<aChecks.length;i++){
 		if(aChecks[i].checked){
-			orderArr.push(aChecks[i].name);
-			
+			var shopCartProes = (new Function('','return '+Storage.getItem("shopcart")))();
+			if(shopCartProes){
+				for(var j=0;j<shopCartProes.length;j++){
+					if(shopCartProes[j].id == aChecks[i].name){
+						
+						orderArr.push(shopCartProes[j]);
+//						Storage.setItem("orderlist",JSON.stringify(orderArr));
+//						shopCartProes.splice(j,1);
+//		　				Storage.setItem("shopcart",JSON.stringify(shopCartProes));
+					}
+				}
+			}
 //			var num = aChecks[i].parentNode.parentNode.getElementsByClassName("num")[0].value;
 //			var price = aChecks[i].parentNode.parentNode.getElementsByClassName("price")[0].innerHTML;
 //			var money = parseFloat(num)*parseFloat(price);
