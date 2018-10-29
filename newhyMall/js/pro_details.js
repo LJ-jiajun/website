@@ -177,3 +177,7 @@ function setShopCartPro(obj){
 //		console.log(shopCartProes);
 　Storage.setItem("shopcart",JSON.stringify(shopCartProes));
 }
+
+window.onhashchange = function(){
+	initProDetails();
+}
