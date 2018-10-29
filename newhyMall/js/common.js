@@ -4,15 +4,42 @@ var allUser = (new Function('','return '+Storage.getItem("user")))();
 var htctul = $('.htct-ul li');
 
 //console.log(htctul[1]);
+if(htctul[0]){
+	htctul[1].children[0].onclick = function(){
+		var loginState = getUserLoginState();
+		if(loginState){
+			window.location.href = "order.html";
+		}else{
+			alert('请登录您的账户！');
+		}
+	};
+}
 
-htctul[1].children[0].onclick = function(){
-	var loginState = getUserLoginState();
-	if(loginState){
-		window.location.href = "order.html";
-	}else{
-		alert('请登录您的账户！');
-	}
-};
+var hmsbtn = $('.hms-btn');
+
+if(hmsbtn[0]){
+	hmsbtn.click(function(){
+		window.location.href = 'shop_list.html';
+	});
+}
+
+var hmshotTxts = $('.hms-hotTxt li');
+if(hmshotTxts[0]){
+	hmshotTxts.click(function(){
+		window.location.href = 'shop_list.html';
+	});
+}
+
+
+var hbpclis = $('.hbpc-list').children();
+if(hbpclis[0]){
+	hbpclis.click(function(ev){
+		ev = ev||window.event;
+		if(ev.target.nodeName == "A"){
+			window.location.href = "shop_list.html?protype="+($(this).index()+1);
+		}
+	});
+}
 
 var navas = $('.nav li a');
 for(var i=1;i<navas.length;i++){
@@ -152,6 +179,23 @@ function getUserLoginState(){
 		}
 	}else{
 		return false;
+	}
+}
+
+var noLoginArr = ['order','pay','address','comment','user'];
+
+noLogin();
+function noLogin(){
+	var pathname = window.location.pathname;
+	for(var i=0;i<noLoginArr.length;i++){
+		if(pathname.indexOf(noLoginArr[i]) != -1){
+			var loginState = getUserLoginState();
+			if(!loginState){
+				$('body').hide();
+				alert('请登录您的账户！');
+				window.location.href = 'login.html';
+			}
+		}
 	}
 }
 
