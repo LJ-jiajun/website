@@ -106,6 +106,7 @@
 	height: 28px;
 	border: 1px solid #eea615;
 	background: #fff;
+	cursor: pointer;
 }
 .my-order .order-table td input:nth-of-type(1){
 	margin-top: -22px;

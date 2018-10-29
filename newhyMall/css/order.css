@@ -10,13 +10,15 @@
 	height: 50px;
 	padding-left: 30px;
 	line-height: 50px;
-	color: #fefefe;
 	background: #2c2619;
 }
 .order-center .ordertype p{
 	float: left;
 	width: 250px;
 	font-size: 12px;
+}
+.order-center .ordertype p a{
+	color: #fefefe;
 }
 .order-center .ordertype p img{
 	margin-right: 15px;
@@ -88,6 +90,7 @@
 	height: 28px;
 	border: 1px solid #eea615;
 	background: #fff;
+	cursor: pointer;
 }
 .my-order .order-table td input:nth-of-type(1){
 	margin-top: -22px;

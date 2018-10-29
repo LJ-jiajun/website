@@ -58,21 +58,33 @@ function clearShopCart(){
 //						Storage.setItem("orderlist",JSON.stringify(orderArr));
 //						shopCartProes.splice(j,1);
 //		　				Storage.setItem("shopcart",JSON.stringify(shopCartProes));
+//						window.location.href = 'confirm_order.html';
 					}
 				}
 			}
-//			var num = aChecks[i].parentNode.parentNode.getElementsByClassName("num")[0].value;
-//			var price = aChecks[i].parentNode.parentNode.getElementsByClassName("price")[0].innerHTML;
-//			var money = parseFloat(num)*parseFloat(price);
-//			aChecks[i].parentNode.parentNode.getElementsByClassName("money")[0].innerHTML = toDecimal(money,2);
-//			totalnum += parseFloat(num);
-//			totalmoney += money;
 		}
 	}
 	if(orderArr.length==0){
 		alert("请选择商品！");
 	}else{
-		console.log(orderArr);
+		var loginState = getUserLoginState();
+		if(loginState){
+			Storage.setItem("orderlist",JSON.stringify(orderArr));
+			for(var i=0;i<orderArr.length;i++){
+				var shopCartProes = (new Function('','return '+Storage.getItem("shopcart")))();
+				if(shopCartProes){
+					for(var j=0;j<shopCartProes.length;j++){
+						if(shopCartProes[j].id == orderArr[i].id){
+							shopCartProes.splice(j,1);
+			　				Storage.setItem("shopcart",JSON.stringify(shopCartProes));
+							window.location.href = 'confirm_order.html';
+						}
+					}
+				}
+			}
+		}else{
+			alert('请登录您的账户！');
+		}
 	}
 }
 

@@ -1,6 +1,18 @@
 var Storage = window.localStorage;
 console.log(Storage);
 var allUser = (new Function('','return '+Storage.getItem("user")))();
+var htctul = $('.htct-ul li');
+
+//console.log(htctul[1]);
+
+htctul[1].children[0].onclick = function(){
+	var loginState = getUserLoginState();
+	if(loginState){
+		window.location.href = "order.html";
+	}else{
+		alert('请登录您的账户！');
+	}
+};
 
 var navas = $('.nav li a');
 for(var i=1;i<navas.length;i++){
@@ -129,3 +141,19 @@ function setDUser(){
 　　	Storage.setItem("user",JSON.stringify(dUser));
 	return (new Function('','return '+Storage.getItem("user")))();
 }
+
+function getUserLoginState(){
+	var loginUser = (new Function('','return '+Storage.getItem("loginUser")))();
+	if(loginUser){
+		if(loginUser[0].loginState){
+			return true;
+		}else{
+			return false;
+		}
+	}else{
+		return false;
+	}
+}
+
+
+var varr = [];
