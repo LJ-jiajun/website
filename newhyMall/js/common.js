@@ -155,5 +155,3 @@ function getUserLoginState(){
 	}
 }
 
-
-var varr = [];
