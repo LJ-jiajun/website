@@ -1,0 +1,14 @@
+
+http://newhy.51zuopin.com/index.html
+http://newhy.51zuopin.com/shop_list.html
+http://newhy.51zuopin.com/pro_details.html
+http://newhy.51zuopin.com/shop_cart.html
+http://newhy.51zuopin.com/confirm_order.html
+http://newhy.51zuopin.com/pay.html
+http://newhy.51zuopin.com/user.html
+http://newhy.51zuopin.com/order.html
+http://newhy.51zuopin.com/order_details.html
+http://newhy.51zuopin.com/addresss.html
+http://newhy.51zuopin.com/comment.html
+http://newhy.51zuopin.com/login.html
+http://newhy.51zuopin.com/register.html
